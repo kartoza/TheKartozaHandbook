@@ -13,6 +13,7 @@ Community contributions to this documentation site and associated resources are 
 The following conventions outline expectations for contributions to this documentation project:
 
 - Use grammar checking tools where available, such as grammarly or spell checking extensions for your IDE
+- Request a review for internal changes before they are merged into the main repository
 - Default to British English spellings rather than American English
 - Do not commit sensitive information or links to non-public resources. This includes internal unlisted youtube channels, cloud storage repositories such as nextcloud, or personal details
 - Due to the nature of the contents in this repository, when making large edits that do not create new content, communicate with team members to prevent collisions
