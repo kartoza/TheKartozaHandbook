@@ -26,7 +26,7 @@ The purpose and function of this collection of documents is to perform the follo
 
 ## Scope
 
-Kartoza is a company that specializes in Open Source Geospatial solutions. As a result, topics covered by this documentation will be limited to categories relevant to the operations of Kartoza. These catergories are outlined as follows:
+Kartoza is a company that specializes in Open Source Geospatial solutions. As a result, topics covered by this documentation will be limited to categories relevant to the operations of Kartoza. These categories are outlined as follows:
 
 - [GIS](/gis): Resources for Geographic Information Systems and data
 - [Development](/development): Software development processes, tools, and conventions
