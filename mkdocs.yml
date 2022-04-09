@@ -14,18 +14,22 @@ nav:
       - About Kartoza: about_kartoza.md
       - Contributing: contributing.md
   - GIS:
+      - GIS: gis/index.md
       - Technologies: gis/technologies/index.md
       - Cartography: gis/cartography/index.md
       - Resources: gis/resources/index.md
   - Development:
+      - Development: development/index.md
       - Conventions: development/conventions/index.md
       - Languages: development/technologies/index.md
       - Environments: development/environments/index.md
   - DevOps:
+      - DevOps: devops/index.md
       - Infrastructure: devops/infrastructure/index.md
       - Procedures: devops/procedures/index.md
       - Security: devops/security/index.md
   - Resources:
+      - Resources: library/index.md
       - Cheatsheets: library/cheatsheets/index.md
       - Tutorials: library/tutorials/index.md
       - Media: library/media/index.md
