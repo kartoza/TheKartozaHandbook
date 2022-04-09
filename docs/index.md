@@ -17,6 +17,7 @@ The purpose and function of this collection of documents is to perform the follo
 
 - Improve consistency in processes and products
 - Improve efficiency and innovation
+- Increase transparency and accountability
 - Improve value for clients
 - Provide a space for the dissemination and proliferation of ideas
 - Promote a culture of openness and collaboration
