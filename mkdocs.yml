@@ -1,0 +1,116 @@
+site_name: Kartoza Handbook
+site_description: "Kartoza staff handbook and technical documentation."
+site_author: "Kartoza"
+docs_dir: ./docs
+site_dir: ./site
+repo_name: "Kartoza Handbook"
+repo_url: "https://github.com/kartoza/docs"
+edit_uri: "https://github.com/kartoza/docs/blob/main/"
+copyright: Kartoza and Contributors
+
+nav:
+  - Home: index.md
+  - About:
+      - About Kartoza: about_kartoza.md
+      - Contributing: contributing.md
+  - GIS:
+      - Technologies: gis/technologies/index.md
+      - Cartography: gis/cartography/index.md
+      - Resources: gis/resources/index.md
+  - Development:
+      - Conventions: development/conventions/index.md
+      - Languages: development/technologies/index.md
+      - Environments: development/environments/index.md
+  - DevOps:
+      - Infrastructure: devops/infrastructure/index.md
+      - Procedures: devops/procedures/index.md
+      - Security: devops/security/index.md
+  - Resources:
+      - Cheatsheets: library/cheatsheets/index.md
+      - Tutorials: library/tutorials/index.md
+      - Media: library/media/index.md
+      - Links: library/links/index.md
+
+# Configuration
+theme:
+  name: material
+  language: en
+  direction: ltr
+  include_search_page: false
+  search_index_only: true
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-6
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/logo.png
+  icon:
+    logo: material/book
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kartoza
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/kartoza/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/KartozaGeo
+    - icon: fontawesome/brands/facebook
+      link: https://kartoza.com
+    - icon: fontawesome/solid/earth-africa
+      link: https://kartoza.com
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.snippets:
+      base_path: .
+  - admonition
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+plugins:
+  - search
