@@ -9,8 +9,8 @@ edit_uri: "https://github.com/kartoza/docs/blob/main/"
 copyright: Kartoza and Contributors
 
 nav:
-  - Home: index.md
-  - About:
+  - Home:
+      - Home: index.md
       - About Kartoza: about_kartoza.md
       - Contributing: contributing.md
   - GIS:
