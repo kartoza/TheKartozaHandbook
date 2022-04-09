@@ -1,6 +1,6 @@
 # Conventions
 
-https://kartoza.com/en/coding-standards/
+[https://kartoza.com/en/coding-standards/](https://kartoza.com/en/coding-standards/)
 
 - [IDEs](./ides.md)
 - [Processes](./dev_processes.md)
