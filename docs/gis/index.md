@@ -9,5 +9,5 @@ Resources, information, and processes related to Geographic Information Systems
 GIS is a core competency at Kartoza. All technical staff should endeavour to ensure that they have or develop some level of proficiency in GIS.
 
 - [Cartography](./cartography/)
-- [Resources](./resources/)
 - [Technologies](./technologies/)
+- [Resources](./resources/)

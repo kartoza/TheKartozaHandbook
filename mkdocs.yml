@@ -15,8 +15,8 @@ nav:
       - Contributing: contributing.md
   - GIS:
       - GIS: gis/index.md
-      - Technologies: gis/technologies/index.md
       - Cartography: gis/cartography/index.md
+      - Technologies: gis/technologies/index.md
       - Resources: gis/resources/index.md
   - Development:
       - Development: development/index.md
@@ -25,9 +25,9 @@ nav:
       - Environments: development/environments/index.md
   - DevOps:
       - DevOps: devops/index.md
-      - Infrastructure: devops/infrastructure/index.md
-      - Procedures: devops/procedures/index.md
       - Security: devops/security/index.md
+      - Procedures: devops/procedures/index.md
+      - Infrastructure: devops/infrastructure/index.md
   - Resources:
       - Resources: library/index.md
       - Cheatsheets: library/cheatsheets/index.md
