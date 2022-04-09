@@ -38,7 +38,7 @@ This repository is limited to these categories, with some slight overlap in doma
 
 ## Limitations
 
-This collection of documents does not constitute a replacement for Standard Operating Procedures (SOPs) and company policy. Due to the rate at which modern technology develops, opinions evolve, project needs or priorities change, and the operational requirements of the organisation evolve, this collection is somewhat ephemeral and should be considered a dynamic "living document" which is subject to constant change and iteration.
+This collection of documents does not constitute a replacement for Standard Operating Procedures (SOPs) and company policy. Due to the rate at which modern technology develops, opinions change, project needs or priorities are adjusted, and the operational requirements of the organisation evolve, this collection is somewhat ephemeral and should be considered a dynamic "living document" which is subject to constant change and iteration.
 
 Processes and documentation from this collection are developed in conjunction with the broader community, independant contractors, temporary staff, juniors, and interns. As such they are not guaranteed to reflect the views of Kartoza, and are not intended to be a substitute for official policy.
 
