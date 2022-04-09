@@ -57,13 +57,13 @@ theme:
   palette:
     - scheme: default
       primary: blue
-      accent: orange
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
     - scheme: slate
       primary: blue
-      accent: orange
+      accent: grey
       toggle:
         icon: material/brightness-6
         name: Switch to light mode
