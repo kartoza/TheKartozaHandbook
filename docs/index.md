@@ -31,7 +31,7 @@ Kartoza is a company that specializes in Open Source Geospatial solutions. As a 
 - [GIS](/gis): Resources for Geographic Information Systems and data
 - [Development](/development): Software development processes, tools, and conventions
 - [DevOps](/devops): Developer operations and system administration
-- [Resources](/resources): Cheatsheets, links, media, and other resources
+- [Resources](/library): Cheatsheets, links, media, and other resources
 
 This repository is limited to these categories, with some slight overlap in domain verticals. In the majority of instances, where overlaps with adjacent fields of interest, such as Data Science, "Big Data", or to some extent even earth observation and remote sensing, these elements should be primarily remanded to external references in the resources section. Whilst some resources (such as tutorials on Semi-Automated Classification with QGIS) may be considered valuable additions, the priority of this content is to remain a concise collection of resources directly related to the operations and key competencies of Kartoza staff.
 
