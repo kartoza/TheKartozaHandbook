@@ -1,6 +1,6 @@
-# Kartoza Mediacenter
+# Kartoza Media Center
 
-Welcome to the Kartoza Mediacenter.
+Welcome to the Kartoza Media Center.
 
 Here you can find links to media releases, social media feeds, and notices from Kartoza (Pty) Ltd
 

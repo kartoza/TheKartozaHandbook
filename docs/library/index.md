@@ -2,5 +2,5 @@
 
 - [Cheatsheets](./cheatsheets)
 - [Resources](./resources)
-- [Kartoza Mediacenter](./media)
+- [Kartoza Media Center](./media)
 - [Tutorials](./tutorials)
