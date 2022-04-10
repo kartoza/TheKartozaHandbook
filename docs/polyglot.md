@@ -17,20 +17,21 @@ A community standard has already been developed, available at [https://gitmoji.d
 gitmoji is fairly comprehensive collection, and used quite widely in the tech community (relative to similar projects). The downside to this is that it is rather verbose and becomes cumbersome to learn and use.
 
 The simple solution is to select a subset (kit) of the gitmoji icons and use them as broader higher level categories. This keeps things a bit more consistent and allows gradual adoption of the wider collection.
-| Icon | Reference | Function |
-| ---- | -------------------- | -------------- |
-| ✨ | `:sparkles:` | New features. |
-| 🐛 | `:bug:` | Bugfix. |
-| ♻️ | `:recycle:` | Refactoring/ Comments. |
-| 📝 | `:memo:` | Documentation. |
-| 💄 | `:lipstick:` | UI |
-| ⚡️ | `:zap:` | Performance. |
-| 🚀 | `:rocket:` | CI/ CD. |
-| ✅ | `:white_check_mark:` | Testing. |
-| 🔒️ | `:lock:` | Security. |
-| 🔥 | `:fire:` | Remove data. |
-| ⏪️ | `:rewind:` | Revert changes. |
-| ⚗️ / 💩 | `:alembic:` / `:poop:` | Experiments/ PoC/ bad code |
+
+| id  |  Icon   |       Reference        | Function                   |
+| :-: | :-----: | :--------------------: | :------------------------- |
+|  1  |   ✨    |      `:sparkles:`      | New features               |
+|  2  |   🐛    |        `:bug:`         | Bugfix                     |
+|  3  |   ♻️    |      `:recycle:`       | Refactoring/ Comments      |
+|  4  |   📝    |        `:memo:`        | Documentation              |
+|  5  |   💄    |      `:lipstick:`      | UI                         |
+|  6  |   ⚡️   |        `:zap:`         | Performance                |
+|  7  |   🚀    |       `:rocket:`       | CI/ CD/ Deployment         |
+|  8  |   ✅    |  `:white_check_mark:`  | Testing                    |
+|  9  |   🔒️   |        `:lock:`        | Security                   |
+| 10  |   🔥    |        `:fire:`        | Remove data                |
+| 11  |   ⏪️   |       `:rewind:`       | Revert changes             |
+| 12  | ⚗️ / 💩 | `:alembic:` / `:poop:` | Experiments/ PoC/ bad code |
 
 Not every commit has to have a gitmoji, but it's useful for common cases.
 

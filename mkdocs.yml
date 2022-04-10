@@ -98,6 +98,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: .
   - admonition
+  - tables
   - pymdownx.details
   - pymdownx.caret
   - pymdownx.keys
