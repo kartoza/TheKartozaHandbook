@@ -22,6 +22,7 @@ The following conventions outline expectations for contributions to this documen
 - When using assets, upload them to a suitable file path according to their primary usage location, e.g. `assets/images/resources/cheatsheets/postgresql/joins.png`
 - Due to the depth and breadth of these resources, it is necessary to manually index new pages in various subcategories to ensure access and discoverability
 - It makes sense to use a consistent legend of emoji for tagging project and documentation items. Although it may have a steep initial learning curve or implementation strategy, using emoji and unicode symbols to tag elements is a fun and intuitive way to attach metadata to elements which makes visually scanning over documents and commit histories much more effective in multiple languages. Please see the [polyglot](polyglot.md) document for more information.
+- Build and check your changes locally to catch any errors before committing them to the main repository
 
 ## Translations
 
@@ -32,3 +33,11 @@ Translations and i18n are handled by the documentation framework, as outlined in
 ## Framework
 
 This documentation uses the [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) framework, and site configuration is specified in the mkdocs.yaml file. Various [extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions) are supported to improve usability, such as [pymdown](https://facelessuser.github.io/pymdown-extensions/), which may be enabled via pull requests. Please note that only extensions which provide relevant value will be considered for integration, and extensions with significant learning curves or duplication should be avoided. Extensions which provide accessibility improvements are welcome.
+
+## Building
+
+The online documentation is built using github actions and published to the gh-pages branch.
+
+To build the documentation locally, use the docker command `docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build` to populate the _site_ directory with the static content. To serve the data for testing, a simple solution is to use a python webserver to serve the data at `127.0.0.1:9101` using the command `cd site && python -m http.server --bind 127.0.0.1 9101`.
+
+Note that the generated site data and assets are explicitly excluded from git.
