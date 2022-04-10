@@ -1,6 +1,6 @@
 # Development
 
-???+ tip Security
+???+ tip "Security"
 
     Note that all users, regardless of role, should understand and review the security section.
 
