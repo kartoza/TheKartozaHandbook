@@ -23,6 +23,7 @@ The following conventions outline expectations for contributions to this documen
 - Due to the depth and breadth of these resources, it is necessary to manually index new pages in various subcategories to ensure access and discoverability
 - It makes sense to use a consistent legend of emoji for tagging project and documentation items. Although it may have a steep initial learning curve or implementation strategy, using emoji and unicode symbols to tag elements is a fun and intuitive way to attach metadata to elements which makes visually scanning over documents and commit histories much more effective in multiple languages. Please see the [polyglot](polyglot.md) document for more information.
 - Build and check your changes locally to catch any errors before committing them to the main repository
+- TODO: come up with some formatting guideline (e.g. max line length etc)
 
 ## Translations
 
