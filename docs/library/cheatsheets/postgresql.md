@@ -282,3 +282,26 @@ Additional command line tools for interacting with postgreql databases. Note tha
     ```cmd
     "C:\Program Files\PostgreSQL\14\bin\pg_dump.exe" --file "C:\\backup\\data.sql" --host "127.0.0.1" --port "5234" --username "admin_user" --no-password --verbose --format=p --no-owner --no-privileges --no-tablespaces --no-unlogged-table-data --encoding "UTF8" --schema "public" "database_name"
     ```
+
+## PostGIS
+
+PostGIS is a spatial extension for PostgreSQL that provides spatial functions and datatypes.
+
+Be sure to check out the reference documentation at [https://postgis.net/](https://postgis.net/documentation/).
+
+### SRIDs
+
+Spatial Reference Identifiers and Coordinate Reference System (CRS) management with PostGIS.
+
+??? abstract "Create Custom CRS Definitions"
+
+    Example using custom Albers EE Conic (Southern Africa)
+    ```sql
+    INSERT INTO spatial_ref_sys (srid,proj4text) VALUES (40030,
+                                '+proj=aea +lat_0=0 +lon_0=25 +lat_1=-24 +lat_2=-33 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs');
+    ```
+
+    Use [UpdateGeometrySRID](https://postgis.net/docs/UpdateGeometrySRID.html) to update geometry SRIDs.
+    ```sql
+    select UpdateGeometrySRID('table_name', 'geom', 4326);
+    ```
