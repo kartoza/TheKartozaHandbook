@@ -6,7 +6,7 @@ Note that this is not limited to DevOps team members and may include conventions
 
 ???+ tip "Security"
 
-    Note that all users, regardless of role, should understand and review the security section.
+    Note that all users, regardless of role, should understand and review the [security](./security) section.
 
 - [Security](./security)
 - [Procedures](./procedures)
