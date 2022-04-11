@@ -13,6 +13,7 @@ nav:
       - Home: index.md
       - About Kartoza: about_kartoza.md
       - Contributing: contributing.md
+      - Polyglot: polyglot.md
   - GIS:
       - GIS: gis/index.md
       - Cartography: gis/cartography/index.md
