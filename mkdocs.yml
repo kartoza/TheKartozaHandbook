@@ -13,6 +13,7 @@ nav:
       - Home: index.md
       - About Kartoza: about_kartoza.md
       - Contributing: contributing.md
+      - Polyglot: polyglot.md
   - GIS:
       - GIS: gis/index.md
       - Cartography: gis/cartography/index.md
@@ -115,7 +116,7 @@ markdown_extensions:
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+  - js/tablesort.js
 
 plugins:
   - search
