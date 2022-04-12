@@ -25,6 +25,14 @@ The following conventions outline expectations for contributions to this documen
 - Build and check your changes locally to catch any errors before committing them to the main repository
 - TODO: come up with some formatting guideline (e.g. max line length etc)
 
+## Tags, Badges, and Shields
+
+[Tagging elements with emoji](polyglot.md) is useful for visual identification and search of various elements in broader categories, but sometimes more explicit metadata is required to be attached to something to indicate whether it constitutes a general resource, opinion, community standard, or whether something is a known reference item connected to an official SOP. One method of identifying such features may be using [shields.io](https://shields.io), for example:
+
+- ![Best Practice](https://img.shields.io/badge/kartoza-best--practice-blue) `![Best Practice](https://img.shields.io/badge/kartoza-best--practice-blue)`
+- ![Community](https://img.shields.io/badge/community-standard-brightgreen) `![Community](https://img.shields.io/badge/community-standard-brightgreen)`
+- ![Industry](https://img.shields.io/badge/industry-standard-yellowgreen) `![Industry](https://img.shields.io/badge/industry-standard-yellowgreen)`
+
 ## Translations
 
 Due to the scope and intension for frequent updates to this documentation, additional languages will not be supported at this time.

@@ -4,8 +4,8 @@ site_author: "Kartoza"
 docs_dir: ./docs
 site_dir: ./site
 repo_name: "Kartoza Handbook"
-repo_url: "https://github.com/kartoza/docs"
-edit_uri: "https://github.com/kartoza/docs/blob/main/"
+repo_url: "https://github.com/kartoza/TheKartozaHandbook"
+edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/"
 copyright: Kartoza and Contributors
 
 nav:

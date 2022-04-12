@@ -4,7 +4,7 @@ This site comprises the organisational and technical documentation for [Kartoza]
 
 This is where we highlight the procedures, principles, and processes related to Development, DevOps, and GIS, in line with the organisations best practices.
 
-This is open content, available on [GitHub](https://github.com/kartoza/docs) and freely licensed as public domain content under the terms of [CC0 1.0 Universal](https://github.com/kartoza/docs/blob/main/LICENSE).
+This is open content, available on [GitHub](https://github.com/kartoza/TheKartozaHandbook) and freely licensed as public domain content under the terms of [CC0 1.0 Universal](https://github.com/kartoza/TheKartozaHandbook/blob/main/LICENSE).
 
 !!! danger "DISCLAIMER"
 
