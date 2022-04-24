@@ -360,7 +360,9 @@ Then I was able ot open the site (different port number now) an set up my creden
 
 ![Port Forward Option](img/k8-rancher-running.png)
 
+I did however still have some errors now showing in rancher:
 
+![Port Forward Option](img/k8-rancher-running-mount-errors.png)
 
 
 
