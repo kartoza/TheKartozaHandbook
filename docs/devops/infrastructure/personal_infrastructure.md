@@ -273,8 +273,10 @@ We can see various jobs are still spinning up in the cattle-system.
 Next I went on a [little detour](https://www.linode.com/docs/guides/create-a-self-signed-tls-certificate/) on creating a self signed certificate that I can install in my rancher instance.
 
 ```bash
-openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out MyCertificate.crt -keyout MyKey.key
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out tls.crt -keyout tls.key
 ```
+
+> **Note:** I believe it is required to name the key tls.* so as to match the secret name.
 
 Which outputs this:
 
@@ -282,7 +284,7 @@ Which outputs this:
 Generating a RSA private key
 ...............................++++
 ......................................................................++++
-writing new private key to 'MyKey.key'
+writing new private key to 'tls.key'
 -----
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
@@ -304,15 +306,15 @@ Then we have two certs in our directory:
 
 ```bash
 $ls
-MyCertificate.crt  MyKey.key  nginx.yml
+tls.crt  tls.key  nginx.yml
 ```
 
 Then on [this rancher page](https://rancher.com/docs/rancher/v2.5/en/installation/resources/tls-secrets/), I followed these notes to install my cert:
 
 ```bash
 $kubectl -n cattle-system create secret tls tls-rancher-ingress \
-  --cert=MyCertificate.crt \
-  --key=MyKey.key
+  --cert=tls.crt \
+  --key=tls.key
 secret/tls-rancher-ingress created
 ```
 
@@ -346,6 +348,18 @@ Which gave me an error:
 
 ![Certificate Error](img/k8-rancher-desktop-error-after-rancher-install.png
 )
+
+The thing seems to be that you need to rather forward this port:
+
+![Port Forward Option](img/k8-rancher-desktop-ports-after-rancher-install-working.png)
+
+Then I was able ot open the site (different port number now) an set up my credentials following the hints provided.
+
+
+> **Note**: Since I am using a self signed cert I had to do the normal firefox security warning process to proceed to the site.
+
+![Port Forward Option](img/k8-rancher-running.png)
+
 
 
 
