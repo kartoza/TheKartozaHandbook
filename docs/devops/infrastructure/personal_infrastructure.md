@@ -365,4 +365,21 @@ I did however still have some errors now showing in rancher:
 ![Port Forward Option](img/k8-rancher-running-mount-errors.png)
 
 
+## Deploying a small application from a helm chart
 
+I know helm charts are like the package managers of kubernetes, but I am not familiar with them, so I went to make a small test with the filebrowser.org (awesome app btw). I found these instructions and so ran and deployed it like this:
+
+```bash
+helm repo add utkuozdemir https://utkuozdemir.org/helm-charts
+helm install my-release utkuozdemir/filebrowser
+export POD_NAME=$(kubectl get pods kubernetes.io/name=filebrowser,app.ease" -o jsonpath="{.items[0].metadata.name}
+export CONTAINER_PORT=$(kubectl get pod E -o jsonpath="{.spec.containers0].ports[0]. 
+echo "Visit http://127.0.0.1:8080 to use 
+kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
+```
+
+From this I learned a couple of things:
+
+1. We can pull helm charts from the internet with a system of repos
+2. We can use xpath style queries to parse out bits of info from kubectl
+3. The last line gives some hints about how to foward traffic out of k8
