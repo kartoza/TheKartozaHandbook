@@ -14,6 +14,8 @@ nav:
       - About Kartoza: about_kartoza.md
       - Contributing: contributing.md
       - Polyglot: polyglot.md
+  - General:
+      - Overarching Guidelines: overarching_guidelines/index.md
   - GIS:
       - GIS: gis/index.md
       - Cartography: gis/cartography/index.md
