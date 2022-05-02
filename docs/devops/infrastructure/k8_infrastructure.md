@@ -53,4 +53,82 @@ From these services we can already see our baseline design goals:
 2. Image scanning before deployment for better security.
 3. Image slimming before deployment e.g. [slim.ai](https://www.slim.ai/).
 3. [Terraform (is it needed?) with Hetzner](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs)
-4. Serivce accounts, roles and role bindings so that each developer can access their project namespaces and that they can have staging environments.
+4. Service accounts, roles and role bindings so that each developer can access their project namespaces and that they can have staging environments.
+
+## Generating an SSH key
+
+You can and should generate an SSH key specifically for managing the cluster.
+
+This key should not be used for any other purpose.
+
+> 📔We need to additionally protect the SSH key from being compromised by using a Yubikey or similar hardware security device.
+
+To create your key do:
+
+```bash
+ssh-keygen -t ed25519 -C "youemail@kartoza.com"
+```
+
+## Provisioning the master node with Kubespray
+
+What follows are steps for provisioning a master node with Anisble using kubespray.
+
+I am using the toolbox feature of Fedora which lets you install stuff (in this case all the ansible packages) into a sandbox environment. These notes are based on the [kubespray documentation](https://kubespray.io/docs/getting-started/install/).
+
+Before starting make an .ssh/config entry for the host:
+
+```bash
+# Duplicate of above for ansible spraybook
+Host 10.0.0.1
+  Hostname 10.0.0.1
+  IdentityFile /home/timlinux/.ssh/id_ed25519_kubernetes_training
+  User root
+```
+
+I set the host to the IP addres for the ansible script below to run correctly.
+You should change the IP address above and below to the VPN configured address
+for the server. Also note above that I set the SSH key to the one that I created.
+
+```bash
+git clone git@github.com:kubernetes-sigs/kubespray.git
+toolbox create kubespray
+toolbox enter kubespray
+cd kubespray
+sudo dnf install python-pip
+sudo pip install -r requirements.txt
+cp -rfp inventory/sample inventory/kartoza-k8
+# You can provision multiple hosts by space separating the list of IP addresses
+# Substitute with the correct IP
+declare -a IPS=(10.0.0.1)
+ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root cluster.yml
+
+```
+
+If the script runs properly, it will take a little while to run and you should see green text interlaced in the output. If it runs really quickly or has red (not brown) text in the output, investigate the issues and try to address them as they come up.
+
+Once the script has run, log back into the master node and test the cluster. You can do this by checking if kubectl etc. is working:
+
+```bash
+root@node1:~# kubectl get nodes
+NAME    STATUS   ROLES                  AGE     VERSION
+node1   Ready    control-plane,master   4m20s   v1.23.6
+
+```
+
+Kubespray seems to install a lot of components that I am not familiar with - I would like to revise / create our own ansible script that installs just the minimum of what we need and then we add things on a 'need to have' basis.
+
+## Installing helm
+
+Helm is not installed by kubespray it seems so I installed it on the server following official instructions.
+
+> 📔**Note:** Avoid following random guides on how to install helm.
+
+```bash
+
+```bash
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+```
+
+## Setting up kubectl to use the cluster
