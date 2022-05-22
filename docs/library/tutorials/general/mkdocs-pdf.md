@@ -4,6 +4,8 @@ Serving a local clone of this documentation with docker is as simple as `docker 
 
 This process walks through attempting to setup an environment with Docker that will produce PDF documentation for a MkDocs site with A MkDocs-Material Theme (Like this one).
 
+## Docker environment
+
 Create a dockerfile with the relevant dependencies in line with the [mkdocs-material docs](https://squidfunk.github.io/mkdocs-material/getting-started/#with-docker) and the [mkdocs-pdf-export-plugin](https://github.com/zhaoterryy/mkdocs-pdf-export-plugin).
 
 ```
@@ -35,7 +37,29 @@ CMD ["serve", "--dev-addr=0.0.0.0:8000"]
 
 Now create the custom mkdocs-material docker image with the command `docker build -t my-mkdocs .`.
 
-Once this image is built, edit the `mkdocs.yml` file to include the plugin:
+## Export Single PDF
+
+To build the updated documentation and produce the output pdf, edit the `mkdocs.yml` file to include the plugin with the "combined" option set to true:
+
+```
+plugins:
+  - search
+  - pdf-export:
+      verbose: true
+      media_type: print
+      combined: true
+      combined_output_path: pdf/TheKartozaHandbook.pdf
+```
+
+Then use the following command to build the docs
+
+```
+docker run --rm -it -v ${PWD}:/docs my-mkdocs build
+```
+
+## PDF Export Plugin
+
+The PDF export plugin can also be used to add a "download pdf" for each page. To try this out, edit the `mkdocs.yml` file to include the plugin:
 
 ```
 plugins:
@@ -43,13 +67,19 @@ plugins:
   - pdf-export
 ```
 
-Now you can run the documentation with the command `docker run --rm -p 8000:8000 -v ${PWD}:/docs my-mkdocs`.
+Now you can run the documentation with the command:
+
+```
+docker run --rm -p 8000:8000 -v ${PWD}:/docs my-mkdocs
+```
+
+Note that setting the "combined" option to true when service the documentation with the plugin will automatically point all download links to the collated file and individual page exports will not be available.
 
 !!! danger "WARNING"
 
     This docker file takes rather a long time to start up...
 
-The docker logs will hang while the documentation is built. This is much slower with the PDF export plugin.
+The docker logs will hang while the documentation is built. This is much slower with the PDF export plugin and using the default mkdocs-material image and configuration will be much faster for simple site builds. The expected docker logs output might be as follows:
 
 ```
 warnings.warn(
@@ -88,7 +118,8 @@ INFO     -  [11:40:10] Serving on http://0.0.0.0:8000/
 
 Once it's built it should include a pdf export button at the top of each page.
 
-TODO:
+## TODO
 
 - Add theming/ customization
 - Incorporate into GitHub Pages site and actions
+- Add static collated pdf version (and download link) to published docs

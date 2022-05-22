@@ -92,6 +92,9 @@ extra:
     - icon: fontawesome/solid/earth-africa
       link: https://kartoza.com
 
+extra_css:
+  - css/print.css
+
 markdown_extensions:
   - toc:
       permalink: true
