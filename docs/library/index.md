@@ -1,6 +1,6 @@
 # Resources
 
 - [Cheatsheets](./cheatsheets)
-- [Resources](./resources)
+- [External Resources](./links)
 - [Kartoza Media Center](./media)
 - [Tutorials](./tutorials)
