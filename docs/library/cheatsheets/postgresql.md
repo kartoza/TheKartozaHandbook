@@ -1,10 +1,18 @@
 # PostgreSQL
 
-This will have some useful information one day.
+??? danger "Work in Progress"
+
+    This article is under heavy development and is not considered production ready
+
+> PostgreSQL best SQL -- _Everyone who knows what's up_
+
+PostgreSQL also known as Postgres, is a free and open-source relational database management system (RDBMS). The name comes from its succession of its predecessor, Ingres. You are now a database nerd... there's no turning back.
 
 ## SQL
 
-Structured Query Language (SQL) is a query language used to interact with databases.
+Structured Query Language (SQL) is a query language used to interact with databases. It is a "standard" language structure, although its implementation differs between implementations. It does more than just query as well (see the [Language Structures](#Language Structures) section below). Each discrete action in SQL is called a "statement", which does something like retrieving the results of a query or creating a new record, and multiple statements can be bundled together into a transaction.
+
+Fortunately the key words used in SQL tend to be written in (mostly) plain english, so it's relatively easy to understand and pick up. Multiple statements, joins, and subqueries can also be used which is where things start to get complicated, and optimizing those operations (and the database) can get rather complex.
 
 ### Simple Query Structures
 
@@ -305,3 +313,13 @@ Spatial Reference Identifiers and Coordinate Reference System (CRS) management w
     ```sql
     select UpdateGeometrySRID('table_name', 'geom', 4326);
     ```
+
+## Language Structures
+
+There are multiple "categories" in SQL which apply different functionalities to different entities within the database. These are Data Definition Language (DDL), Data Query Language (DQL), Data Manipulation Language (DML), Transaction Control Language (TCL), and Data Control Language (DCL).
+
+Very basically, the nomenclature (and therefore the command used) may change between entities, and this makes it clear to the user and the database which entity or object the function should apply to. For example, you might use the *DELETE* command to delete a record from the database, but you would use the *DROP* command to delete a table, because tables and records are seen as different entities within the database. You can also do a *ROLLBACK* in a transaction, but you can't do so with a record *INSERT* command directly.
+
+These definitions are, of course, not arbitrarily assigned, and databases are a mature and complex field of computer science, which is where these formal structures and definitions come into effect.
+
+Read more on the topic at [geeksforgeeks.org](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/).
