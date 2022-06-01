@@ -25,7 +25,7 @@ Use `kubectl -n my-namespace get pods` to list the pods in the `my-namespace` na
 This is useful when you want to find a pod by name, so that you can execute the command directly against a pod that forms a particular service. You would have to be careful with your deployments naming conventions to avoid collisions, but it can be super handy to enhance your automation capabilities.
 
 ```bash
-$ nginx_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -e "nginx") && \
+$ nginx_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -m 1 -e "nginx") && \
 echo $nginx_pod
 ```
 
@@ -39,21 +39,21 @@ If you're a sucker for punishment, you can accomplish a similar result with powe
 This makes it trivial to copy data into a volume with kubectl
 
 ```bash
-nginx_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -e "nginx") && \
+nginx_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -m 1 -e "nginx") && \
   kubectl -n my-namespace cp ./configs/web/index.html $nginx_pod:/web/index.html
 ```
 
 Or execute commands such as a mapproxy cleanup
 
 ```bash
-mapproxy_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -e "mapproxy") && \
+mapproxy_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -m 1 -e "mapproxy") && \
   kubectl -n my-namespace exec $mapproxy_pod -- /bin/bash -c "mapproxy-seed -s /mapproxy/seed.yaml -f /mapproxy/mapproxy.yaml -c 4 --cleanup=remove_complete_levels"
 ```
 
 Or run the command in the background within the pod, such as a mapproxy seeding operation
 
 ```bash
-mapproxy_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -e "mapproxy") && \
+mapproxy_pod=$(kubectl -n my-namespace get pods | awk '{print $1}' | grep -m 1 -e "mapproxy") && \
   kubectl -n my-namespace exec $mapproxy_pod -- /bin/bash -c "mapproxy-seed -s /mapproxy/seed.yaml -f /mapproxy/mapproxy.yaml -c 4 > /dev/null 2> /dev/null &"
 ```
 
