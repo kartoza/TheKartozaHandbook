@@ -5,7 +5,7 @@ docs_dir: ./docs
 site_dir: ./site
 repo_name: "Kartoza Handbook"
 repo_url: "https://github.com/kartoza/TheKartozaHandbook"
-edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/"
+edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/"
 copyright: Kartoza and Contributors
 
 nav:
@@ -91,6 +91,9 @@ extra:
       link: https://kartoza.com
     - icon: fontawesome/solid/earth-africa
       link: https://kartoza.com
+
+extra_css:
+  - css/print.css
 
 markdown_extensions:
   - toc:
