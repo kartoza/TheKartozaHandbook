@@ -8,6 +8,8 @@ I started by setting up rancher desktop on my Fedora based linux laptop. I used 
 
 Here is the [installation guide](https://docs.rancherdesktop.io/getting-started/installation/#installing-via-appimage).
 
+> **Note:** After upgrading to fedora 36 rancher desktop no longer started until I applied the following fix: https://github.com/rancher-sandbox/rancher-desktop/issues/2139#issuecomment-1114933138
+
 Once installed I performed the following commands to do a quick start setup of nginx running in the k8 cluster.
 
 ```bash
