@@ -117,34 +117,31 @@ kubectl exec -it nginx-6799fc88d8-7k4kd /bin/sh
 
 > kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future > > version. Use kubectl exec [POD] -- [COMMAND] instead.
 
-```curl 10.42.0.9```
+```bash
+curl 10.42.0.9
+```
 
-> <!DOCTYPE html>
-> <html>
-> <head>
-> <title>Welcome to nginx!</title>
-> <style>
+> Welcome to nginx!
 > html { color-scheme: light dark; }
 > body { width: 35em; margin: 0 auto;
 > font-family: Tahoma, Verdana, Arial, sans-serif; }
-> </style>
-> </head>
-> <body>
-> <h1>Welcome to nginx!</h1>
-> <p>If you see this page, the nginx web server is successfully installed and
-> working. Further configuration is required.</p>
 >
-> <p>For online documentation and support please refer to
-> <a href="http://nginx.org/">nginx.org</a>.<br/>
+> Welcome to nginx!
+> If you see this page, the nginx web server is successfully installed and
+> working. Further configuration is required.
+>
+> For online documentation and support please refer to
+> nginx.org
 > Commercial support is available at
-> <a href="http://nginx.com/">nginx.com</a>.</p>
+> nginx.com
 >
-> <p><em>Thank you for using nginx.</em></p>
-> </body>
-> </html>
+> Thank you for using nginx.
+
 > # exit
 
-```kubectl get pods```
+```bash
+kubectl get pods
+``
 
 > NAME                     READY   STATUS    RESTARTS   AGE
 > nginx-6799fc88d8-7k4kd   1/1     Running   0          2m45s
