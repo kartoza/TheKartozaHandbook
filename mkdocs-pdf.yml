@@ -1,0 +1,50 @@
+site_name: The Kartoza Handbook
+site_description: "Kartoza staff handbook and technical documentation."
+site_author: "Kartoza"
+docs_dir: ./docs
+site_dir: ./site
+repo_name: "Kartoza Handbook"
+repo_url: "https://github.com/kartoza/TheKartozaHandbook"
+edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/"
+copyright: Kartoza and Contributors
+
+nav:
+  - Home:
+      - Home: index.md
+      - About Kartoza: about_kartoza.md
+      - Contributing: contributing.md
+      - Polyglot: polyglot.md
+  - GIS:
+      - GIS: gis/index.md
+      - Cartography: gis/cartography/index.md
+      - Technologies: gis/technologies/index.md
+      - Resources: gis/resources/index.md
+  - Development:
+      - Development: development/index.md
+      - Conventions: development/conventions/index.md
+      - Languages: development/technologies/index.md
+      - Environments: development/environments/index.md
+  - DevOps:
+      - DevOps: devops/index.md
+      - Security: devops/security/index.md
+      - Procedures: devops/procedures/index.md
+      - Infrastructure: devops/infrastructure/index.md
+  - Resources:
+      - Resources: library/index.md
+      - Cheatsheets: library/cheatsheets/index.md
+      - Tutorials: library/tutorials/index.md
+      - Media: library/media/index.md
+      - Links: library/links/index.md
+
+
+
+
+theme:
+  name: material
+use_directory_urls: false
+plugins:
+  - pdf-export:
+      combined: true
+      theme_handler_path: theme-handler/material.py
+extra_css:
+    - css/extra.css
