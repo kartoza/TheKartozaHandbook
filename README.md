@@ -14,7 +14,7 @@ git clone git@github.com:kartoza/TheKartozaHandbook.git
 
 ### Install Dependencies
 
-You need so install these packages:
+You need to install these packages:
 
 ```bash
 pip install mkdocs-with-pdf
