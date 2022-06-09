@@ -4,7 +4,8 @@
 }
 @page {
     size: a4 portrait;
-    margin: 25mm 10mm 25mm 10mm;
+    margin: 0mm;
+    padding: 25mm 10mm 25mm 10mm;
     counter-increment: page;
     font-family: avenir;
     font-size: 8pt;
@@ -12,12 +13,12 @@
     color: grey;
     @bottom-right {
         content: 'Copyright © Kartoza';
+    	  margin-top: -25mm;
+    	  margin-right: 10mm;
     }
-    @top-center {
-        content: string(chapter);
-    }
-    @top-right {
+    @bottom-center{
         content: 'Page ' counter(page);
+    	margin-top: -25mm;
     }
 
 }
