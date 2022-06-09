@@ -1,17 +1,27 @@
 @font-face {
-    src: url(../assets/AvenirLTStd-Book.otf);
+    src: url(../stylesheet/AvenirLTStd-Book.otf);
     font-family: avenir;
 }
+body{
+    background-image: url('../img/kartozaBackgroundBorder.png');
+    background-size: cover;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    font-family: avenir;
+    text-align: justify;
+    white-space: normal;
+}
+
 @page {
     size: a4 portrait;
-    margin: 25mm 10mm 25mm 10mm;
+    margin:0px;
     counter-increment: page;
     font-family: avenir;
     font-size: 8pt;
     white-space: normal;
     color: grey;
     @bottom-right {
-        content: 'Copyright © Kartoza';
+        content: 'Copyrights © Kartoza';
     }
     @top-center {
         content: string(chapter);
@@ -19,13 +29,5 @@
     @top-right {
         content: 'Page ' counter(page);
     }
-
 }
 
-body{
-  background-image: url('../img/kartozaBackgroundBorder.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: avenir;
-  height: 100vh;
-}
