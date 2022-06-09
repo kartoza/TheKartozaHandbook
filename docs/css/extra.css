@@ -1,5 +1,5 @@
 @font-face {
-    src: url(../stylesheet/AvenirLTStd-Book.otf);
+    src: url(../assets/AvenirLTStd-Book.otf);
     font-family: avenir;
 }
 body{
@@ -14,20 +14,19 @@ body{
 
 @page {
     size: a4 portrait;
-    margin:0px;
     counter-increment: page;
     font-family: avenir;
     font-size: 8pt;
     white-space: normal;
     color: grey;
     @bottom-right {
-        content: 'Copyrights © Kartoza';
+        content: 'Copyright © Kartoza';
+    	  margin-top: -25mm;
+    	  margin-right: 10mm;
     }
-    @top-center {
-        content: string(chapter);
-    }
-    @top-right {
+    @bottom-center{
         content: 'Page ' counter(page);
+    	  margin-top: -25mm;
     }
 }
 
