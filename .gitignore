@@ -131,3 +131,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 docs/devops/infrastructure/img/~$k8-concepts.drawio.bkp
+
+
+# Misc
+pdfs/TheKartozaHandbook.pdf
