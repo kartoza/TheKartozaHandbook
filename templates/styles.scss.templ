@@ -85,163 +85,6 @@ blockquote {
 
 /* End of resets ------------------------------- */
 
-
-//
-// Heading styles
-//
-
-article h1,
-h2,
-h3 {
-    width: 100%;
-    padding-right: 20pt;
-    text-align: right;
-    background: white;
-    color: black;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    display: inline-block;
-}
-
-
-article h1 {
-    border-bottom: 2px solid $kartoza-orange;
-    color: $kartoza-orange;
-    padding-top: 8px;
-}
-
-article h2 {
-    border-bottom: 1px solid $kartoza-blue;
-    color: $kartoza-blue;
-    padding-top: 12px;
-}
-
-article h3 {
-    border-bottom: none;
-    color: $kartoza-gray;
-    padding-top: 8px;
-}
-
-
-/* MKdocs renders code blocks inside a pre element and 
-  inline code simply inside code elements 
-  
-  Code block related items below are based on the article
-  at https://css-tricks.com/styling-code-in-and-out-of-blocks/
-  
-  */
-
-code {
-    font-family: monospace;
-    font-size: inherit;
-    color: $font-color;
-}
-
-
-/* Code in text */
-
-p>code,
-li>code,
-dd>code,
-td>code {
-    display: inline;
-    background: $inline-code-background;
-    white-space: pre;
-    //max-width: 100%;
-    //min-width: 100px;
-    padding: 0;
-    word-wrap: break-word;
-    box-decoration-break: clone;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
-    font-size: $font-size;
-    color: #000 !important;
-}
-
-
-/* code in blocks */
-
-pre code:before {
-    display: block;
-    width: 25%;
-    position: relative;
-    top: -33px;
-    left: -20px;
-    content: '🧑‍💻 Code:';
-    padding: 1em 1em;
-    margin-left: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-left: 5px solid $codeblock-label-border;
-    background: $codeblock-label-background;
-    font-size: $font-size;
-    color: $codeblock-label-font-color;
-    font-weight: bolder;
-}
-
-pre code {
-    display: block;
-    white-space: pre;
-    max-width: 100%;
-    min-width: 100px;
-    padding: 0;
-    font-size: $font-size;
-    /* margin: 1em 3em; */
-    padding: 1em 1em;
-    margin-left: 8px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-    border-left: 5px solid $codeblock-border;
-    background: $codeblock-background;
-    font-size: $font-size;
-    color: $font-color;
-}
-
-
-/* End of code blocks */
-
-blockquote:before {
-    display: block;
-    width: 25%;
-    position: relative;
-    top: -33px;
-    left: -20px;
-    content: '🧑‍🔧 Note:';
-    padding: 1em 1em;
-    margin-left: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-left: 5px solid $blockquote-label-border;
-    background: $blockquote-label-background;
-    font-size: $font-size;
-    color: $blockquote-label-font-color;
-    font-weight: bolder !important;
-}
-
-blockquote {
-    /* margin: 1em 3em; */
-    padding: 1em 1em;
-    margin-left: 8px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-    border-left: 5px solid $blockquote-border;
-    background: $blockquote-background;
-    font-size: $font-size;
-    color: $font-color;
-}
-
-blockquote p {
-    margin: 0;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
 //
 // Print media specific page setup
 // 
@@ -263,7 +106,7 @@ html {
     /* size: a4 portrait; */
     size: 210mm 297mm;
     margin: 0mm;
-    padding: 25mm 10mm 25mm 10mm;
+    padding: 0mm;
     counter-increment: page;
     font-family: avenir;
     font-size: $font-size;
@@ -399,7 +242,7 @@ html {
 }
 
 //
-//  Heading counters
+//  Heading counters and styles
 //  
 
 h1 {
@@ -440,6 +283,166 @@ h3:before {
     color: $kartoza-gray;
     content: counter(c1) "." counter(c2) "." counter(c3);
 }
+
+
+article h1,
+h2,
+h3 {
+    width: 100%;
+    padding-right: 20pt;
+    text-align: right;
+    background: white;
+    color: black;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    display: inline-block;
+}
+
+
+article h1 {
+    border-bottom: 2px solid $kartoza-orange;
+    color: $kartoza-orange;
+    padding-top: 24px;
+}
+
+article h2 {
+    border-bottom: 1px solid $kartoza-blue;
+    color: $kartoza-blue;
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+article h3 {
+    border-bottom: none;
+    color: $kartoza-gray;
+    padding-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+/* MKdocs renders code blocks inside a pre element and 
+  inline code simply inside code elements 
+  
+  Code block related items below are based on the article
+  at https://css-tricks.com/styling-code-in-and-out-of-blocks/
+  
+  */
+
+code {
+    font-family: monospace;
+    font-size: inherit;
+    color: $font-color;
+}
+
+
+/* Code in text */
+
+p>code,
+li>code,
+dd>code,
+td>code {
+    display: inline;
+    background: $inline-code-background;
+    white-space: pre;
+    //max-width: 100%;
+    //min-width: 100px;
+    padding: 0;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+    font-size: $font-size;
+    color: #000 !important;
+}
+
+
+/* code in blocks */
+
+pre code:before {
+    display: block;
+    width: 25%;
+    position: relative;
+    top: -33px;
+    left: -20px;
+    content: '🧑‍💻 Code:';
+    padding: 1em 1em;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid $codeblock-label-border;
+    background: $codeblock-label-background;
+    font-size: $font-size;
+    color: $codeblock-label-font-color;
+    font-weight: bolder;
+}
+
+pre code {
+    display: block;
+    white-space: pre;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 0;
+    font-size: $font-size;
+    /* margin: 1em 3em; */
+    padding: 1em 1em;
+    margin-left: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border-left: 5px solid $codeblock-border;
+    background: $codeblock-background;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+
+/* End of code blocks */
+
+blockquote:before {
+    display: block;
+    width: 25%;
+    position: relative;
+    top: -33px;
+    left: -20px;
+    content: '🧑‍🔧 Note:';
+    padding: 1em 1em;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-left: 5px solid $blockquote-label-border;
+    background: $blockquote-label-background;
+    font-size: $font-size;
+    color: $blockquote-label-font-color;
+    font-weight: bolder !important;
+}
+
+blockquote {
+    /* margin: 1em 3em; */
+    padding: 1em 1em;
+    margin-left: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border-left: 5px solid $blockquote-border;
+    background: $blockquote-background;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
 
 img {
     page-break-inside: avoid;
