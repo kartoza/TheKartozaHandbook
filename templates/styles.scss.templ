@@ -15,17 +15,32 @@ xdg-open /tmp/output.html
 
 /* Sass property declarations */
 
+$kartoza-blue: #54a2cc;
+$kartoza-orange: #eeb248;
+$kartoza-gray: #8a8b8b;
+$kartoza-blue-light: #cdedff;
+$kartoza-orange-light: #f4ebdb;
+$kartoza-gray-light: #eaeaea;
+$kartoza-blue-dark: #0082c7;
+$kartoza-orange-dark: #e79709;
+$kartoza-gray-dark: #3f3f3f;
+
 $font-size: 10pt;
 $font-color: #000;
+
 $inline-code-background: #c2d4dd;
-$codeblock-label-background: #c2d4dd;
-$codeblock-label-border: #54a2cc;
-$codeblock-background: #fff4e1;
-$codeblock-border: #eeb248;
-$blockquote-label-background: #ffdfa6;
-$blockquote-label-border: #eeb248;
-$blockquote-background: #e9e9e9;
-$blockquote-border: #54a2cc;
+
+$codeblock-label-font-color: white;
+$codeblock-label-background: $kartoza-blue;
+$codeblock-label-border: $kartoza-blue-dark;
+$codeblock-background: $kartoza-blue-light;
+$codeblock-border: $kartoza-blue;
+
+$blockquote-label-font-color: white;
+$blockquote-label-background: $kartoza-orange;
+$blockquote-label-border: $kartoza-orange-dark;
+$blockquote-background: $kartoza-orange-light;
+$blockquote-border: $kartoza-orange;
 
 /* CSS Reset Rules from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
 
@@ -70,19 +85,41 @@ blockquote {
 
 /* End of resets ------------------------------- */
 
+
+//
+// Heading styles
+//
+
+article h1,
+h2,
+h3 {
+    width: 100%;
+    padding-right: 20pt;
+    text-align: right;
+    background: white;
+    color: black;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    display: inline-block;
+}
+
+
 article h1 {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $kartoza-orange;
+    color: $kartoza-orange;
+    padding-top: 8px;
 }
 
 article h2 {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $kartoza-blue;
+    color: $kartoza-blue;
+    padding-top: 12px;
 }
 
-html {
-    padding: 5px;
-    font-family: 'Roboto Slab', serif;
-    font-size: $font-size;
-    color: $font-color;
+article h3 {
+    border-bottom: none;
+    color: $kartoza-gray;
+    padding-top: 8px;
 }
 
 
@@ -138,7 +175,7 @@ pre code:before {
     border-left: 5px solid $codeblock-label-border;
     background: $codeblock-label-background;
     font-size: $font-size;
-    color: $font-color;
+    color: $codeblock-label-font-color;
     font-weight: bolder;
 }
 
@@ -178,7 +215,7 @@ blockquote:before {
     border-left: 5px solid $blockquote-label-border;
     background: $blockquote-label-background;
     font-size: $font-size;
-    color: $font-color;
+    color: $blockquote-label-font-color;
     font-weight: bolder !important;
 }
 
@@ -203,6 +240,19 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+//
+// Print media specific page setup
+// 
+
+html {
+    font-family: 'Roboto Slab', serif;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+
 
 @font-face {
     src: url(../assets/AvenirLTStd-Book.otf);
@@ -236,7 +286,8 @@ table {
     }
     */
     @top-left {
-        content: 'QGIS Animation Workbench';
+        /* Note this element gets obscured by top-center if it is solid. */
+        content: 'The Kartoza Handbook';
     }
     @top-center {
         /* Idiosyncratic note: The top center section is the 
@@ -330,12 +381,6 @@ table {
     }
 }
 
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: avenir;
-    height: 100vh;
-}
 
 
 /** Setting margins */
@@ -353,22 +398,9 @@ body {
     right: 0px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    width: 100%;
-    padding-right: 20pt;
-    text-align: right;
-    background: white;
-    color: black;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    border-bottom: 5px solid black;
-    display: inline-block;
-}
+//
+//  Heading counters
+//  
 
 h1 {
     counter-increment: c1;
@@ -388,8 +420,6 @@ h3 {
 h1:before,
 h2:before,
 h3:before {
-    /* Styling of section numbers */
-    color: gray;
     width: 2cm;
     display: inline-block;
     text-align: right;
@@ -397,14 +427,17 @@ h3:before {
 }
 
 h1:before {
+    color: $kartoza-orange;
     content: counter(c1);
 }
 
 h2:before {
+    color: $kartoza-blue;
     content: counter(c1) "." counter(c2);
 }
 
 h3:before {
+    color: $kartoza-gray;
     content: counter(c1) "." counter(c2) "." counter(c3);
 }
 
