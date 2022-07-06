@@ -1,44 +1,5 @@
-site_name: The Kartoza Handbook
-site_description: "Kartoza staff handbook and technical documentation."
-site_author: "Kartoza"
-docs_dir: ./docs
-site_dir: ./site
-repo_name: "Kartoza Handbook"
-repo_url: "https://github.com/kartoza/TheKartozaHandbook"
-edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/"
-copyright: Kartoza and Contributors
-
-nav:
-  - Home:
-      - Home: index.md
-      - About Kartoza: about_kartoza.md
-      - Contributing: contributing.md
-      - Polyglot: polyglot.md
-  - GIS:
-      - GIS: gis/index.md
-      - Cartography: gis/cartography/index.md
-      - Technologies: gis/technologies/index.md
-      - Resources: gis/resources/index.md
-  - Development:
-      - Development: development/index.md
-      - Conventions: development/conventions/index.md
-      - Languages: development/technologies/index.md
-      - Environments: development/environments/index.md
-  - DevOps:
-      - DevOps: devops/index.md
-      - Security: devops/security/index.md
-      - Procedures: devops/procedures/index.md
-      - Infrastructure: devops/infrastructure/index.md
-  - Resources:
-      - Resources: library/index.md
-      - Cheatsheets: library/cheatsheets/index.md
-      - Tutorials: library/tutorials/index.md
-      - Media: library/media/index.md
-      - Links: library/links/index.md
-
-theme:
-  name: material
-use_directory_urls: false
+# See mkdocs base and the create-mkdocs* 
+# scripts for how this is used
 
 plugins:
   - with-pdf:
@@ -48,39 +9,48 @@ plugins:
       # And don't get it confused with https://github.com/zhaoterryy/mkdocs-pdf-export-plugin
       # which is intended to export a single page at a time
       output_path: ../pdfs/TheKartozaHandbook.pdf
-      author: The Kartoza Team
-      copyright: '© 2022'
+      author: Kartoza Pty (Ltd.)
+      # copyright will draw in page.bottom-right 
+      # do it manually in templates/styles.scss 
+      # for more control
+      # if you comment out here or use an empty string,
+      # the copyright text from mkdocs-base.yml will be
+      # used instead
+      copyright: ' '
       cover: true # see templates/cover.html
       back_cover: true
       cover_title: The Kartoza Handbook
-      cover_subtitle: Helping you to make the most of Open Source GIS!
-      cover_logo: img/logo.png
+      cover_subtitle: Mappiness is Happiness
+      cover_logo: ../resources/img/logo/kartoza-logo.svg
       # Print css is defined in templates/styles.scss
-    #custom_template_path: TEMPLATES PATH
-    #
-    #toc_title: TOC TITLE TEXT
-    #heading_shift: false
-    #toc_level: 3
-    #ordered_chapter_level: 2
-    #excludes_children:
-    #    - 'release-notes/:upgrading'
-    #    - 'release-notes/:changelog'
-    #
-    #exclude_pages:
-    #    - 'bugs/'
-    #    - 'appendix/contribute/'
-    #convert_iframe:
-    #    - src: IFRAME SRC
-    #      img: POSTER IMAGE URL
-    #      text: ALTERNATE TEXT
-    #    - src: ...
-    #two_columns_level: 3
-    #
-    #render_js: true
-    #headless_chrome_path: headless-chromium
-    #
-    
-    #enabled_if_env: ENABLE_PDF_EXPORT
-    #
-    #debug_html: true
-    #show_anchors: true
+      #custom_template_path: TEMPLATES PATH
+      #
+      toc_title: Contents
+      #heading_shift: false
+      # Set to 0 so that it does not generate chapter numbering
+      # we do the numbering in styles.css rather
+      toc_level: 0
+      ordered_chapter_level: 0
+      #excludes_children:
+      #    - 'release-notes/:upgrading'
+      #    - 'release-notes/:changelog'
+      #
+      #exclude_pages:
+      #    - 'bugs/'
+      #    - 'appendix/contribute/'
+      #convert_iframe:
+      #    - src: IFRAME SRC
+      #      img: POSTER IMAGE URL
+      #      text: ALTERNATE TEXT
+      #    - src: ...
+      #two_columns_level: 3
+      #
+      #render_js: true
+      #headless_chrome_path: headless-chromium
+      #
+      
+      #enabled_if_env: ENABLE_PDF_EXPORT
+      # See notes at the top of templates/styles.scss.templ
+      # for debugging workflow details.
+      debug_html: false
+      #show_anchors: true
