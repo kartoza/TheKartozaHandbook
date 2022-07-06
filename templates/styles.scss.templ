@@ -17,6 +17,15 @@ xdg-open /tmp/output.html
 
 $font-size: 10pt;
 $font-color: #000;
+$inline-code-background: #c2d4dd;
+$codeblock-label-background: #c2d4dd;
+$codeblock-label-border: #54a2cc;
+$codeblock-background: #fff4e1;
+$codeblock-border: #eeb248;
+$blockquote-label-background: #ffdfa6;
+$blockquote-label-border: #eeb248;
+$blockquote-background: #e9e9e9;
+$blockquote-border: #54a2cc;
 
 /* CSS Reset Rules from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
 
@@ -98,9 +107,8 @@ p>code,
 li>code,
 dd>code,
 td>code {
-    background: black;
     display: inline;
-    background: #dff0b0;
+    background: $inline-code-background;
     white-space: pre;
     //max-width: 100%;
     //min-width: 100px;
@@ -127,8 +135,8 @@ pre code:before {
     margin-left: 0;
     margin-top: 1em;
     margin-bottom: 1em;
-    border-left: 5px solid #9df7a5;
-    background: #cbfab5;
+    border-left: 5px solid $codeblock-label-border;
+    background: $codeblock-label-background;
     font-size: $font-size;
     color: $font-color;
     font-weight: bolder;
@@ -136,7 +144,6 @@ pre code:before {
 
 pre code {
     display: block;
-    background: #e5ffb6;
     white-space: pre;
     max-width: 100%;
     min-width: 100px;
@@ -148,8 +155,8 @@ pre code {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 100%;
-    border-left: 5px solid #c3f5bc;
-    background: #e5fcd5;
+    border-left: 5px solid $codeblock-border;
+    background: $codeblock-background;
     font-size: $font-size;
     color: $font-color;
 }
@@ -168,8 +175,8 @@ blockquote:before {
     margin-left: 0;
     margin-top: 1em;
     margin-bottom: 1em;
-    border-left: 5px solid #ebbd08;
-    background: #f5ce6c;
+    border-left: 5px solid $blockquote-label-border;
+    background: $blockquote-label-background;
     font-size: $font-size;
     color: $font-color;
     font-weight: bolder !important;
@@ -182,8 +189,8 @@ blockquote {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 100%;
-    border-left: 5px solid #fce27c;
-    background: #fcf1d5;
+    border-left: 5px solid $blockquote-border;
+    background: $blockquote-background;
     font-size: $font-size;
     color: $font-color;
 }
@@ -256,7 +263,7 @@ table {
         background-size: contain;
         size: 210mm 22mm;
         /* BASE FOLDER token will be replaced at compile time by our bash script. */
-        background: url('file://[BASE_FOLDER]/templates/animation-workbench-header.svg');
+        background: url('file://[BASE_FOLDER]/templates/header.svg');
         /* Hack needed or image will not show */
         content: " ";
     }
@@ -303,7 +310,7 @@ table {
         background-size: contain;
         size: 210mm 22mm;
         /* BASE FOLDER token will be replaced at compile time by our bash script. */
-        background: url('file://[BASE_FOLDER]/templates/animation-workbench-footer.svg');
+        background: url('file://[BASE_FOLDER]/templates/footer.svg');
         /* Note you cannot do concatenation in CSS content 
           except I figured out this little trick below TS */
         content: " " counter(page) " ";
