@@ -28,6 +28,7 @@ The purpose and function of this collection of documents is to perform the follo
 
 Kartoza is a company that specializes in Open Source Geospatial solutions. As a result, topics covered by this documentation will be limited to categories relevant to the operations of Kartoza. These categories are outlined as follows:
 
+- [Company](/company): General practices and procedures for Kartoza staff
 - [GIS](/gis): Resources for Geographic Information Systems and data
 - [Development](/development): Software development processes, tools, and conventions
 - [DevOps](/devops): Developer operations and system administration
@@ -41,7 +42,7 @@ Whilst some resources (such as tutorials on Semi-Automated Classification with Q
 
 ## Limitations
 
-This collection of documents does not constitute a replacement for Standard Operating Procedures (SOPs) and company policy. Due to the rate at which modern technology develops, opinions change, project needs or priorities are adjusted, and the operational requirements of the organisation evolve, this collection is somewhat ephemeral and should be considered a dynamic "living document" which is subject to constant change and iteration.
+This collection of documents does not constitute a replacement for Standard Operating Procedures (SOPs) and company policy. In some cases, our SOPs may point to sections of this handbook, but the SOP itself is canonical as to where the procude content lies. Due to the rate at which modern technology develops, opinions change, project needs or priorities are adjusted, and the operational requirements of the organisation evolve, this collection is somewhat ephemeral and should be considered a dynamic "living document" which is subject to constant change and iteration.
 
 Processes and documentation from this collection are developed in conjunction with the broader community, independant contractors, temporary staff, juniors, and interns. As such they are not guaranteed to reflect the views of Kartoza, and are not intended to be a substitute for official policy.
 
