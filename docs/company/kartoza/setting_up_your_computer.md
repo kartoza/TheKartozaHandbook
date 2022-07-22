@@ -51,7 +51,11 @@ All staff should in addition be issued with:
 
 * **A USB headset.** USB headsets include their own DSP (Digital Sound Processor) and will generally have a better sound quality than an analogue headset.
 * **An external disk for backups.** This should again be encrypted. The disk should be 4x the size of the hard disk. Use Déjà Dup Backups to run automatic backups on a nightly basis.
-* **A Yubikey.** This will be used to authenticate to Google Apps for Domains (Via Yubikey TOTP), BitWarden, your local PC login (via FIDO2) and other services such as NextCloud.
+* **A kensington lock.** This should be used whenever the laptop is left unattended in a public place (i.e. anywhere other than your home).
+* **A Yubikey.** This will be used to authenticate to Google Apps for Domains (Via Yubikey TOTP), BitWarden, your local PC login (via FIDO2) and other services such as NextCloud. Each staff member should be issued with two of these devices and the second should be stored at home in a safe place in case the first is lost. One of following models are suggested:
+
+![USB A](./img/yubikey-usba.png)
+![USB C](./img/yubikey-usbc.png)
 
 ## Base Install Requirements
 
