@@ -78,6 +78,28 @@ ykman-gui
 
 ![FIDO2 Reset](./img/reset-yubikey-fido-keys.png)
 
+## Online Accounts
+
+You need to have online accounts with the following services:
+
+* [GitHub](https://github.com) - then set up your YubiKey as your 2FA [here](https://github.com/settings/two_factor_authentication/configure). As a backup 2FA you should use the GitHub mobile app. Note that using SMS for 2FA is not considered secure.
+
+![GitHub 2FA](img/github-2fa.png)
+
+* [Google](https://myaccount.google.com/). Set up your YubiKey as your 2FA [here](https://myaccount.google.com/two-step-verification/security-keys). As a backup 2FA you should use the Google mobile app. Note that using SMS for 2FA is not considered secure.
+
+![Google 2FA](img/google-2fa.png)
+
+* [Hetzner](https://hetzner.com). If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA [here](https://accounts.hetzner.com/tfa). Note that using SMS for 2FA is not considered secure.
+
+![Hetzner 2FA](img/hetzner-2fa.png)
+
+* ERNext. Our admin team will provision an account for you.
+
+* NextCloud. Our admin team will provision an account for you. [NextCloud](https://cloud.kartoza.com/). If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA [here](https://cloud.kartoza.com/settings/user/security). Note that using SMS for 2FA is not considered secure.
+
+![NextCloud 2FA](img/nextcloud-2fa.png)
+
 ## Software
 
 ![Essential Software](./img/essential_software.png)
