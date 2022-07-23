@@ -57,6 +57,7 @@ All staff should in addition be issued with:
 ![USB A](./img/yubikey-usba.png)
 ![USB C](./img/yubikey-usbc.png)
 
+
 ## Base Install Requirements
 
 Every staff computer should have the following as a minimum:
