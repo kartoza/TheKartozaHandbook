@@ -75,9 +75,7 @@ docker run --rm -p 8000:8000 -v ${PWD}:/docs my-mkdocs
 
 Note that setting the "combined" option to true when service the documentation with the plugin will automatically point all download links to the collated file and individual page exports will not be available.
 
-!!! danger "WARNING"
-
-    This docker file takes rather a long time to start up...
+> This docker file takes rather a long time to start up...
 
 The docker logs will hang while the documentation is built. This is much slower with the PDF export plugin and using the default mkdocs-material image and configuration will be much faster for simple site builds. The expected docker logs output might be as follows:
 
@@ -108,7 +106,7 @@ INFO     -  The following pages exist in the docs directory, but are not include
   - library/tutorials/qgis/index.md
 ```
 
-After a long wait period, the docker log should let you know the system is running and you can access the site on your local machine from the URL http://127.0.0.1:8000
+After a long wait period, the docker log should let you know the system is running and you can access the site on your local machine from the URL <http://127.0.0.1:8000>
 
 ```
 INFO     -  Documentation built in 224.82 seconds

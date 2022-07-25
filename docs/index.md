@@ -6,9 +6,7 @@ This is where we highlight the procedures, principles, and processes related to 
 
 This is open content, available on [GitHub](https://github.com/kartoza/TheKartozaHandbook) and freely licensed as public domain content under the terms of [CC0 1.0 Universal](https://github.com/kartoza/TheKartozaHandbook/blob/main/LICENSE).
 
-!!! danger "DISCLAIMER"
-
-    This content is delivered without any warranty, express or implied. Use at own risk.
+> This content is delivered without any warranty, express or implied. Use at own risk.
 
 ## Purpose
 

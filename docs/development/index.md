@@ -1,8 +1,6 @@
 # Development
 
-???+ tip "Security"
-
-    Note that all users, regardless of role, should understand and review the [security](../devops/security) section.
+> Note that all users, regardless of role, should understand and review the [security](../devops/security) section.
 
 Kartoza is a consulting and development firm. In many instances, projects require developers to leverage existing tools and codebases, and to work with other organisations in a way that is consistent in their own conventions.
 

@@ -4,9 +4,7 @@ Although [Kartoza](https://kartoza.com) is a privately held Open Source developm
 
 Community contributions to this documentation site and associated resources are welcome. Contributions are expected to adhere to the QGIS.org [Diversity Statement](https://qgis.org/en/site/getinvolved/governance/codeofconduct/diversitystatement.html) and [Code of Conduct](https://qgis.org/en/site/getinvolved/governance/codeofconduct/codeofconduct.html).
 
-!!! info
-
-    If you have any queries or feedback, please contact us at [info@kartoza.com](mailto: info@kartoza.com)
+> If you have any queries or feedback, please contact us at [info@kartoza.com](mailto: info@kartoza.com)
 
 ## Conventions
 

@@ -10,6 +10,20 @@
             // see tasks.json for definition
             "preLaunchTask": "Compile PDF", // The name of the task defined above
             "request": "attach"
+        },
+        {
+            "name": "Compile HTML",
+            "type": "node",
+            // see tasks.json for definition
+            "preLaunchTask": "Compile HTML", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Serve HTML",
+            "type": "node",
+            // see tasks.json for definition
+            "preLaunchTask": "Serve HTML", // The name of the task defined above
+            "request": "attach"
         }
     ]
 }

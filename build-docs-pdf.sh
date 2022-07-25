@@ -7,4 +7,4 @@
 # this will create mkdocs.yml
 ./create-mkdocs-pdf-config.sh
 # and this will build the PDF document
-mkdocs build
+mkdocs build > /tmp/document.html

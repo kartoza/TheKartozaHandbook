@@ -1,8 +1,6 @@
 # OSGeo4W
 
-??? danger "Work in Progress"
-
-    This article is under heavy development and is not considered production ready
+> This article is under heavy development and is not considered production ready
 
 OSGeo4W is an initiative from osgeo.org for packaging OpenSource Geospatial Systems, which are typically designed on and for Linux based systems, in an easy to use process that allows these systems (such as GRASS, QGIS, and others) to function well on the Windows Platform and manage each system and its dependencies in an easy to use way.
 

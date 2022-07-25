@@ -1,8 +1,6 @@
 # Cheatsheets
 
-??? danger "Work in Progress"
-
-    This article is under heavy development and is not considered production ready
+> This article is under heavy development and is not considered production ready
 
 Cheatsheets and snippets for important and common operations.
 

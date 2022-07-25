@@ -1,8 +1,6 @@
 # Bash
 
-??? danger "Work in Progress"
-
-    This article is under heavy development and is not considered production ready
+> This article is under heavy development and is not considered production ready
 
 A shell is a computer program which exposes an operating system's services to a human user or other programs. The Bourne Again SHell (BASH) is a command-line interpreter that is commonly found in many UNIX based Operating Systems, and the term "bash-scripting" has become synonymous with the execution of UNIX commands.
 
@@ -19,7 +17,6 @@ Other system commands vary from installation to installation, so the more you ca
 ## Executing Scripts
 
 A script is a file that contains a sequence of commands that are executed by the shell. To run those commands it must be made executable.
-
 
 ```bash
 chmod +x /path/to/my-script.sh
