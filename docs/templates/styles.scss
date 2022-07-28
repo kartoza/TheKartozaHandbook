@@ -77,7 +77,7 @@ img {
 
     @top-left-corner {
         @if $show-top-left-corner-logo {
-            background: $logo-url;
+            background: $corner-logo-url;
         }
 
         background-repeat: no-repeat;
@@ -340,7 +340,6 @@ td>code {
     //min-width: 100px;
     word-wrap: break-word;
     box-decoration-break: clone;
-    padding: 5mm;
     border-radius: .2rem;
     font-size: $font-size;
     color: #000 !important;
