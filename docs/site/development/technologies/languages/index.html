@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Kartoza" name="author"/>
+<link href="../../../img/favicon.ico" rel="shortcut icon"/>
+<title>Languages - Kartoza Handbook</title>
+<link href="../../../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../../../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../../../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../../../../pdfs/TheKartozaHandbook.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="../../..">Kartoza Handbook</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../..">Home</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../about_kartoza.md">About Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../contributing/">Contributing</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../polyglot/">Polyglot</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Company <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/">Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/strategic_objective/">Strategic Objective</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/operating_principles/">Operating Principles</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/setting_up_your_computer/">Staff Computers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GIS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../gis/">GIS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/cartography/">Cartography</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/technologies/">Technologies</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/resources/">Resources</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Development <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../">Development</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../conventions/">Conventions</a>
+</li>
+<li>
+<a class="dropdown-item" href="../">Languages</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../environments/">Environments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DevOps <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../devops/">DevOps</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/security/">Security</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/procedures/">Procedures</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/infrastructure/">Infrastructure</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../library/">Resources</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/cheatsheets/">Cheatsheets</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/tutorials/">Tutorials</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/media/">Media</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/links/">Links</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/development/technologies/languages.md">Edit on Kartoza Handbook</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#languages">Languages</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="languages">Languages</h1>
+<p>Focus is on python, javascript, and C++, but anything goes really.</p>
+<p>Note that <strong>python</strong> is the <strong>preferred</strong> language for tool and application implementation for a number of reasons, including having consistent tooling and <em>ensuring that everyone on the team is able to collaborate</em>. By remaining consistent and lowering the</p>
+<p>Javascript cannot be escaped on the modern web, and so is a requirement by default. In instances where is makes sense, using serverside javascript is certainly supported, but python is still the preferred approach.</p>
+<p>C++ is used for QGIS development and the focus for conventions will be on using C++ with QT.</p>
+<p>There are no strict rules applied to technology, so everybody is free to use whatever works, and a key ability in open source ecosystems is to remain adaptable and be capable of leveraging the existing tools that are the best available. Stand on the shoulders of giants where you can.</p>
+<p>Because these are not considered core competencies, there aren't really any expectations, requirements, or recommendations that apply to other ecosystems. How users choose to code in rust, go, ruby, or c is entirely up to them. But there are caveats.</p>
+<p>Boring solutions often work best. The newest shiny can be fun but it's rarely a good idea to dive into early adoption. Team work is important, and it's hard to work as a team when you're using esoteric tools.</p>
+<p>When in doubt, have a look at a chart of <a href="https://en.wikipedia.org/wiki/Diffusion_of_innovations">Diffusion of innovations</a> and try assess if the current position is at the end of the early adopter and start of the early majority group.</p>
+<p>This includes the development of mobile, cross platform, or native apps. Whilst universal support for PWAs lingers, it is still a way off from being the de facto standard for the development industry. In the meantime, stick to using tools that the rest of the team can get up to speed with quickly or have experience with, such as QT, python, or javascript. Nobody will stop you from starting an app in kotlin, but it's unlikely to get the momentum or collaboration that is desired within the organisation.</p></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Kartoza and Contributors</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

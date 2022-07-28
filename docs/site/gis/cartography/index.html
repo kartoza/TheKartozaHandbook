@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Kartoza" name="author"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Cartography - Kartoza Handbook</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../../../pdfs/TheKartozaHandbook.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="../..">Kartoza Handbook</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../..">Home</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../about_kartoza.md">About Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../contributing/">Contributing</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../polyglot/">Polyglot</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Company <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../company/kartoza/">Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../company/kartoza/strategic_objective/">Strategic Objective</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../company/kartoza/operating_principles/">Operating Principles</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../company/kartoza/setting_up_your_computer/">Staff Computers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown active">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GIS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../">GIS</a>
+</li>
+<li>
+<a class="dropdown-item active" href="./">Cartography</a>
+</li>
+<li>
+<a class="dropdown-item" href="../technologies/">Technologies</a>
+</li>
+<li>
+<a class="dropdown-item" href="../resources/">Resources</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Development <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../development/">Development</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../development/conventions/">Conventions</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../development/technologies/">Languages</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../development/environments/">Environments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DevOps <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../devops/">DevOps</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../devops/security/">Security</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../devops/procedures/">Procedures</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../devops/infrastructure/">Infrastructure</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../library/">Resources</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../library/cheatsheets/">Cheatsheets</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../library/tutorials/">Tutorials</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../library/media/">Media</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../library/links/">Links</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../technologies/" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/gis/cartography/index.md">Edit on Kartoza Handbook</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#cartography">Cartography</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="cartography">Cartography</h1>
+<p><a href="Guidelines%20on%20how%20to%20create%20effective%20cartography/">Guidelines on how to create effective cartography</a>.</p>
+<p>Information on the development of cartographic style guides.</p></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Kartoza and Contributors</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

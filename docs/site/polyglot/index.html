@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Kartoza" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Polyglot - Kartoza Handbook</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../../pdfs/TheKartozaHandbook.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="..">Kartoza Handbook</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown active">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="..">Home</a>
+</li>
+<li>
+<a class="dropdown-item" href="../about_kartoza.md">About Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../contributing/">Contributing</a>
+</li>
+<li>
+<a class="dropdown-item active" href="./">Polyglot</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Company <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../company/kartoza/">Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../company/kartoza/strategic_objective/">Strategic Objective</a>
+</li>
+<li>
+<a class="dropdown-item" href="../company/kartoza/operating_principles/">Operating Principles</a>
+</li>
+<li>
+<a class="dropdown-item" href="../company/kartoza/setting_up_your_computer/">Staff Computers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GIS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../gis/">GIS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../gis/cartography/">Cartography</a>
+</li>
+<li>
+<a class="dropdown-item" href="../gis/technologies/">Technologies</a>
+</li>
+<li>
+<a class="dropdown-item" href="../gis/resources/">Resources</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Development <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../development/">Development</a>
+</li>
+<li>
+<a class="dropdown-item" href="../development/conventions/">Conventions</a>
+</li>
+<li>
+<a class="dropdown-item" href="../development/technologies/">Languages</a>
+</li>
+<li>
+<a class="dropdown-item" href="../development/environments/">Environments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DevOps <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../devops/">DevOps</a>
+</li>
+<li>
+<a class="dropdown-item" href="../devops/security/">Security</a>
+</li>
+<li>
+<a class="dropdown-item" href="../devops/procedures/">Procedures</a>
+</li>
+<li>
+<a class="dropdown-item" href="../devops/infrastructure/">Infrastructure</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../library/">Resources</a>
+</li>
+<li>
+<a class="dropdown-item" href="../library/cheatsheets/">Cheatsheets</a>
+</li>
+<li>
+<a class="dropdown-item" href="../library/tutorials/">Tutorials</a>
+</li>
+<li>
+<a class="dropdown-item" href="../library/media/">Media</a>
+</li>
+<li>
+<a class="dropdown-item" href="../library/links/">Links</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../contributing/" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../company/kartoza/" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/polyglot.md">Edit on Kartoza Handbook</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#polyglot-the-emoji-map">Polyglot: The Emoji Map</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#gitmoji">gitmoji</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#geomoji">GeoMoji</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="polyglot-the-emoji-map">Polyglot: The Emoji Map</h1>
+<p>Although it may have a steep initial learning curve or implementation strategy, using emoji and unicode symbols to tag elements is a fun and intuitive way to attach metadata to elements which makes visually scanning over documents and commit histories much more effective in multiple languages.</p>
+<p>In order for this to be effective, a consistent method of referencing the emoji meanings is required. This is challenging because the utilisation of emoji are typically context specific, which requires a mapping of emoji meanings for various contexts.</p>
+<blockquote>
+<p>Kartoza values inclusion and diversity. Please contribute to ensure that the items represented here remain inclusive and fair wherever possible.</p>
+</blockquote>
+<h2 id="gitmoji">gitmoji</h2>
+<p>Tagging commit messages in git is a useful tool for visually assessing the issues addressed by a particular commit.</p>
+<p>A community standard has already been developed, available at <a href="https://gitmoji.dev/">https://gitmoji.dev/</a></p>
+<h3 id="kitmoji-gitmoji-">kitmoji (gitmoji-)</h3>
+<p>gitmoji is fairly comprehensive collection, and used quite widely in the tech community (relative to similar projects). The downside to this is that it is rather verbose and becomes cumbersome to learn and use.</p>
+<p>The simple solution is to select a subset (kit) of the gitmoji icons and use them as broader higher level categories. This keeps things a bit more consistent and allows gradual adoption of the wider collection.</p>
+<table>
+<thead>
+<tr>
+<th align="center">id</th>
+<th align="center">Icon</th>
+<th align="center">Reference</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">✨</td>
+<td align="center"><code>:sparkles:</code></td>
+<td align="left">New features</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">🐛</td>
+<td align="center"><code>:bug:</code></td>
+<td align="left">Bugfix</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">♻️</td>
+<td align="center"><code>:recycle:</code></td>
+<td align="left">Refactoring/ Comments</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">📝</td>
+<td align="center"><code>:memo:</code></td>
+<td align="left">Documentation</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">💄</td>
+<td align="center"><code>:lipstick:</code></td>
+<td align="left">UI</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">⚡️</td>
+<td align="center"><code>:zap:</code></td>
+<td align="left">Performance</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">🚀</td>
+<td align="center"><code>:rocket:</code></td>
+<td align="left">CI/ CD/ Deployment</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">✅</td>
+<td align="center"><code>:white_check_mark:</code></td>
+<td align="left">Testing</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">🔒️</td>
+<td align="center"><code>:lock:</code></td>
+<td align="left">Security</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">🔥</td>
+<td align="center"><code>:fire:</code></td>
+<td align="left">Remove data</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">⏪️</td>
+<td align="center"><code>:rewind:</code></td>
+<td align="left">Revert changes</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">⚗️ / 💩</td>
+<td align="center"><code>:alembic:</code> / <code>:poop:</code></td>
+<td align="left">Experiments/ PoC/ bad code</td>
+</tr>
+</tbody>
+</table>
+<p>Not every commit has to have a gitmoji, but it's useful for common cases.</p>
+<h2 id="geomoji">GeoMoji</h2>
+<p>As with gitmoji, we need a consistent way to reference Geographic Information Elements. This could be related to data sources, licenses, tools, or standard metadata categories. Some may <a href="https://eos.org/geofizz/geomojis-translate-geoscience-across-any-language">confuse the concept of geomoji with generic symbology and signage</a>, but in this instance the reference is to a series of common Emoji characters which can be used as concise, visually effective hashtags that can be used across across applications, search tools, git messages, documentation, or social media. It would be great to extend this concept to a collection of map symbols (e.g. using emoji instead of a font library).</p>
+<p>A alpha-state concept project is in development at <a href="https://github.com/zacharlie/geomoji">https://github.com/zacharlie/geomoji</a>.</p></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Kartoza and Contributors</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

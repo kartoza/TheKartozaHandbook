@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Kartoza" name="author"/>
+<link href="../../../img/favicon.ico" rel="shortcut icon"/>
+<title>Staff Computers - Kartoza Handbook</title>
+<link href="../../../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../../../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../../../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../../../../pdfs/TheKartozaHandbook.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="../../..">Kartoza Handbook</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../..">Home</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../about_kartoza.md">About Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../contributing/">Contributing</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../polyglot/">Polyglot</a>
+</li>
+</ul>
+</li>
+<li class="dropdown active">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Company <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../">Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../strategic_objective/">Strategic Objective</a>
+</li>
+<li>
+<a class="dropdown-item" href="../operating_principles/">Operating Principles</a>
+</li>
+<li>
+<a class="dropdown-item active" href="./">Staff Computers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GIS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../gis/">GIS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/cartography/">Cartography</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/technologies/">Technologies</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/resources/">Resources</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Development <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../development/">Development</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/conventions/">Conventions</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/technologies/">Languages</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/environments/">Environments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DevOps <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../devops/">DevOps</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/security/">Security</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/procedures/">Procedures</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../devops/infrastructure/">Infrastructure</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../library/">Resources</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/cheatsheets/">Cheatsheets</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/tutorials/">Tutorials</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/media/">Media</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/links/">Links</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="../operating_principles/" rel="prev">
+<i class="fa fa-arrow-left"></i> Previous
+                                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../../../gis/" rel="next">
+                                    Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/company/kartoza/setting_up_your_computer.md">Edit on Kartoza Handbook</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#setting-up-your-pc">Setting up your PC</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#hardware">Hardware</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#base-install-requirements">Base Install Requirements</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#online-accounts">Online Accounts</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#software">Software</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#skills">Skills</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="setting-up-your-pc">Setting up your PC</h1>
+<h2 id="hardware">Hardware</h2>
+<p>Here are the standard minimum guidelines for hardware for Kartoza Staff:</p>
+<p>Laptops are preferred in general. Many of our staff work in areas with unreliable power supply and so you need to be able to work offline for at least four hours.</p>
+<h3 id="admin-staff">Admin Staff</h3>
+<p>Admin staff tend to have less demanding activities which is reflected in the hardware:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAM</td>
+<td>8GB</td>
+</tr>
+<tr>
+<td>Hard Disk</td>
+<td>256GB SSD</td>
+</tr>
+<tr>
+<td>Internal Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>External Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Ubuntu LTR</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Mid range e.g. i5 4 core or Athlon equivalent</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gis-staff">GIS Staff</h3>
+<p>GIS Staff need laptops with good storage capacity for accommodating large GIS datasets, and good processing power to perform time-consuming analysis quickly.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAM</td>
+<td>16GB</td>
+</tr>
+<tr>
+<td>Hard Disk</td>
+<td>1TB SSD</td>
+</tr>
+<tr>
+<td>Internal Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>External Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Ubuntu LTR</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Mid range e.g. i5 4 core or Athlon equivalent</td>
+</tr>
+</tbody>
+</table>
+<h3 id="developer-staff-devops">Developer Staff &amp; Devops</h3>
+<p>Developer Staff and Devops need laptops with processing power so they can run multiple containers to emulate the deployment environment for their apps. Developer staff tend to have more technical skills and may install their own preference of Operating System if they prefer.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAM</td>
+<td>16GB</td>
+</tr>
+<tr>
+<td>Hard Disk</td>
+<td>500GB SSD</td>
+</tr>
+<tr>
+<td>Internal Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>External Display</td>
+<td>1920 x 1080 or better</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Ubuntu LTR or user preference</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Mid range e.g. i5 4 core or Athlon equivalent</td>
+</tr>
+</tbody>
+</table>
+<h3 id="additional-hardware">Additional Hardware</h3>
+<p>All staff should in addition be issued with:</p>
+<ul>
+<li><strong>A USB headset.</strong> USB headsets include their own DSP (Digital Sound Processor) and will generally have a better sound quality than an analogue headset.</li>
+<li><strong>An external disk for backups.</strong> This should again be encrypted. The disk should be 4x the size of the hard disk. Use Déjà Dup Backups to run automatic backups on a nightly basis.</li>
+<li><strong>A kensington lock.</strong> This should be used whenever the laptop is left unattended in a public place (i.e. anywhere other than your home).</li>
+<li><strong>A Yubikey.</strong> This will be used to authenticate to Google Apps for Domains (Via Yubikey TOTP), BitWarden, your local PC login (via FIDO2) and other services such as NextCloud. Each staff member should be issued with two of these devices and the second should be stored at home in a safe place in case the first is lost. One of following models are suggested:</li>
+</ul>
+<p><img alt="USB A" src="../img/yubikey-usba.png"/>
+<img alt="USB C" src="../img/yubikey-usbc.png"/></p>
+<h2 id="base-install-requirements">Base Install Requirements</h2>
+<p>Every staff computer should have the following as a minimum:</p>
+<ul>
+<li>
+<p>Encrypted disk. Under Linux use LUKS when you install to encypt at a minimum your home partition. Ideally your whole system should be encrypted since if you run docker, postgres and other similar services, you have exposure to data loss if someone steals your PC.</p>
+</li>
+<li>
+<p>Strong password. The password for your account should not be used for any other system.</p>
+</li>
+<li>
+<p>Yubikey PAM Integration. We recommend as an added precaution to set up the YubiKey PAM module which will require to touch your YubiKey after typing in your system password to autheticate. The process for doing this is described <a href="https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F">here</a>.</p>
+</li>
+</ul>
+<blockquote>
+<p>Yubkey locks the FIDO2 Pin by default. You should follow  these steps to unlock it first before running through the above tutorial. Note they assume you have installed the PPA in the above tutorial above first.</p>
+</blockquote>
+<p>Install the YubiKey GUI manager, then use the options as shown below.</p>
+<pre><code>sudo apt install yubikey-manager-qt
+ykman-gui
+</code></pre>
+<p><img alt="FIDO2 Reset" src="../img/reset-yubikey-fido-keys.png"/></p>
+<h2 id="online-accounts">Online Accounts</h2>
+<p>You need to have online accounts with the following services:</p>
+<ul>
+<li><a href="https://github.com">GitHub</a> - then set up your YubiKey as your 2FA <a href="https://github.com/settings/two_factor_authentication/configure">here</a>. As a backup 2FA you should use the GitHub mobile app. Note that using SMS for 2FA is not considered secure.</li>
+</ul>
+<p><img alt="GitHub 2FA" src="../img/github-2fa.png"/></p>
+<ul>
+<li><a href="https://myaccount.google.com/">Google</a>. Set up your YubiKey as your 2FA <a href="https://myaccount.google.com/two-step-verification/security-keys">here</a>. As a backup 2FA you should use the Google mobile app. Note that using SMS for 2FA is not considered secure.</li>
+</ul>
+<p><img alt="Google 2FA" src="../img/google-2fa.png"/></p>
+<ul>
+<li><a href="https://hetzner.com">Hetzner</a>. If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA <a href="https://accounts.hetzner.com/tfa">here</a>. Note that using SMS for 2FA is not considered secure.</li>
+</ul>
+<p><img alt="Hetzner 2FA" src="../img/hetzner-2fa.png"/></p>
+<ul>
+<li>
+<p>ERNext. Our admin team will provision an account for you.</p>
+</li>
+<li>
+<p>NextCloud. Our admin team will provision an account for you. <a href="https://cloud.kartoza.com/">NextCloud</a>. If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA <a href="https://cloud.kartoza.com/settings/user/security">here</a>. Note that using SMS for 2FA is not considered secure.</p>
+</li>
+</ul>
+<p><img alt="NextCloud 2FA" src="../img/nextcloud-2fa.png"/></p>
+<h2 id="software">Software</h2>
+<p><img alt="Essential Software" src="../img/essential_software.png"/></p>
+<h2 id="skills">Skills</h2></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Kartoza and Contributors</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

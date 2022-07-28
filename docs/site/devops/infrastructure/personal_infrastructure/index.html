@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Kartoza" name="author"/>
+<link href="../../../img/favicon.ico" rel="shortcut icon"/>
+<title>Personal Kubernetes Infrastructure - Kartoza Handbook</title>
+<link href="../../../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<script defer="" src="../../../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../../../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link href="../../../../pdfs/TheKartozaHandbook.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="../../..">Kartoza Handbook</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Home <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../..">Home</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../about_kartoza.md">About Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../contributing/">Contributing</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../polyglot/">Polyglot</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Company <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/">Kartoza</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/strategic_objective/">Strategic Objective</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/operating_principles/">Operating Principles</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../company/kartoza/setting_up_your_computer/">Staff Computers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GIS <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../gis/">GIS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/cartography/">Cartography</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/technologies/">Technologies</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../gis/resources/">Resources</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Development <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../development/">Development</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/conventions/">Conventions</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/technologies/">Languages</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../development/environments/">Environments</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DevOps <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../">DevOps</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../security/">Security</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../procedures/">Procedures</a>
+</li>
+<li>
+<a class="dropdown-item" href="../">Infrastructure</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../library/">Resources</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/cheatsheets/">Cheatsheets</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/tutorials/">Tutorials</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/media/">Media</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../library/links/">Links</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/devops/infrastructure/personal_infrastructure.md">Edit on Kartoza Handbook</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#personal-kubernetes-infrastructure">Personal Kubernetes Infrastructure</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#initial-setup">Initial Setup</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-level="1"><a class="nav-link" href="#exit">exit</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#installing-rancher-on-rancher-desktop">Installing Rancher on Rancher Desktop</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#testing-it-out">Testing it out</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#deploying-a-small-application-from-a-helm-chart">Deploying a small application from a helm chart</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="personal-kubernetes-infrastructure">Personal Kubernetes Infrastructure</h1>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>This are initial notes from Tim on setting up a personal docker, rancher desktop and rancher server testbed environment.</p>
+<p>I started by setting up rancher desktop on my Fedora based linux laptop. I used the appimage (despite a concerning looking warning that firefox gives about the image when downloading it.)</p>
+<p>Here is the <a href="https://docs.rancherdesktop.io/getting-started/installation/#installing-via-appimage">installation guide</a>.</p>
+<blockquote>
+<p><strong>Note:</strong> After upgrading to fedora 36 rancher desktop no longer started until I applied the following fix: <a href="https://github.com/rancher-sandbox/rancher-desktop/issues/2139#issuecomment-1114933138">https://github.com/rancher-sandbox/rancher-desktop/issues/2139#issuecomment-1114933138</a></p>
+</blockquote>
+<p>Once installed I performed the following commands to do a quick start setup of nginx running in the k8 cluster.</p>
+<pre><code class="language-bash">kubectl get nodes
+</code></pre>
+<blockquote>
+<p>NAME                   STATUS   ROLES                  AGE   VERSION
+lima-rancher-desktop   Ready    control-plane,master   80m   v1.22.7+k3s1
+</p>
+</blockquote>
+<pre><code class="language-bash">kubectl create deployment nginx --image=nginx
+</code></pre>
+<blockquote>
+<p>deployment.apps/nginx created</p>
+</blockquote>
+<pre><code class="language-bash">kubectl get pods
+</code></pre>
+<blockquote>
+<p>NAME                     READY   STATUS              RESTARTS   AGE
+nginx-6799fc88d8-7k4kd   0/1     ContainerCreating   0          10s</p>
+</blockquote>
+<pre><code class="language-bash">kubectl describe nginx-6799fc88d8-7k4kd
+</code></pre>
+<blockquote>
+<p>error: the server doesn't have a resource type "nginx-6799fc88d8-7k4kd"</p>
+</blockquote>
+<pre><code class="language-bash">
+kubectl describe pod nginx-6799fc88d8-7k4kd
+</code></pre>
+<blockquote>
+<p>Name:         nginx-6799fc88d8-7k4kd
+Namespace:    default
+Priority:     0
+Node:         lima-rancher-desktop/192.168.5.15
+Start Time:   Sat, 23 Apr 2022 22:57:06 +0100
+Labels:       app=nginx
+pod-template-hash=6799fc88d8
+Annotations:  none
+Status:       Running
+IP:           10.42.0.9
+IPs:
+IP:           10.42.0.9
+Controlled By:  ReplicaSet/nginx-6799fc88d8
+Containers:
+nginx:
+    &gt; Container ID:   containerd://f85e833716a254f9e981ebf6c0f432edab366aacdfa74cc46b84904e6afc8760
+Image:          nginx
+    &gt; Image ID:       docker.io/library/nginx@sha256:859ab6768a6f26a79bc42b231664111317d095a4f04e4b6fe79ce37b3d199097
+Port:           none
+Host Port:      none
+State:          Running
+Started:      Sat, 23 Apr 2022 22:57:23 +0100
+Ready:          True
+Restart Count:  0
+Environment:    none
+Mounts:
+      &gt; /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-hl4hc (ro)
+Conditions:
+Type              Status
+Initialized       True
+Ready             True
+ContainersReady   True
+PodScheduled      True
+Volumes:
+kube-api-access-hl4hc:
+    &gt; Type:                    Projected (a volume that contains injected data from multiple sources)
+TokenExpirationSeconds:  3607
+ConfigMapName:           kube-root-ca.crt
+ConfigMapOptional:       nil
+DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              none
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             &gt; node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+Normal  Scheduled  33s   default-scheduler  Successfully assigned default/nginx-6799fc88d8-7k4kd to lima-rancher-desktop
+Normal  Pulling    33s   kubelet            Pulling image "nginx"
+Normal  Pulled     17s   kubelet            Successfully pulled image "nginx" in 16.398944871s
+Normal  Created    17s   kubelet            Created container nginx
+Normal  Started    16s   kubelet            Started container nginx</p>
+</blockquote>
+<pre><code class="language-bash">kubectl get pods
+</code></pre>
+<blockquote>
+<p>NAME                     READY   STATUS    RESTARTS   AGE
+nginx-6799fc88d8-7k4kd   1/1     Running   0          44s</p>
+</blockquote>
+<pre><code class="language-bash">kubectl get pods -o wide
+</code></pre>
+<blockquote>
+<p>NAME                     READY   STATUS    RESTARTS   AGE   IP          NODE                   NOMINATED NODE   READINESS GATES
+nginx-6799fc88d8-7k4kd   1/1     Running   0          57s   10.42.0.9   lima-rancher-desktop   none           none</p>
+</blockquote>
+<pre><code class="language-bash">kubectl exec -it nginx-6799fc88d8-7k4kd /bin/sh
+</code></pre>
+<blockquote>
+<p>kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future &gt; &gt; version. Use kubectl exec [POD] -- [COMMAND] instead.</p>
+</blockquote>
+<pre><code class="language-bash">curl 10.42.0.9
+</code></pre>
+<blockquote>
+<p>Welcome to nginx!
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }</p>
+<p>Welcome to nginx!
+If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+<p>For online documentation and support please refer to
+nginx.org
+Commercial support is available at
+nginx.com</p>
+<p>Thank you for using nginx.</p>
+<h1 id="exit">exit</h1>
+</blockquote>
+<pre><code class="language-bash">kubectl get pods
+``
+
+&gt; NAME                     READY   STATUS    RESTARTS   AGE
+&gt; nginx-6799fc88d8-7k4kd   1/1     Running   0          2m45s
+
+These steps are verbatim from [this youtube video](https://www.youtube.com/watch?v=LwE8IA3glE4).
+
+From this initial run through we can assume these basic concepts:
+
+![K8 Concepts](img/k8-concepts.png)
+
+## Deploying Rancher on Rancher Desktop
+
+I remember that Dominic explained about namespaces in his initial walk through so let me try to create a new  namespace.
+
+```bash
+kubectl create namespace tim
+</code></pre>
+<p>While trying to figure out how to list my namespaces, I found <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">this nice k8 cheatsheet</a>.</p>
+<p>The above cheatsheet didnt actually contain the tip I needed but a bit of googling came up with this:</p>
+<pre><code class="language-bash">kubectl get namespaces --show-labels
+</code></pre>
+<blockquote>
+<p>NAME              STATUS   AGE     LABELS
+default           Active   141m    kubernetes.io/metadata.name=default
+kube-system       Active   141m    kubernetes.io/metadata.name=kube-system
+kube-public       Active   141m    kubernetes.io/metadata.name=kube-public
+kube-node-lease   Active   141m    kubernetes.io/metadata.name=kube-node-lease
+tim               Active   3m34s   kubernetes.io/metadata.name=tim</p>
+</blockquote>
+<p>You can see my tim namespace listed as the last entry there. So based on doing that, I think I can update my concept diagram to look like this:</p>
+<p><img alt="K8 Namespace" src="../img/k8-concepts-namespace.png"/></p>
+<pre><code class="language-bash">kubectl
+</code></pre>
+<blockquote>
+<p>apiVersion: v1
+kind: Pod
+metadata:
+name: nginxpod
+namespace: tim
+labels:
+name: nginxpod
+spec:
+containers:</p>
+<ul>
+<li>name: web
+    image: nginx</li>
+</ul>
+</blockquote>
+<p>I saved the above as nginx.yml and was able to run it like this:</p>
+<pre><code class="language-bash">kubectl apply -f nginx.yml
+</code></pre>
+<p>Then I could check in the tim namespace to see if it was running:</p>
+<pre><code class="language-bash">kubectl get pods -A
+</code></pre>
+<blockquote>
+<p>NAMESPACE     NAME                                      READY   STATUS      RESTARTS   AGE
+kube-system   local-path-provisioner-84bb864455-dsv47   1/1     Running     0          150m
+kube-system   helm-install-traefik-crd--1-xrhvf         0/1     Completed   0          150m
+kube-system   svclb-traefik-p9zwj                       2/2     Running     0          150m
+kube-system   helm-install-traefik--1-m2r2x             0/1     Completed   1          150m
+kube-system   coredns-96cc4f57d-5bzj8                   1/1     Running     0          150m
+kube-system   traefik-56c4b88c4b-mpwfm                  1/1     Running     0          150m
+kube-system   metrics-server-ff9dbcb6c-6gzt5            1/1     Running     0          150m
+default       nginx-6799fc88d8-7k4kd                    1/1     Running     0          69m
+tim           nginxpod                                  1/1     Running     0          14s</p>
+</blockquote>
+<p>We can see my nginx pod in my namespace as the last entry.</p>
+<h2 id="installing-rancher-on-rancher-desktop">Installing Rancher on Rancher Desktop</h2>
+<p>I went <a href="https://rancher.com/docs/rancher/v2.5/en/installation/install-rancher-on-k8s/">here</a> for instructions.</p>
+<pre><code class="language-bash">helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
+kubectl create namespace cattle-system
+helm install rancher rancher-latest/rancher   --namespace cattle-system   --set hostname=crest   --set replicas=1 --set ingress.tls.source=secret
+</code></pre>
+<p>A little note here: the above tutorial provides different pathways to get a certificate. I am using ingress.tls.source=secret because I am just running on my local sytstem. In production you probably want to use a different option. Also I reduced replicas to 1 since I only have 1 pod in my local test environment.</p>
+<p>After running, I got a nice message saying rancher is setting itself up:</p>
+<blockquote>
+<p>NAME: rancher
+LAST DEPLOYED: Sun Apr 24 11:25:45 2022
+NAMESPACE: cattle-system
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:</p>
+<p>Rancher Server has been installed.</p>
+<p><strong>NOTE:</strong> Rancher may take several minutes to fully initialize. Please standby while Certificates are being issued, Containers are started and the Ingress rule comes up.</p>
+<p>Check out our docs at <a href="https://rancher.com/docs/">https://rancher.com/docs/</a></p>
+<p>If you provided your own bootstrap password during installation, browse to <a href="https://crest">https://crest</a> to get started.</p>
+<p>If this is the first time you installed Rancher, get started by running this command and clicking the URL it generates:</p>
+<p>echo <a href="https://crest/dashboard/?setup=$(kubectl">https://crest/dashboard/?setup=$(kubectl</a> get secret --namespace cattle-system bootstrap-secret -o go-template='{{.data.bootstrapPassword|base64decode}}')</p>
+<p>To get just the bootstrap password on its own, run:</p>
+<p>kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{.data.bootstrapPassword|base64decode}}{{ "\n" }}'</p>
+<p>Happy Containering!
+```</p>
+</blockquote>
+<p>Let's use our experience from the simple nginx deployment to see what is running on the system now:</p>
+<pre><code class="language-bash">kubectl get pods -A
+</code></pre>
+<blockquote>
+<p>NAMESPACE                   NAME                                      READY   STATUS              RESTARTS      AGE
+kube-system                 helm-install-traefik-crd--1-xrhvf         0/1     Completed           0             13h
+kube-system                 helm-install-traefik--1-m2r2x             0/1     Completed           1             13h
+kube-system                 svclb-traefik-p9zwj                       2/2     Running             2 (10m ago)   13h
+kube-system                 local-path-provisioner-84bb864455-dsv47   1/1     Running             1 (10m ago)   13h
+kube-system                 coredns-96cc4f57d-5bzj8                   1/1     Running             1 (10m ago)   13h
+tim                         nginxpod                                  1/1     Running             1 (10m ago)   11h
+default                     nginx-6799fc88d8-7k4kd                    1/1     Running             1 (10m ago)   12h
+kube-system                 traefik-56c4b88c4b-mpwfm                  1/1     Running             1 (10m ago)   13h
+kube-system                 metrics-server-ff9dbcb6c-6gzt5            1/1     Running             1 (10m ago)   13h
+cattle-system               rancher-6448c4dcdf-8wpsk                  1/1     Running             0             3m37s
+cattle-fleet-system         gitjob-cc9948fd7-jxgg5                    1/1     Running             0             44s
+cattle-fleet-system         fleet-controller-5746685958-f4rx5         1/1     Running             0             44s
+cattle-system               helm-operation-zfbfq                      0/2     Completed           0             68s
+cattle-system               helm-operation-5sg9s                      0/2     Completed           0             16s
+cattle-system               helm-operation-n6ggh                      2/2     Running             0             10s
+cattle-fleet-local-system   fleet-agent-6c6c8c45f8-vtbnm              0/1     ContainerCreating   0             7s
+cattle-system               rancher-webhook-6958cfcddf-z9rxr          0/1     ContainerCreating   0             5s</p>
+</blockquote>
+<p>We can see various jobs are still spinning up in the cattle-system.</p>
+<p>Next I went on a <a href="https://www.linode.com/docs/guides/create-a-self-signed-tls-certificate/">little detour</a> on creating a self signed certificate that I can install in my rancher instance.</p>
+<pre><code class="language-bash">openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 \
+-nodes -out tls.crt -keyout tls.key
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> I believe it is required to name the key tls.* so as to match the secret name.</p>
+</blockquote>
+<p>Which outputs this:</p>
+<blockquote>
+<p>Generating a RSA private key
+writing new private key to 'tls.key'
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+Country Name (2 letter code) [XX]:pt
+State or Province Name (full name) []:
+Locality Name (eg, city) [Default City]:
+Organization Name (eg, company) [Default Company Ltd]:
+Organizational Unit Name (eg, section) []:
+Common Name (eg, your name or your server's hostname) []:
+Email Address []:tim@kartoza.com
+</p>
+</blockquote>
+<p>Then we have two certs in our directory:</p>
+<blockquote></blockquote>
+<pre><code class="language-bash">ls
+</code></pre>
+<blockquote>
+<p>tls.crt  tls.key  nginx.yml</p>
+</blockquote>
+<p>Then on <a href="https://rancher.com/docs/rancher/v2.5/en/installation/resources/tls-secrets/">this rancher page</a>, I followed these notes to install my cert:</p>
+<pre><code class="language-bash">kubectl -n cattle-system create secret tls tls-rancher-ingress \
+  --cert=tls.crt \
+  --key=tls.key
+secret/tls-rancher-ingress created
+</code></pre>
+<p>Ok then back to the <a href="https://rancher.com/docs/rancher/v2.5/en/installation/install-rancher-on-k8s/#6-verify-that-the-rancher-server-is-successfully-deployed">main thread</a> of the rancher installation tutorial I continued:</p>
+<pre><code class="language-bash">kubectl -n cattle-system rollout status deploy/rancher
+</code></pre>
+<p>Which returns this:</p>
+<blockquote>
+<p>deployment "rancher" successfully rolled out</p>
+</blockquote>
+<h2 id="testing-it-out">Testing it out</h2>
+<p>The instructions say to open the host in your browser (in my case I used my local hostname of crest), but nothing opened.</p>
+<p>I took a look in rancher desktop and played with the port forwarding. The default install looked like this:</p>
+<p><img alt="Default Ports" src="../img/k8-rancher-desktop-ports-after-rancher-install.png"/></p>
+<p>So I went ahead and tried to forward that rancher port:</p>
+<p><img alt="Port Forward Option" src="../img/k8-rancher-desktop-port-forward-after-rancher-install.png"/></p>
+<p>Then tried to open <a href="https://localhost:37443/">https://localhost:37443/</a></p>
+<p>Which gave me an error:</p>
+<p><img alt="Certificate Error" src="../img/k8-rancher-desktop-error-after-rancher-install.png"/></p>
+<p>The thing seems to be that you need to rather forward this port:</p>
+<p><img alt="Port Forward Option" src="../img/k8-rancher-desktop-ports-after-rancher-install-working.png"/></p>
+<p>Then I was able ot open the site (different port number now) an set up my credentials following the hints provided.</p>
+<blockquote>
+<p><strong>Note</strong>: Since I am using a self signed cert I had to do the normal firefox security warning process to proceed to the site.</p>
+</blockquote>
+<p><img alt="Port Forward Option" src="../img/k8-rancher-running.png"/></p>
+<p>I did however still have some errors now showing in rancher:</p>
+<p><img alt="Port Forward Option" src="../img/k8-rancher-running-mount-errors.png"/></p>
+<h2 id="deploying-a-small-application-from-a-helm-chart">Deploying a small application from a helm chart</h2>
+<p>I know helm charts are like the package managers of kubernetes, but I am not familiar with them, so I went to make a small test with the filebrowser.org (awesome app btw). I found these instructions and so ran and deployed it like this:</p>
+<pre><code class="language-bash">helm repo add utkuozdemir https://utkuozdemir.org/helm-charts
+helm install my-release utkuozdemir/filebrowser
+export POD_NAME=$(kubectl get pods kubernetes.io/name=filebrowser,app.ease" -o jsonpath="{.items[0].metadata.name}
+export CONTAINER_PORT=$(kubectl get pod E -o jsonpath="{.spec.containers0].ports[0]. 
+echo "Visit http://127.0.0.1:8080 to use 
+kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
+</code></pre>
+<p>From this I learned a couple of things:</p>
+<ol>
+<li>We can pull helm charts from the internet with a system of repos</li>
+<li>We can use xpath style queries to parse out bits of info from kubectl</li>
+<li>The last line gives some hints about how to foward traffic out of k8</li>
+</ol></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Kartoza and Contributors</p>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

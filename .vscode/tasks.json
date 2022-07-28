@@ -7,7 +7,10 @@
             "args": [
                 ""
             ],
-            "type": "shell"
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/docs/"
+            },
         },
         {
             "label": "Compile HTML",
@@ -15,7 +18,10 @@
             "args": [
                 ""
             ],
-            "type": "shell"
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/docs/"
+            },
         },
         {
             "label": "Serve HTML",
@@ -23,7 +29,10 @@
             "args": [
                 "serve"
             ],
-            "type": "shell"
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/docs/"
+            },
         }
     ]
 }
