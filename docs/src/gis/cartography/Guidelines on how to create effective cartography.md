@@ -18,7 +18,9 @@ No. | Image | Description
 5 | ![](img/road-cap-style.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads.
 6 | ![](img/points-on-top.png) | As a general rule, points should be drawn above polygon and line features.
 7 | ![](img/font-matches-language.png) | Use a font that matches the language of your map.
-1 | ![](img/solid-symbol-layer-background.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background.
+8 | ![](img/solid-symbol-layer-background.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background.
+9 | ![](img/inappropriate-transparency.png) | Do not use transparency inappropriately. Features like dams should be usually rendered with a solid fill.
+10 | ![](img/avoid-visual-clutter.png) | Avoid visual clutter in your map. If there are too many features visible with similar contrast  your user will quickly become overwhelmed.
 
 Template row:
 1 | ![]() |
