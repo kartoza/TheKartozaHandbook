@@ -23,31 +23,18 @@ pip install mdx_gh_links
 pip install mkdocs-pdf-export-plugin
 ```
 
-Note the following assets are used during the building of the mkdocs project as a pdf:
-
-```bash
-docs/img/kartozaBackgroundBorder.png  
-docs/img/logo.png
-docs/css/extra.css
-docs/assets/*.otf
-mkdocs-pdf.yml
-```
-
-
 ### Build the documentation
 
-> Note that whenever you add new sections to nav in the mkdocs.yml 
-> (used for building the web version), you should apply those same 
-> edits to mkdocs-pdf.yml if you want those new sections to appear 
+> Note that whenever you add new sections to nav in the mkdocs.yml
+> (used for building the web version), you should apply those same
+> edits to mkdocs-pdf.yml if you want those new sections to appear
 > in the pdf too.
 
 ```bash
-mkdocs build --config-file mkdocs-pdf.yml
-mv site/pdf/combined.pdf TheKartozaHandbook.pdf
+cd  docs
+./build-docs-pdf.sh
 xdg-open TheKartozaHandbook.pdf
 ```
 
-
-
-
-
+If you are in VSCode, you can also just run the 'Compile PDF' task. The
+generated PDF will be placed in docs/pdfs/.
