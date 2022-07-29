@@ -12,6 +12,7 @@ Symbol levels tell QGIS in what order to draw the features symbols when there ar
 No. | Image | Description
 ----|-------|------------------------
 1 | ![](img/overlapping-labels-and-features.png) | Dont let labels overlap features.
+2 | ![](img/major-roads-cover-minor-roads.png) | Make sure that major roads cover minor roads.
 
 Template row:
 1 | ![]() |
