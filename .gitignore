@@ -136,3 +136,4 @@ docs/devops/infrastructure/img/~$k8-concepts.drawio.bkp
 # Misc - these are generated on the fly by the build process, so they can be ignored.
 docs/mkdocs.yml
 docs/templates/graphics.scss
+docs/site

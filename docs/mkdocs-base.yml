@@ -9,34 +9,33 @@ edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/"
 copyright: Kartoza and Contributors
 
 nav:
-      - Home:
-              - Home: index.md
-              - About Kartoza: about_kartoza.md
-              - Contributing: contributing.md
-              - Polyglot: polyglot.md
-      - Company:
-              - Kartoza: company/kartoza/index.md
-              - Strategic Objective: company/kartoza/strategic_objective.md
-              - Operating Principles: company/kartoza/operating_principles.md
-              - Staff Computers: company/kartoza/setting_up_your_computer.md
-      - GIS:
-              - GIS: gis/index.md
-              - Cartography: gis/cartography/index.md
-              - Technologies: gis/technologies/index.md
-              - Resources: gis/resources/index.md
-      - Development:
-              - Development: development/index.md
-              - Conventions: development/conventions/index.md
-              - Languages: development/technologies/index.md
-              - Environments: development/environments/index.md
-      - DevOps:
-              - DevOps: devops/index.md
-              - Security: devops/security/index.md
-              - Procedures: devops/procedures/index.md
-              - Infrastructure: devops/infrastructure/index.md
-      - Resources:
-              - Resources: library/index.md
-              - Cheatsheets: library/cheatsheets/index.md
-              - Tutorials: library/tutorials/index.md
-              - Media: library/media/index.md
-              - Links: library/links/index.md
+        - Home:
+                  - Home: index.md
+                  - About Kartoza: about_kartoza.md
+                  - Contributing: contributing.md
+                  - Polyglot: polyglot.md
+        - Company:
+                  - Kartoza: company/kartoza/index.md
+                  - Strategic Objective: company/kartoza/strategic_objective.md
+                  - Operating Principles: company/kartoza/operating_principles.md
+                  - Staff Computers: company/kartoza/setting_up_your_computer.md
+        - GIS:
+                  - Cartography Guidelines: gis/cartography/cartography-guidelines.md
+                  - Technologies: gis/technologies/index.md
+                  - Resources: gis/resources/index.md
+        - Development:
+                  - Development: development/index.md
+                  - Conventions: development/conventions/index.md
+                  - Languages: development/technologies/index.md
+                  - Environments: development/environments/index.md
+        - DevOps:
+                  - DevOps: devops/index.md
+                  - Security: devops/security/index.md
+                  - Procedures: devops/procedures/index.md
+                  - Infrastructure: devops/infrastructure/index.md
+        - Resources:
+                  - Resources: library/index.md
+                  - Cheatsheets: library/cheatsheets/index.md
+                  - Tutorials: library/tutorials/index.md
+                  - Media: library/media/index.md
+                  - Links: library/links/index.md

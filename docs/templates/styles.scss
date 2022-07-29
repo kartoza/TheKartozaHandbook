@@ -438,6 +438,15 @@ dl {
     page-break-before: avoid;
 }
 
+table>tbody>tr>td>img {
+    height: 80px;
+    width: 80px;
+}
+
+
+
+/* Next section based on https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+
 table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -449,8 +458,6 @@ table {
     margin-right: auto;
 }
 
-
-/* Next section based on https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
 
 table thead tr {
     background-color: $primary-color;
