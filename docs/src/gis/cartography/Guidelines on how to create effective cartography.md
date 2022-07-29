@@ -13,6 +13,7 @@ No. | Image | Description
 ----|-------|------------------------
 1 | ![](img/overlapping-labels-and-features.png) | Dont let labels overlap features.
 2 | ![](img/major-roads-cover-minor-roads.png) | Make sure that major roads cover minor roads.
+3 | ![](img/scale-planning.png) | Set you canvas scale to the scale you plan to print at (1) then lock it (2) then when you zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale (3).
 
 Template row:
 1 | ![]() |
