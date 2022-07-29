@@ -17,6 +17,8 @@ No. | Image | Description
 4 | ![](img/abruptly-ending-roads.png) | Don't include roads on your map that end abruptly unless this indeed reflects reality.
 5 | ![](img/road-cap-style.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads.
 6 | ![](img/points-on-top.png) | As a general rule, points should be drawn above polygon and line features.
+7 | ![](img/font-matches-language.png) | Use a font that matches the language of your map.
+1 | ![](img/solid-symbol-layer-background.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background.
 
 Template row:
 1 | ![]() |
