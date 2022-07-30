@@ -58,28 +58,6 @@ extra:
 extra_css:
   - css/print.css
 
-markdown_extensions:
-  - toc:
-      permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
-  - pymdownx.snippets:
-      base_path: .
-  - admonition
-  - tables
-  - pymdownx.details
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
-
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js

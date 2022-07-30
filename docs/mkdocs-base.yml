@@ -8,6 +8,32 @@ repo_url: "https://github.com/kartoza/TheKartozaHandbook"
 edit_uri: "https://github.com/kartoza/TheKartozaHandbook/blob/main/docs/"
 copyright: Kartoza and Contributors
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  #- mdx_truly_sane_lists
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.snippets:
+      base_path: .
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+
 nav:
         - Home:
                   - Home: index.md
