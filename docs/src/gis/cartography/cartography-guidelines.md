@@ -54,7 +54,11 @@ No. | Image | Description
 9 | ![Inappropriate Transparency](img/inappropriate-transparency.png) | Do not use transparency inappropriately. Features like dams should be usually rendered with a solid fill.
 10 | ![Avoid Clutter](img/avoid-visual-clutter.png) | Avoid visual clutter in your map. If there are too many features visible with similar contrast  your user will quickly become overwhelmed.
 11 | ![Dont overlap buildings and roads](img/buildings-in-roads.png) | Avoid overlapping features that don't naturally overlap.
-1 | ![Symbol Levels](img/symbol-layer-z-levels.png) | Use layer symbol levels for multilayer symbols to prevent elements of the style overlapping.
+12 | ![Symbol Levels](img/symbol-layer-z-levels.png) | Use layer symbol levels for multilayer symbols to prevent elements of the style overlapping.
+13 | ![Meaningful Legends](img/meaningful-legends.png) | Don't use legend items that are not meaningful.
+14 | ![Call outs](img/use-callout-labels.png) | Use call out labels when they risk covering important features on the map.
+15 | ![Point z order](img/point-z-order.png) | Don't let line or polygon features obscure point symbols.
+16 | ![Component sizes](img/component-sizes.png) | Make sure the sizes of components on your map are balanced.
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
