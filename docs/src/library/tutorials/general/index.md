@@ -15,3 +15,7 @@ General Tutorials.
 ## Tools
 
 - [Git Primer](./git-primer): A light-but-functional introduction to the Git Version Control System
+
+## Procedures
+
+- [Deployments with Docker-Ansible](./docker-ansible-deployments): How to set up, configure, and deploy to a new host with [docker-ansible](https://github.com/kartoza/docker-ansible).
