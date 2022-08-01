@@ -37,6 +37,7 @@ The relative size of your circles for process versus creative versus technical a
 7. **Choose a style.** There are many amazing cartographic styles out there. Do you want something technical? Cartoony? Medieval looking? Find an example of a similar style to what you have in mind and look at what visual elements they use to cartography style. ![Mappa Mundi](img/mappa-mundi.png) - Medieval Mappa Mundi map from the 1300s ([source - Wikipedia](https://en.wikipedia.org/wiki/Mappa_mundi#/media/File:Hereford-Karte.jpg))
 8. **Plan your layout.** If you are making a print map, it can be useful to roughly plan where all the elements such as map, legend, photos or graphics etc. will appear on your layout. That will influence some decisions in your cartography and will help you to organise your work plan.
 9. **Create a set of guidelines.** Create some rules for yourself to follow. Life gets a lot easier when you have a framework to construct your work on than when you are just 'winging it'.
+10. Use the **QGIS QuickOSM Plugin** to quickly establish a baseline set of layers for your map. ![QuickOSM](img/quick-osm.png).
 
 ## Common issues in cartography
 
@@ -52,6 +53,8 @@ No. | Image | Description
 8 | ![Symbol Layer](img/solid-symbol-layer-background.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background.
 9 | ![Inappropriate Transparency](img/inappropriate-transparency.png) | Do not use transparency inappropriately. Features like dams should be usually rendered with a solid fill.
 10 | ![Avoid Clutter](img/avoid-visual-clutter.png) | Avoid visual clutter in your map. If there are too many features visible with similar contrast  your user will quickly become overwhelmed.
+11 | ![Dont overlap buildings and roads](img/buildings-in-roads.png) | Avoid overlapping features that don't naturally overlap.
+1 | ![Symbol Levels](img/symbol-layer-z-levels.png) | Use layer symbol levels for multilayer symbols to prevent elements of the style overlapping.
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
