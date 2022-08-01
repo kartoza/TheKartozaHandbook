@@ -59,6 +59,7 @@ No. | Image | Description
 14 | ![Call outs](img/use-callout-labels.png) | Use call out labels when they risk covering important features on the map.
 15 | ![Point z order](img/point-z-order.png) | Don't let line or polygon features obscure point symbols.
 16 | ![Component sizes](img/component-sizes.png) | Make sure the sizes of components on your map are balanced.
+17 | ![Transparent Fills](img/transparent-fills.png) | Avoid side effects of using transparent colours.
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
