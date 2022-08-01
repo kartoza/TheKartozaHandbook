@@ -60,6 +60,9 @@ No. | Image | Description
 15 | ![Point z order](img/point-z-order.png) | Don't let line or polygon features obscure point symbols.
 16 | ![Component sizes](img/component-sizes.png) | Make sure the sizes of components on your map are balanced.
 17 | ![Transparent Fills](img/transparent-fills.png) | Avoid side effects of using transparent colours.
+18 | ![Spelling Errors](img/spelling-errors.png) | Always run your text through a spelling and grammar checker.
+19 | ![Phrasing](img/phrasing.png) | Have someone else read your prose to ensure the phrasing is clear and easy to read.
+20 | ![Legends](img/legend-columns.png) | Learn how to split legend columns to create a sense of balance in your composition.
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
