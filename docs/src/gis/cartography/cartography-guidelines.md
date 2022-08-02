@@ -88,6 +88,8 @@ No. | Image | Description
 18 | ![Spelling Errors](img/spelling-errors.png) | Always run your text through a spelling and grammar checker.
 19 | ![Phrasing](img/phrasing.png) | Have someone else read your prose to ensure the phrasing is clear and easy to read.
 20 | ![Legends](img/legend-columns.png) | Learn how to split legend columns to create a sense of balance in your composition.
+21 | ![Contrast](img/background-contrast.png) | Don't use light colours on a dark background, dark colours on a dark background.
+22 | ![Humanize](img/humanize.png) | Humanize all text shown to users. (see mantra about exposing users to inner workings of the system).
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
