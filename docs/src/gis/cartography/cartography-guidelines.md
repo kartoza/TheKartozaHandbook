@@ -89,7 +89,9 @@ No. | Image | Description
 19 | ![Phrasing](img/phrasing.png) | Have someone else read your prose to ensure the phrasing is clear and easy to read.
 20 | ![Legends](img/legend-columns.png) | Learn how to split legend columns to create a sense of balance in your composition.
 21 | ![Contrast](img/background-contrast.png) | Don't use light colours on a dark background, dark colours on a dark background.
-22 | ![Humanize](img/humanize.png) | Humanize all text shown to users. (see mantra about exposing users to inner workings of the system).
+22 | ![Humanize](img/humanize.png) | Humanize all text shown to users (see mantra about exposing users to inner workings of the system).
+23 | ![Clipping Symbols](img/clipped-symbols.png) | Set up your rendering options so that your symbols are not partially drawn / clipped - unless this is by design.
+24 | ![Labels covering](img/labels-cover-features.png) | Avoid having labels obscure the features they are labelling.
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
