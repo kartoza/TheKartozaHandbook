@@ -39,6 +39,31 @@ The relative size of your circles for process versus creative versus technical a
 9. **Create a set of guidelines.** Create some rules for yourself to follow. Life gets a lot easier when you have a framework to construct your work on than when you are just 'winging it'.
 10. Use the **QGIS QuickOSM Plugin** to quickly establish a baseline set of layers for your map. ![QuickOSM](img/quick-osm.png).
 
+## Mantras
+
+1. The user should not be exposed to the inner workings of the system. With is guideline we try to avoid asking the user to perform activities that presume or require that they have inside knowledge of how the system works. Where breaking this guideline is unavoidable, such tasks should be well described so as to allow the user to carry out the task with the least possible friction.
+2. If you use somebody else's work, they should be attributed unless they do not require it.
+3. Get peer review of your work early and often.
+4. Keep to the topic of your creation.
+5. Speak to your audience. Think of your work from the user's point of view and create something they can relate to.
+6. Follow the principle of separation of concerns. Users should have a clear understanding of where they are in a workflow, being presented with information which is thematic to the task at hand, whilst non-relevant questions or  information should be hidden.
+7. Use emphasis sparingly. If everything is emphasised, nothing is emphasised! Some things that provide emphasis are ![Emphasis](img/emphasis-elements.png).
+8. Layout visual elements in a consistent way in terms of size, colour and spacing. Break this rule with intention. ![spacing](img/layout.png).
+9. Tell a story!
+10. Make sure the user understands why they are here.
+11. Explicit is better than implicit. Don't assume your users know about simple things like north direction etc.
+12. Design the system to be easy to maintain. In this case, the map should avoid introducing unneeded functionality, using unneeded infrastructure, include obfuscated or overly complex terms or visual imagery. To achieve this, we should strive for simplicity and clarity in the user experience.
+13. Don't present data, present insights.
+14. Pay extreme attention to detail to create a professional product.
+15. Pay extreme attention to detail to create a professional product.
+16. Reduce reduce reduce - prune the content until it has the minumum number of elements needed to convey your message.
+17. Make rules for yourself and follow them closely. Break your rules with intention. Create a consistent visual and interactive metaphor and using it throughout the system if possible.
+18. "Obey the principle of least surprise". Design to reduce cognative friction.
+19. Surpise and delight your user.
+20. There is no such thing as cheating, only finding creative solutions to your problems.
+21. Whenever possible, do things for the user.
+22. There is no such thing as cheating, only finding creative solutions to your problems.
+
 ## Common issues in cartography
 
 No. | Image | Description
