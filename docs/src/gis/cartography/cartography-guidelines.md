@@ -92,7 +92,10 @@ No. | Image | Description
 22 | ![Humanize](img/humanize.png) | Humanize all text shown to users (see mantra about exposing users to inner workings of the system).
 23 | ![Clipping Symbols](img/clipped-symbols.png) | Set up your rendering options so that your symbols are not partially drawn / clipped - unless this is by design.
 24 | ![Labels covering](img/labels-cover-features.png) | Avoid having labels obscure the features they are labelling.
-
+25 | ![Pixle perfect alignment](img/pixel-perfect-alignment.png) | Make sure all elements are aligned with pixel perfect precision.
+26 | ![Pixel perfect symmetry](img/pixel-perfect-symmetry.png) | Ensure white space between elements is the same to create a sense of perfect symmetry. Using a layout grid can help a lot with this.
+27 | ![Repeating Labels](img/repeating-labels.png) | Avoid repeating labels on the same line segment unless it is by intention.
+28 | ![Map Edge Context](img/map-edge-content.png) | Where relevant, provide context at the edges of your map so the user understands where they will go if they leave the map.
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
 [//]: # ( Template row: )
