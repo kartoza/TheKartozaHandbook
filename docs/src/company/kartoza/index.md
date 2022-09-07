@@ -17,3 +17,4 @@ Learn more at our company website [https://kartoza.com](https://kartoza.com)
 * [Strategic Objective](./strategic_objective.md)
 
 * [Your Kartoza Computer](./setting_up_your_computer.md)
+* [Essential Software](./essential_software.md)

@@ -101,8 +101,5 @@ You need to have online accounts with the following services:
 
 ![NextCloud 2FA](img/nextcloud-2fa.png)
 
-## Software
-
-![Essential Software](./img/essential_software.png)
 
 ## Skills
