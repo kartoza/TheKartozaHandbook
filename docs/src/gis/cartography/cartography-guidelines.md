@@ -64,6 +64,22 @@ The relative size of your circles for process versus creative versus technical a
 21. Whenever possible, do things for the user.
 22. There is no such thing as cheating, only finding creative solutions to your problems.
 
+## Choosing a Coordinate Reference System for your map
+
+The order of preference for selection of a CRS for your map should be determined by the intended purpose and by client requirements:
+
+Scale | CRS Type | CRS | Notes
+------|----------|-----|--------
+Global | Spherical | IAU_2015:39965 |  ![Orthographic](img/orthographic-projection.png)  Use for inset maps or contextual maps. Create a customised CRS based on this to move the LO origin.
+Global | Cylindrical | EPSG:8857 |  ![Equal Earth](img/equal-earth-projection.png) Use for flat maps of the world. Represents country sizes fairly. See [The Equal Earth Website](https://equal-earth.com/equal-earth-projection.html).
+Any | Spherical | EPSG:3857 | ![Spherical Mercator](img/spherical-projection.png) Use for maps destined for the web or that incorporate data from online sources like MapTiler or OSM tiles.
+
+## Cartography Resources
+
+Name | Description
+-----|-------------
+[Oxford AI Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/) | Use for raster fill textures. License unknown.
+
 ## Common issues in cartography
 
 No. | Image | Description
