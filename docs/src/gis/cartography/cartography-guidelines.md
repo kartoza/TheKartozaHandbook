@@ -70,15 +70,24 @@ The order of preference for selection of a CRS for your map should be determined
 
 Scale | CRS Type | CRS | Notes
 ------|----------|-----|--------
-Global | Spherical | IAU_2015:39965 |  ![Orthographic](img/orthographic-projection.png)  Use for inset maps or contextual maps. Create a customised CRS based on this to move the LO origin.
-Global | Cylindrical | EPSG:8857 |  ![Equal Earth](img/equal-earth-projection.png) Use for flat maps of the world. Represents country sizes fairly. See [The Equal Earth Website](https://equal-earth.com/equal-earth-projection.html).
-Any | Spherical | EPSG:3857 | ![Spherical Mercator](img/spherical-projection.png) Use for maps destined for the web or that incorporate data from online sources like MapTiler or OSM tiles.
+Global | Spherical | IAU_2015:39965 | **Orthographic** ![Orthographic](img/orthographic-projection.png)  Use for inset maps or contextual maps. Create a customised CRS based on this to move the LO origin.
+Global | Cylindrical | EPSG:8857 | **Equal Earth** ![Equal Earth](img/equal-earth-projection.png) Use for flat maps of the world. Represents country sizes fairly. See [The Equal Earth Website](https://equal-earth.com/equal-earth-projection.html).
+Any | Spherical | EPSG:3857 | **Spherical** ![Spherical Mercator](img/spherical-projection.png) Use for maps destined for the web or that incorporate data from online sources like MapTiler or OSM tiles.
+Regional | Conic | EPSG:102024 | **Lambert** ![Lambert Conic Confirmal](img/lambert-projection.png) Use for maps covering a large East-West area. For example spanning 3 or 4 UTM zones.
+Local | Mercator | EPSG:32XXXX | **UTM** ![UTM](img/utm-projection.png) Use for maps covering small, local areas. For example spanning  1 or less UTM zones.
 
 ## Cartography Resources
 
 Name | Description
 -----|-------------
 [Oxford AI Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/) | Use for raster fill textures. License unknown.
+[QGIS Styles](https://plugins.qgis.org/styles/) | A collection of re-usable QGIS styles you can use to level up your cartography and learn how to produce interesting cartography.
+[QGIS Example Projects](https://plugins.qgis.org/geopackages/) | A collection of QGIS projects which provide reference examples of how different GIS workflows in QGIS.
+[QGIS Example Processing Models](https://plugins.qgis.org/models/)| A collection of processing models which solve different geospatial analysis problems.
+[QGIS Example 3D Models](https://plugins.qgis.org/wavefronts/) | A collection of 3d Objects you can use as point symbol markers for your 3D Scenes.
+[QGIS .lyr Files](https://plugins.qgis.org/layerdefinitions)| A collection of QGIS .lyr files with useful datasets that you can add to your QGIS projects.
+[Google Fonts](https://github.com/google/fonts/archive/refs/heads/main.zip) | A large collection of fonts you can use in your projects. We also deploy these fonts in OSGS too so if you make a web map they will be available there.
+[GNU Fonts](http://ftp.gnu.org/gnu/freefont/freefont-ttf-20120503.zip) | Another large set of free fonts you can use in your project.
 
 ## Common issues in cartography
 
