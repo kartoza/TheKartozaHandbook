@@ -69,4 +69,3 @@ _Not sure if the online instance is using an older version of Maven than whats i
   -- [backend] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
   -- [backend] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
   -- [backend] [ERROR] For more information about the errors and possible solutions, please read the following articles:
-  -- [backend] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
