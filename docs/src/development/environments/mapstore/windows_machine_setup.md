@@ -42,7 +42,7 @@
 - Run _npm cache clean_ in the terminal
 - Run _npm install_ in the terminal
 
-_Note: If you're struggling to run the locacl backend instance use the online instance of MapStore as the backend._
+_Note: If you're struggling to run the local backend instance use the online instance of MapStore as the backend._
 
 ### Swap out local instance of backend for online instance
 
@@ -65,7 +65,7 @@ _Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=ht
 **When running ./build.sh the following error appears "Unable to move the cache: Access is denied" The build does not continue after this point**
 
 *When running the command **mvn compile war:war -e** the following error appears: Error assembling WAR: webxml attribute is required (or pre-existing WEB-INF/web.xml if executing in update mode) *
-- To try and remedy this error I added the following int the product/pom.xml 
+- To try and remedy this error I added the following in the product/pom.xml 
 - `<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
