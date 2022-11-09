@@ -81,4 +81,4 @@ _Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=ht
                 </overlays>
             </configuration>
         </plugin>`
-- This did fix the error. Still investigating a fix
+- This not did fix the error. Still investigating a fix
