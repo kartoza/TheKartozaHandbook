@@ -1,7 +1,6 @@
 # Getting Started
 
 **IDE used is VSCode**
-**Windows only**
 
 ## Important links
 
@@ -43,29 +42,28 @@
 - Run _npm cache clean_ in the terminal
 - Run _npm install_ in the terminal
 
-_Note: The local instance for the back end from the github repo failed it's build. To remedy this use the online instance of MapStore as the backend._
+_Note: If you're struggling to run the locacl backend instance use the online instance of MapStore as the backend._
 
 ### Swap out local instance of backend for online instance
 
 1. Open the following file _MapStore2/build/DevServer.js_
 2. Set the variable MAPSTORE_BACKEND_URL to the url *https://dev-mapstore.geosolutionsgroup.com/mapstore*
 
-_Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=https://dev-mapstore.geosolutionsgroup.com/mapstore did not work_
-_Not sure if the online instance is using an older version of Maven than whats installed on the local machine?_
+_Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=https://dev-mapstore.geosolutionsgroup.com/mapstore did not work on my machine_
 
 ### Start front end
 
-- Run _npm run fe:start_ in the terminal to start the app. The server does take some time to install, please be patient
+- Run _npm run fe:start_ in the terminal to start the app. The app does take some time to install, please be patient
 
-### Notes
+### Running the back end
 
-- When running the local instance of the backend the build fails. Need to do more investigating as to why this happening
-  Following errors include:
-  -- [backend] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project mapstore-services: There are test failures.
-  -- [backend] [ERROR]
-  -- [backend] [ERROR] Please refer to C:\node\mapstore\MapStore2\java\services\target\surefire-reports for the individual test results.
-  -- [backend] [ERROR] -> [Help 1]
-  -- [backend] [ERROR]
-  -- [backend] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-  -- [backend] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
-  -- [backend] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+** Please note the backend works with jdk version 1.8. Any version higher than that and the build fails
+- Run backend with *npm run be:start*
+
+### Build a .war file 
+
+**When running ./build.sh the following error appears "Unable to move the cache: Access is denied" The build does not continue after this point **
+
+*When running the command **mvn compile war:war -e** the following error appears: Error assembling WAR: webxml attribute is required (or pre-existing WEB-INF/web.xml if executing in update mode) *
+- To try and remedy this error I added the following int the product/pom.xml file **<failOnMissingWebXml>false</failOnMissingWebXml>**
+- This did fix the error. Still investigating a fix
