@@ -65,5 +65,20 @@ _Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=ht
 **When running ./build.sh the following error appears "Unable to move the cache: Access is denied" The build does not continue after this point**
 
 *When running the command **mvn compile war:war -e** the following error appears: Error assembling WAR: webxml attribute is required (or pre-existing WEB-INF/web.xml if executing in update mode) *
-- To try and remedy this error I added the following int the product/pom.xml file **<failOnMissingWebXml>false</failOnMissingWebXml>**
+- To try and remedy this error I added the following int the product/pom.xml 
+- <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <extensions>false</extensions>
+            <version>2.1.1</version>
+            <configuration>
+                <overlays>
+                    <overlay>
+                        <groupId>it.geosolutions.mapstore</groupId>
+                        <artifactId>mapstore-webapp</artifactId>
+                        **<failOnMissingWebXml>false</failOnMissingWebXml>**   
+                    </overlay>
+                </overlays>
+            </configuration>
+        </plugin>
 - This did fix the error. Still investigating a fix
