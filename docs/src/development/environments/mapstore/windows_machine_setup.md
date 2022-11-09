@@ -57,12 +57,12 @@ _Changing the MAPSTORE_BACKEND_URL in console using >set MAPSTORE_BACKEND_URL=ht
 
 ### Running the back end
 
-** Please note the backend works with jdk version 1.8. Any version higher than that and the build fails
+**Please note the backend works with jdk version 1.8. Any version higher than that and the build fails**
 - Run backend with *npm run be:start*
 
 ### Build a .war file 
 
-**When running ./build.sh the following error appears "Unable to move the cache: Access is denied" The build does not continue after this point **
+**When running ./build.sh the following error appears "Unable to move the cache: Access is denied" The build does not continue after this point**
 
 *When running the command **mvn compile war:war -e** the following error appears: Error assembling WAR: webxml attribute is required (or pre-existing WEB-INF/web.xml if executing in update mode) *
 - To try and remedy this error I added the following int the product/pom.xml file **<failOnMissingWebXml>false</failOnMissingWebXml>**
