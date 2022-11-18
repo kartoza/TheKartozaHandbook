@@ -38,11 +38,13 @@ Notes: Although GitHub is not Git, you need to be set up to work on github.
 
 ##
 
-![](./img/.png)
+![Fkameshot](./img/flameshot.png)
 
-URL: []()
-Purpose:
-Notes:
+URL: [https://flameshot.org/](https://flameshot.org/)
+Purpose: Taking annotated screenshots efficiently
+Notes: I map Ctrl-4 to the tool in gnome like this:
+
+![Fkameshot Shortcut](./img/flameshot-shortcut.png)
 
 ##
 
