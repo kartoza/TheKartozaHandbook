@@ -18,6 +18,6 @@ Learn more at our company website [https://kartoza.com](https://kartoza.com)
 
 Working at Kartoza:
 
-* [Your Kartoza Computer](./setting_up_your_computer.md)
+* [Your Kartoza Computer](./setting_up_your_computer/)
 * [Essential Software](./essential_software.md)
-* [Daily Workflow](./../daily_workflow.md)
+* [Daily Workflow](./daily_workflow.md)
