@@ -21,3 +21,4 @@ Working at Kartoza:
 * [Your Kartoza Computer](./setting_up_your_computer/)
 * [Essential Software](./essential_software.md)
 * [Daily Workflow](./daily_workflow.md)
+* [Communication](./communication.md)
