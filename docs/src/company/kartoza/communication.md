@@ -35,6 +35,7 @@ All Kartoza employees are issued with an email address ending in @kartoza.com. W
 ![Email Signature](./img/email-signature.png)
 
 Here is the signatature in text form:
+
 ​---------------------------------------------------------
 ​
 ![Logo](https://ci3.googleusercontent.com/proxy/6hvwfZ1QlZbFuxyb6WzOVNJGQF7bDrGZYswzub61gu0avvYCtQXgUkWt0ljsZtVrC3lq5SQex-4p4m8Ahq0a7Vwz2gOD3Zz5=s0-d-e1-ft#https://kartoza.com/files/KartozaNewLogoThumbnail.jpg)
