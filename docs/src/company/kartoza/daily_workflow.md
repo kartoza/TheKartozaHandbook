@@ -15,6 +15,8 @@ Your issues closed in GH should equate to a day or more (assuming some tasks wil
 
 Your daily stand ups should be written like this:
 
+--------
+
 ### Yesterday
 
 **Project: Flux Capacitor Enlargement**
@@ -36,6 +38,12 @@ Your daily stand ups should be written like this:
 ### Blockers
 
 * Waiting for client to respond with clarification request on <https://github.com/fcap/foobar/issues/130>
+
+--------
+
+Here is an example from our Slack of a beautifully presented standup up - yours should look like this too!
+
+![Standup Example](./img/dimas-standup.png)
 
 ## Running your timesheets
 
