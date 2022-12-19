@@ -52,3 +52,33 @@ We run our own timesheet application (thanks Dimas!) at [timesheets.kartoza.com]
 The descriptions in your timesheets should be defensible, terse descriptions of work with links to GitHub issues. Defensible means that if a client were ever to ask you to justify how you spent your time in an invoiced line item, we can refer back to the description and see references to tickets worked on and the story points associated with the work.
 
 **Your timesheets should match the projects planned on the planner sheet.**
+
+## Setting up the timesheet account
+
+Step 1: Go to <https://timesheets.kartoza.com>
+
+Step 2: Choose register to create your account:
+
+![Register](./img/timesheets-register.png)
+
+Step 3: Complete the form to create your account:
+
+![Register Form](./img/timesheets-register-form.png)
+
+Step 4: Use the cog menu to get to the settings panel
+
+![Register Cog](./img/timesheets-register-cog.png)
+
+Go to ERP Next to get your API keys by looking in your user profile e.g.
+
+<https://kartoza.erpnext.com/app/user/YOURUSERNAME%40kartoza.com>
+
+![Register API](./img/timesheets-generate-keys.png)
+
+Back on the timesheets app, in the form that appeared from the cog menu, enter your API key and secret:
+
+![Register API](./img/timesheets-register-api.png)
+
+Now use the button (1) to pull data from erpnext then the button (2) to return to your timesheet.
+
+![Register Complete](./img/timesheets-harvest.png)
