@@ -121,6 +121,10 @@ No. | Image | Description
 26 | ![Pixel perfect symmetry](img/pixel-perfect-symmetry.png) | Ensure white space between elements is the same to create a sense of perfect symmetry. Using a layout grid can help a lot with this.
 27 | ![Repeating Labels](img/repeating-labels.png) | Avoid repeating labels on the same line segment unless it is by intention.
 28 | ![Map Edge Context](img/map-edge-content.png) | Where relevant, provide context at the edges of your map so the user understands where they will go if they leave the map.
+29 | ![Suitable CRS](img/CRS.PNG) | Always use CRS that is suitable for the study area. Avoid CRS that distorts your study area.
+30 | ![Callout crossing](img/label_crossing.PNG) | Avoid placing labels such that the callout crosses several other boundaries.
+31 | ![Repetition](img/repetive.png) | Avoid repetition and unnecessary elements such as adding the word 'Legend' to the legend in situations where it is obvious.
+30 | ![Sequential](img/sequential.PNG) | Avoid using a sequential color scheme when you have many categories since it makes it difficult to distinguish between categories, and use diverging, converging, or other schemes. For example, instead of light red to dark red, use red to blue.
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
 [//]: # ( Template row: )
