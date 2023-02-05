@@ -21,6 +21,65 @@ We should stress that all rules you or others create can be broken if they are b
 
 The relative size of your circles for process versus creative versus technical abilities will likely differ widelines. Your job is to strive in your personal journey as a cartographer to bring them into good proportion and to grow the areas which are under developed. There is a lot of theory out there on cartographic design, but I really recommend reading [this wikipedia page: https://en.wikipedia.org/wiki/Cartographic_design](https://en.wikipedia.org/wiki/Cartographic_design) and also reading the QGIS Map Design book by Anita Graser and Gretchen Peterson ([available at https://locatepress.com/book/qmd2](https://locatepress.com/book/qmd2)). ![MapDesignCover](img/qmd2_cover.png).
 
+## Cartographic Map Design 
+
+**Definition.** Cartographic design or map design is the process of crafting the appearance of a map, applying the principles of design and knowledge of how maps are used to create a map that has both aesthetic appeal and practical function. It shares this dual goal with almost all forms of design; it also shares with other design, especially graphic design, the three skill sets of artistic talent, scientific reasoning, and technology. As a discipline, it integrates design, geography, and geographic information science.
+
+## Types of Maps
+
+According to the ICSM (Intergovernmental Committee on Surveying and Mapping), there are five different types of maps namely: General Reference, Topographical, Thematic, Navigation Charts and Cadastral Maps and Plans.
+
+## The Cartographic Design Process
+
+As map production and reproduction technology has advanced, the process of designing and producing maps has changed considerably. Most notably, GIS and graphics software not only makes it easier and faster to create a map, but it facilitates a non-linear editing process that is more flexible than in the days of manual cartography. There is still a general procedure that cartographers generally follow:
+
+1. Planning: Typically, this involves answering several questions:
+
+Question | Answer
+-------- | ------
+What is the purpose of the map? | Maps serve a wide variety of purposes; they may be descriptive (showing the accurate location of geographic features to be used in a variety of ways, like a street map), exploratory (showing the distribution of phenomena and their properties, to look for underlying patterns and processes, like many thematic maps), explanatory (educating the audience about a specific topic), or even rhetorical (trying to convince the audience to believe or do something).
+Who is the audience? | Maps will be more useful if they cater to the intended audience. This audience could range from the cartographer herself (desiring to learn about a topic by mapping it), to focused individuals or groups, to the general public. Several characteristics of the audience can aid this process, if they can be determined, such as: their level of knowledge about the subject matter and the region being covered; their skill in map reading and understanding of geographic principles (e.g., do they know what 1:100,000 means?); and their needs, motivations and biases.
+Is a map the best solution? | There are times when a map could be made, but a chart, photograph, text, or other tool may better serve the purpose.
+What datasets are needed? | The typical map will require data to serve several roles, including information about the primary purpose, as well as supporting background information.
+What medium should be used? | Different mapping media, such as posters, brochures, folded maps, page maps, screen displays, and web maps have advantages and disadvantages for different purposes, audiences, and usage contexts.
+
+2. Data Collection: In the era of Geographic information systems, it seems like vast amounts of data are available for every conceivable topic, but they must be found and obtained. Frequently, available datasets are not perfect matches for the needs of the project at hand, and must be augmented or edited. Also, it is still common for there to be no available data on the specific topic, requiring the cartographer to create them, or derive them from existing data using GIS tools.
+
+3. Design and Implementation: This step involves making decisions about all of the aspects of map design, as listed below, and implementing them using computer software. In the manual drafting era, this was a very linear process of careful decision making, in which some aspects needed to be implemented before others (often, projection first). However, current GIS and graphics software enables interactive editing of all of these aspects interchangeably, leading to a non-linear, iterative process of experimentation, evaluation, and refinement.
+
+4. Production and Distribution: The last step is to produce the map in the chosen medium, and distribute it to the audience. This could be as simple as a desktop printer, or sending it to a press, or developing an interactive Web Mapping Site.
+
+## Design Goals
+
+While maps serve a variety of purposes, and come in a variety of styles, most designs share common goals. Some of the most commonly stated include:
+
+Goal | Description
+---- | -----------
+*Accuracy,* | the degree to which the information on the map corresponds to the nature of the real world. Traditionally, this was the primary determinant of quality cartography. It is now accepted, due largely to studies in Critical Cartography, that no dataset or map is a perfect reproduction of reality, and that the subjective biases and motivations of the cartographer are virtually impossible to circumvent. That said, maps can still be crafted to be as accurate as possible, honest about their shortcomings, and leverage their subjectivity.
+*Functionality,* | the usefulness of the map to achieve its purpose. During much of the latter 20th century, this was the primary goal of academic cartography, especially the Cartographic Communication school of thought: to determine how to make the most efficient maps as conduits of information.
+*Clarity,* | the degree to which the map makes its purpose obvious and its information easy to access. Clarity can be achieved through removing all but the most important information, but this comes at the expense of other goals.
+*Richness,* | the volume and diversity of information the reader can glean from the map. Even maps with a narrowly-defined purpose often require the reader to see patterns in large amounts of data.
+*Aesthetic appeal,* | a positive emotional reaction to the overall appearance of the map. Maps may be appreciated as "beautiful," but other positive affects include "interesting," "engaging," "convincing," and "motivating." Aesthetic reactions can be negative as well, such as "ugly," "cluttered," "confusing," "complicated," "annoying," or "off-putting."
+
+These goals often seem to be in conflict, and it may be tempting to prioritize one over the others. However, quality design in cartography, as in any other design field, is about finding creative and innovative solutions to achieve multiple goals. According to Edward Tufte,
+
+> What is to be sought in designs for the display of information is the clear portrayal of complexity. Not the complication of the simple; rather the task of the designer is to give visual access to the subtle and the difficult--that is, the revelation of the complex.
+
+In fact, good design can produce synergistic results. Even aesthetics can have practical value: potential map users are more likely to pick up, and more likely to spend time with, a beautiful map than one that is difficult to look at. In turn, the practical value of maps has gained aesthetic appeal, favoring those that exude a feeling of being "professional," "authoritative," "well-crafted," "clear," or "informative." In 1942, cartographer John K. Wright said,
+
+> An ugly map, with crude colors, careless line work, and disagreeable, poorly arranged lettering may be intrinsically as accurate as a beautiful map, but it is less likely to inspire confidence.
+
+Rudolf Arnheim, an art theorist, said this about the relationship between maps and aesthetics in 1976:
+
+> The aesthetic or artistic qualities of maps are sometimes thought to be simply matters of so-called good taste, of harmonious color schemes and sensory appeal. In my opinion, those are secondary concerns. The principal task of the artist, be he a painter or a map designer, consists of translating the relevant aspects of the message into the expressive qualities of the medium in such a way that the information comes across as a direct impact of perceptual forces. This distinguishes the mere transmission of facts from the arousal of meaningful experience.
+
+More recently, cartographers have recognised the central role of aesthetics in cartographic design and called for greater focus on how this role functions over time and space. For example, in 2005, Dr Alex Kent (former President of the British Cartographic Society) recommended:
+
+> It will thus be more useful to cartographers and the development of cartography in general to undertake further research towards understanding the role of aesthetics in cartography than to pursue universal principles. Some possible topics for investigation include:
+>> 1. A history of the development of aesthetics in cartography;
+>> 2. An exploration of geographical variations in cartographic aesthetics; and
+>> 3. A critical examination of the factors influencing aesthetic decisions in contemporary mapmaking. 
+
 ## Steps to preparing a map
 
 1. **Choose your locality.** Perhaps you have a client or an assignment which will determine the place. Or perhaps you have the freedom to choose the place yourself.
@@ -38,6 +97,22 @@ The relative size of your circles for process versus creative versus technical a
 8. **Plan your layout.** If you are making a print map, it can be useful to roughly plan where all the elements such as map, legend, photos or graphics e.t.c. will appear on your layout. That will influence some decisions in your cartography and will help you to organise your work plan.
 9. **Create a set of guidelines.** Create some rules for yourself to follow. Life gets a lot easier when you have a framework to construct your work on than when you are just 'winging it'.
 10. Use the **QGIS QuickOSM Plugin** to quickly establish a baseline set of layers for your map. ![QuickOSM](img/quick-osm.png).
+
+## Map Layout
+
+A typical map, whether on paper or on a web page, consists of not only the map image, but also other elements that support the map:
+
+> A **title** tells the reader what the map is about, including the purpose or theme, and perhaps the region covered.
+> A **legend** or **key** explains the meaning of the symbols on the map
+> A **neatline** may frames the entire map image, although many maps use negative space to set the map apart
+> A **compass rose** or **north arrow** provides orientation
+> **Inset maps** may serve several purposes, such as showing the context of the main map in a larger area, showing more detail for a subset of the main map, showing a separated but related area, or showing related themes for the same region.
+> A **bar scale** or other indication of scale translates between map measurements and real distances.
+> **Illustrations** may be included to help explain the map subject or add aesthetic appeal.
+> **Explanatory text** may discuss the subject further
+> **Metadata** declares the sources, date, authorship, projection, or other information about the construction of the map.
+
+Composing and arranging all of the elements on the page involves just as much design skill and knowledge of how readers will use the map as designing the map image itself. Page composition serves several purposes, including directing the reader's attention, establishing a particular aesthetic feel, clearly stating the purpose of the map, and making the map easier to understand and use. Therefore, Page layout follows many of the same principles of Composition above, including figure-ground and Visual hierarchy, as well as aesthetic principles adopted from Graphic design, such as balance and the use of White space (visual arts). In fact, this aspect of cartographic design has more in common with graphic design than any other part of the craft.
 
 ## Mantras
 
