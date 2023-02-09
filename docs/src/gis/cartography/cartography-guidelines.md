@@ -168,9 +168,9 @@ Name | Description
 
 No. | Image | Description
 ----|-------|------------------------
-1 | ![Overlapping Labels](img/overlapping-labels-and-features.png) | Dont let labels overlap features.
+1 | ![Overlapping Labels](img/overlapping-labels-and-features.png) | Don't let labels overlap features.
 2 | ![Road z](img/major-roads-cover-minor-roads.png) | Make sure that major roads cover minor roads.
-3 | ![Scale planning](img/scale-planning.png) | Set your canvas scale to the scale you plan to print at 1️⃣ then lock it 2️⃣ then when you zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale 3️⃣.
+3 | ![Scale planning](img/scale-planning.png) | 1️⃣ Set your canvas scale to the scale you plan to print at and 2️⃣ lock it. When you 3️⃣ zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale.
 4 | ![Road ending](img/abruptly-ending-roads.png) | Don't include roads on your map that end abruptly unless this indeed reflects reality.
 5 | ![Road caps](img/road-cap-style.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads.
 6 | ![Points on top](img/points-on-top.png) | As a general rule, points should be drawn above polygon and line features.
@@ -196,11 +196,12 @@ No. | Image | Description
 26 | ![Pixel perfect symmetry](img/pixel-perfect-symmetry.png) | Ensure white space between elements is the same to create a sense of perfect symmetry. Using a layout grid can help a lot with this.
 27 | ![Repeating Labels](img/repeating-labels.png) | Avoid repeating labels on the same line segment unless it is by intention.
 28 | ![Map Edge Context](img/map-edge-content.png) | Where relevant, provide context at the edges of your map so the user understands where they will go if they leave the map.
+
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
 [//]: # ( Template row: )
 
-1 | ![]() |
+<!-- 1 | ![]() | -->
 
 [//]: # ( Template numbers: )
 
