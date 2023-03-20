@@ -82,3 +82,4 @@ Back on the timesheets app, in the form that appeared from the cog menu, enter y
 Now use the button (1) to pull data from erpnext then the button (2) to return to your timesheet.
 
 ![Register Complete](./img/timesheets-harvest.png)
+
