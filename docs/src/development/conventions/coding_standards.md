@@ -2,9 +2,18 @@
 
 ## General Approach
 
-* Use github for revision control, issue tracking and management. And use the [the recommended workflow](https://github.com/inasafe/inasafe/wiki/Contribute-new-features-workflow) whenever possible.
-* Adherence to regression/unit testing wherever possible (`make test`) with a 
-minimum code coverage of 80%.
+* Use github for revision control, issue tracking and management and use the recommended workflow below whenever possible:
+ * Create new Ticket on https://github.com/<org>/<repo>/issues/new
+  * Fill in the needed information and description
+  * Assign yourself
+  * Note ticket number
+ * Fork InaSAFE (if not already done)
+  * Create new branch called fix-yourticketnumber in your fork
+  * Implement feature
+  * Pull request your branch into InaSAFE Develop
+  * Develop must always pass test and code compliance
+
+* Adherence to regression/unit testing wherever possible (`make test`) with a minimum code coverage of 80%.
 * Simple deployment procedure - all dependencies must be delivered with
   the plugin installer for QGIS or exist in standard QGIS installs.
 * Develop in the spirit of XP/Agile, i.e. frequent releases, continuous
@@ -16,15 +25,13 @@ minimum code coverage of 80%.
 * If you use a few lines of code in more than one place, refactor them into
   their own function.
 
-## Platform support
+## Platform support for QGIS plugins
 
 Currently the following platforms should be supported:
 
 * OSX - latest release
 * Linux - Ubuntu current LTS
-* Windows - 7, 8
-
-
+* Windows - 10,11
 
 ## Compliance
 
