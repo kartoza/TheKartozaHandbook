@@ -1,6 +1,6 @@
 # Conventions
 
-Please read and adhere to our [coding standards](./codingng_standards.md) for all of your work.
+Please read and adhere to our [coding standards](./coding_standards.md) for all of your work.
 
 - [IDEs](./ides.md)
 - [Processes](./dev_processes.md)
