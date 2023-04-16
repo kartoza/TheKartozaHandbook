@@ -11,3 +11,4 @@ For the most part, however, it is less a concern of how a particular outcome is 
 - [Conventions](./conventions)
 - [Technologies](./technologies)
 - [Environments](./environments)
+- [Resources](./resources)
