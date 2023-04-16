@@ -66,7 +66,7 @@ How to create a Storage bucket:
 > It is also important to consider the different storage classes, as this can affect the cost.
 
 | Storage class    | Minimum storage duration (days) | Retrieval fees (per GB) |
-|------------------|:-------------------------------:|-------------------------|
+| ---------------- | :-----------------------------: | ----------------------- |
 | Standard storage |              None               | None                    |
 | Nearline storage |               30                | $0.01                   |
 | Coldline storage |               90                | $0.02                   |
@@ -408,10 +408,6 @@ gcloud functions logs read --limit 50 --project PROJECT_ID
   - **PROJECT_ID**: The ID of the project (not the name of the project)
   - **FILE_NAME**: The local file the user wants to upload; and
   - **BUCKET_DIR**: The bucket directory on GCP. This will consist of ‘gs://’ and the BUCKET_NAME (e.g. gs://example_bucket)
-
-### Pub/Sub trigger events
-
-### Dataflow pipeline using Python
 
 ### BigQuery in Python
 
