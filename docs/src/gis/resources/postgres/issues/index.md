@@ -1,4 +1,4 @@
-# Postgres issues a user may encounter
+# PostgreSQL issues a user may encounter
 
 ## Console commands not working
 

@@ -1,4 +1,4 @@
-# Guidelines when working with QGIS and postgres
+# Guidelines when working with PostgreSQL, PostGIS, and QGIS
 
 This guide deals with restoration of a database (DB) which contains spatial data. In such cases the
 DB will be making use of the PostGIS extension.

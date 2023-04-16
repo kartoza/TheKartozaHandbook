@@ -1,5 +1,11 @@
 # Service file
 
+The connection service file stores connection parameters to be associated with a single service name.
+That service name can then be specified by a libpq connection, and the associated settings will be used.
+This allows connection parameters to be modified without requiring a recompile of the libpq application.
+The service name can also be specified using the PGSERVICE environment variable.
+More information on the service file can be found here: https://www.postgresql.org/docs/9.1/libpq-pgservice.html
+
 A service file is essential to work for the DB the user needs to set up.
 The service file can contain several DBs, and the credentials, host, DB name, etc. of each database.
 
