@@ -166,37 +166,40 @@ Name | Description
 
 ## Common issues in cartography
 
-No. | Image | Description
-----|-------|------------------------
-1 | ![Overlapping Labels](img/overlapping-labels-and-features.png) | Don't let labels overlap features.
-2 | ![Road z](img/major-roads-cover-minor-roads.png) | Make sure that major roads cover minor roads.
-3 | ![Scale planning](img/scale-planning.png) | 1️⃣ Set your canvas scale to the scale you plan to print at and 2️⃣ lock it. When you 3️⃣ zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale.
-4 | ![Road ending](img/abruptly-ending-roads.png) | Don't include roads on your map that end abruptly unless this indeed reflects reality.
-5 | ![Road caps](img/road-cap-style.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads.
-6 | ![Points on top](img/points-on-top.png) | As a general rule, points should be drawn above polygon and line features.
-7 | ![Font Language](img/font-matches-language.png) | Use a font that matches the language of your map.
-8 | ![Symbol Layer](img/solid-symbol-layer-background.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background.
-9 | ![Inappropriate Transparency](img/inappropriate-transparency.png) | Do not use transparency inappropriately. Features like dams should be usually rendered with a solid fill.
-10 | ![Avoid Clutter](img/avoid-visual-clutter.png) | Avoid visual clutter in your map. If there are too many features visible with similar contrast  your user will quickly become overwhelmed.
-11 | ![Dont overlap buildings and roads](img/buildings-in-roads.png) | Avoid overlapping features that don't naturally overlap.
-12 | ![Symbol Levels](img/symbol-layer-z-levels.png) | Use layer symbol levels for multilayer symbols to prevent elements of the style overlapping.
-13 | ![Meaningful Legends](img/meaningful-legends.png) | Don't use legend items that are not meaningful.
-14 | ![Call outs](img/use-callout-labels.png) | Use call out labels when they risk covering important features on the map.
-15 | ![Point z order](img/point-z-order.png) | Don't let line or polygon features obscure point symbols.
-16 | ![Component sizes](img/component-sizes.png) | Make sure the sizes of components on your map are balanced.
-17 | ![Transparent Fills](img/transparent-fills.png) | Avoid side effects of using transparent colours.
-18 | ![Spelling Errors](img/spelling-errors.png) | Always run your text through a spelling and grammar checker.
-19 | ![Phrasing](img/phrasing.png) | Have someone else read your prose to ensure the phrasing is clear and easy to read.
-20 | ![Legends](img/legend-columns.png) | Learn how to split legend columns to create a sense of balance in your composition.
-21 | ![Contrast](img/background-contrast.png) | Don't use light colours on a dark background, dark colours on a dark background.
-22 | ![Humanize](img/humanize.png) | Humanize all text shown to users (see mantra about exposing users to inner workings of the system).
-23 | ![Clipping Symbols](img/clipped-symbols.png) | Set up your rendering options so that your symbols are not partially drawn / clipped - unless this is by design.
-24 | ![Labels covering](img/labels-cover-features.png) | Avoid having labels obscure the features they are labelling.
-25 | ![Pixle perfect alignment](img/pixel-perfect-alignment.png) | Make sure all elements are aligned with pixel perfect precision.
-26 | ![Pixel perfect symmetry](img/pixel-perfect-symmetry.png) | Ensure white space between elements is the same to create a sense of perfect symmetry. Using a layout grid can help a lot with this.
-27 | ![Repeating Labels](img/repeating-labels.png) | Avoid repeating labels on the same line segment unless it is by intention.
-28 | ![Map Edge Context](img/map-edge-content.png) | Where relevant, provide context at the edges of your map so the user understands where they will go if they leave the map.
-
+No. | Before | Description | After | 
+----|-------|------------------------ |-------
+1 | ![Overlapping Labels](img\labels-overlap-features-before.png) | Don't let labels overlap features. | ![Overlapping Labels](img\labels-overlap-features-after.png)
+2 | ![Road z](img\minor-roads-overlapping-major-roads-before.png) | Make sure that major roads cover minor roads. | ![Road z](img\minor-roads-overlapping-major-roads-after.png)
+3 | ![Scale planning](img\scale-magnify-lock-before.png) | 1️⃣ Set your canvas scale to the scale you plan to print at and 2️⃣ lock it. When you 3️⃣ zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale. | ![Scale planning](img\scale-magnify-lock-after-new.png)
+4 | ![Road ending](img\road-ends-abruptly-before.png) | Don't include roads on your map that end abruptly unless this indeed reflects reality. | ![Road ending](img\road-ends-abruptly-after.png) 
+5 | ![Road caps](img\road-cap-before.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads. | ![Road caps](img\road-cap-after.png)
+6 | ![Points on top](img/point-layers-top-before.png) | As a general rule, points should be drawn above polygon and line features. | ![Points on top](img/point-layers-top-after.png)
+7 | ![Font Language](img/language-before.png) | Use a font that matches the language of your map. | ![Font Language](img/language-after.png)
+8 | ![Symbol Layer](img/icon-background-before.png) | Use symbol layers to place a solid background behind symbols which are transparent and are getting lost in the background or make sure your symbols are darker than your background colours to make sure they are visible and not obstructed. | ![Symbol Layer](img/icon-background-after.png)
+9 | ![Inappropriate Transparency](img/transparent-before.png) | Do not use transparency inappropriately. Features like rivers should be usually rendered with a solid fill. | ![Inappropriate Transparency](img/transparent-after.png) 
+10 | ![Avoid Clutter](img/visual-clutter-before.png) | Avoid visual clutter in your map. If there are too many features visible with similar contrast  your user will quickly become overwhelmed.  | ![Avoid Clutter](img/visual-clutter-after.png) |
+11 | ![Dont overlap buildings and roads](img/overlapping-before.png) | Avoid overlapping features that don't naturally overlap. | ![Dont overlap buildings and roads](img/overlapping-after.png)
+12 | ![Symbol Levels](img/multilayer-overlapping-before.png) | Use layer symbol levels for multilayer symbols to prevent elements of the style overlapping. | ![Symbol Levels](img/multilayer-overlapping-after.png)
+13 | ![Meaningful Legends](img/meaningful-legend-before.png) | Don't use legend items that are not meaningful. Make sure spelling is correct and that there are no underscores or dashes in your legend items.| ![Meaningful Legends](img/meaningful-legend-after.png)
+14 | ![Call outs](img/callouts-before.png) | Use call out labels when they risk covering important features on the map. | ![Call outs](img/callouts-after.png)
+15 | ![Point z order](img/obscuring-points-before.png) | Don't let line or polygon features obscure point symbols. | ![Point z order](img/obscuring-points-after.png)
+16 | ![North arrow](img/north-after.png) | Make sure your north arrow is linked to your map and is correctly positioned, sized and fully visible. | ![North arrow](img/north-before.png)
+17 | ![Transparent Fills](img/side-effects-transparent-before.png) | Avoid side effects of using transparent colours. | ![Transparent Fills](img/side-effects-transparent-after.png)
+18 | ![Spelling Errors](img/spelling-before.png) | Always run your text through a spelling and grammar checker. Make sure the font you choose to use is also readable.| ![Spelling Errors](img/spelling-after.png) 
+19 | ![Phrasing](img/make-sense-before.png) | Have someone else read your prose to ensure the phrasing is clear and easy to read. | ![Phrasing](img/make-sense-after.png)
+20 | ![Legends](img/legend-columns-before.png) | Learn how to split legend columns and edit the symbol sizes to create a sense of balance in your composition.  | ![Legends](img/legend-columns-after.png)
+21 | ![Contrast](img/dark-colours-before.png) | Don't use light colours on a dark background or dark colours on a dark background. Try keep your background colours light enough so that all of the features you want to show chan be as visible as possible. You want those features to be what your eyes are drawn to.  | ![Contrast](img/dark-colours-after.png)
+22 | ![Humanize](img/humanise-before.png) | Humanize all text shown to users (see mantra about exposing users to inner workings of the system). | ![Humanize](img/humanise-after.png)
+23 | ![Clipping Symbols](img/cut-off-before.png) | Set up your rendering options so that your symbols are not partially drawn / clipped - unless this is by design. | ![Clipping Symbols](img/cut-off-after.png) 
+24 | ![Element priotiy](img/elements-before.png) | Make sure the size of your elements in your map layout are balanced and important elements standout more than the less important elements. Make sure your elements don't over lap unless it's intentional.  |![Labels covering](img/elements-after.png)
+25 | ![Pixle perfect alignment](img/accurate-before.png) | Make sure all elements are aligned with pixel perfect precision.  | ![Pixle perfect alignment](img/accurate-after.png) 
+26 | ![Pixel perfect symmetry](img/white-space-before.png) | Ensure white space between elements is the same to create a sense of perfect symmetry. Using a layout grid can help a lot with this. | ![Pixel perfect symmetry](img/white-space-after.png)
+27 | ![Repeating Labels](img/repeat-labels-before.png) | Avoid repeating labels on the same line segment unless it is by intention. | ![Repeating Labels](img/repeat-labels-after.png) 
+28 | ![Map Edge Context](img/orientation-before.png) | Where relevant, provide context at the edges of your map so the user understands where they will go if they leave the map or provide an inset map so users can orientate themselves within your map. | ![Map Edge Context](img/orientation-after.png)
+29 | ![Labels](img/labels-before.png) | Make sure all of your labels are legible and the colours are contrasting enough to not blend into the rest of your map. Make sure your labels also have the correct orientation. Road labels should go along the road. | ![Labels](img/labels-after.png)
+30 | ![icons](img/icon-before.png) | Make sure your symbols are consistent unless intentionally not consistent. Look at size, colour and transparency.  | ![icons](img/icons-after.png)
+31 | ![colour](img\colour-before.png) | When choosing colours for you map and even your layout, first consider what the purpose of your map is and who is going to be looking at it. Does your map need to cater for colour blind viewers or viewers with other visual impairments? What data are you representing? Are there colours associated to the data? Does your client have a style guide representing the colours they use? Consider all of these factors when styling your data as well as when you design your map layout.  | ![colour](img/colour-after.png)
+32 | ![stroke](img\stroke-before.png) | be careful when adding defined outlines to your data when styling. Make sure the stroke width is not too thick or the colour is not too pronounced. You can often get away with not having a defined stroke on your features, depending on the feature. | ![stroke](img/stroke-after.png)
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
 [//]: # ( Template row: )
