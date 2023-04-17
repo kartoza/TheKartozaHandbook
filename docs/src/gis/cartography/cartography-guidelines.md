@@ -200,6 +200,8 @@ No. | Before | Description | After |
 30 | ![icons](img/icon-before.png) | Make sure your symbols are consistent unless intentionally not consistent. Look at size, colour and transparency.  | ![icons](img/icons-after.png)
 31 | ![colour](img/colour-before.png) | When choosing colours for you map and even your layout, first consider what the purpose of your map is and who is going to be looking at it. Does your map need to cater for colour blind viewers or viewers with other visual impairments? What data are you representing? Are there colours associated to the data? Does your client have a style guide representing the colours they use? Consider all of these factors when styling your data as well as when you design your map layout.  | ![colour](img/colour-after.png)
 32 | ![stroke](img/stroke-before.png) | be careful when adding defined outlines to your data when styling. Make sure the stroke width is not too thick or the colour is not too pronounced. You can often get away with not having a defined stroke on your features, depending on the feature. | ![stroke](img/stroke-after.png)
+
+
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
 
 [//]: # ( Template row: )
