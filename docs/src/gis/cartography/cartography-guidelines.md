@@ -168,8 +168,8 @@ Name | Description
 
 No. | Before | Description | After | 
 ----|-------|------------------------ |-------
-1 | ![Overlapping Labels](img\labels-overlap-features-before.png) | Don't let labels overlap features. | ![Overlapping Labels](img\labels-overlap-features-after.png)
-2 | ![Road z](img\minor-roads-overlapping-major-roads-before.png) | Make sure that major roads cover minor roads. | ![Road z](img\minor-roads-overlapping-major-roads-after.png)
+1 | ![Overlapping Labels](img/labels-overlap-features-before.png) | Don't let labels overlap features. | ![Overlapping Labels](img/labels-overlap-features-after.png)
+2 | ![Road z](img/minor-roads-overlapping-major-roads-before.png) | Make sure that major roads cover minor roads. | ![Road z](img/minor-roads-overlapping-major-roads-after.png)
 3 | ![Scale planning](img\scale-magnify-lock-before.png) | 1️⃣ Set your canvas scale to the scale you plan to print at and 2️⃣ lock it. When you 3️⃣ zoom in and out with your scroll wheel it will zoom into pixels at the fixed scale. | ![Scale planning](img\scale-magnify-lock-after-new.png)
 4 | ![Road ending](img\road-ends-abruptly-before.png) | Don't include roads on your map that end abruptly unless this indeed reflects reality. | ![Road ending](img\road-ends-abruptly-after.png) 
 5 | ![Road caps](img\road-cap-before.png) | Generally you should use a round cap style for your roads to avoid issues of the road cap extending beyond intersecting roads. | ![Road caps](img\road-cap-after.png)
