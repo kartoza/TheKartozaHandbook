@@ -57,6 +57,7 @@ nav:
                   - Conventions: development/conventions/index.md
                   - Languages: development/technologies/index.md
                   - Environments: development/environments/index.md
+                  - Resources: development/resources/index.md
         - DevOps:
                   - DevOps: devops/index.md
                   - Security: devops/security/index.md
