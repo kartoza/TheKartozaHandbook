@@ -66,7 +66,7 @@ How to create a Storage bucket:
 > It is also important to consider the different storage classes, as this can affect the cost.
 
 | Storage class    | Minimum storage duration (days) | Retrieval fees (per GB) |
-|------------------|:-------------------------------:|-------------------------|
+| ---------------- | :-----------------------------: | ----------------------- |
 | Standard storage |              None               | None                    |
 | Nearline storage |               30                | $0.01                   |
 | Coldline storage |               90                | $0.02                   |
@@ -270,6 +270,7 @@ To add or edit a Schema to the table, do the following:
 ### Notes
 
 Some issues the user should avoid or may encounter:
+
 - BigQuery will not allow loading of a table with the incorrect number of columns:
   - Deleting unwanted fields will solve this problem
   - Always base the schema on the table being loaded, but this can introduce other issues
@@ -291,6 +292,7 @@ Firstly the user needs to create a service account JSON file, followed by settin
 #### Service account key
 
 The service account key will be used by the user’s OS to access the GCP account. The JSON key can be created as follows:
+
 - Go to **IAM and admin**
 - Select **Service account**
 - Select the service account for which you want to create the JSON key
@@ -318,7 +320,7 @@ Windows environmental variables needs to be set up as follows:
     - **Variable name**: GOOGLE_CLOUD_PROJECT; and
     - **Variable value**: Project ID.
 
-![GCP python environmental variables](img/gcp-win-environmental-example.png)
+![GCP python environmental example](img/gcp-win-environmental-example.png)
 
 - Click **OK**
 - The new environmenal variables will now be added
@@ -356,11 +358,11 @@ The following libraries should be installed for local Python runs:
   - sudo snap install google-cloud-sdk.
 
 If the user will be making use of Apache-beam (Data flow pipeline), do the following to be able to run code locally:
-- Open the console;
-- pip install wheel;
+- Open the console
+- pip install wheel
 - Installing Apache-beam differs for Windows and Linux:
-  - Windows: pip install “apache-beam[gcp]”; and
-  - Linux: pip install ‘apache-beam[gcp]’.
+  - Windows: pip install “apache-beam[gcp]”
+  - Linux: pip install ‘apache-beam[gcp]’
 
 > Take note that Windows uses a souble-quote, Linux uses a single-quote.
 
@@ -411,7 +413,168 @@ gcloud functions logs read --limit 50 --project PROJECT_ID
 
 ### Pub/Sub trigger events
 
+This section focuses on setting up a scheduled trigger event using Pub/Sub, Cloud function and Cloud scheduler, but other approaches are available.
+
+- In GCP, open **Pub/Sub** in the menu
+- Click **Create topic**
+- Provide a **Topic ID**
+- The other parameter can be left as is. Click **Create topic**
+
+![GCP create topic](img/gcp-create-topic.png)
+
+- Open your newly created topic
+- Click on **Trigger Cloud function** at the top of the page. This will allow you to add function which will be triggered if the **Pub/Sub** is called
+- Provide the required parameters for the **Create function** step:
+  - **Environment** can be left as 1st gen, but 2nd can also be used
+  - Provide a name in the **Function name** field
+  - Choose a **Region** which will be the same as the data/buckets/BigQuery which will be accessed
+  - Set the **Timeout** to 540 seconds (9 minutes)
+  - Set other settings as desired
+
+![GCP create function](img/gcp-create-function.png)
+
+- Under **Source code** select the programming language for **Runtime** (e.g. Python)
+- Paste your code in the *MAIN.PY* tab
+- Entry point should consist of the name of the function which will be called in the code segment pasted in *MAIN.PY*
+
+![GCP source code](img/gcp-source-code.png)
+
+> The Entry point function needs to have two parameters, namely ‘event’ and ‘context’. These parameters are included when the trigger event happens.
+
+- Click **Deploy function**
+- Now that the Pub/Sub topic and trigger function has been set up, we can set the schedule for when this should occur
+- Go to Cloud Scheduler in the GCP menu
+- Click **Create job**
+- Set the parameters as follows:
+  - **Name**: As desired
+  - **Region**: Select the region which is used by your Sub/Pub topic
+  - **Description**: As desired
+  - **Frequency**: This consist of 5 values using this structure \* \* \* \* \*, which is minute, hour, day of the month, month, and day of the week. \* refers to all cases for that parameter. See https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules for more information on how to set frequencies
+  - **Time zone**: Set as desired. South Africa Standard Time (SAST) is available as an option
+
+![GCP cron job](img/gcp-cron-job.png)
+
+- Click **Continue** to go to the **Configure the execution** section
+- Select Pub/Sub as the **Target type**
+- Select the **Topic** which contains the trigger function
+- Add a message as desired
+- Set other options as desired
+- Click **Create**
+
+The job will be executed based on the frequency set by the user. It will call the Pub/Sub topic, which in turn will trigger the Cloud function. To have a look at the function and execution, do the following:
+- Go to Cloud function in the GCP menu
+- Open the function. The user should see the metric
+
+![GCP function metric](img/gcp-function-metric.png)
+
+- This section shows all information related to the function, such is when it was called, if it failed, completed, or is currently running
+- Go to LOGS to see the terminal responses and print from the active function
+
+![GCP function console](img/gcp-function-console.png)
+
 ### Dataflow pipeline using Python
+
+When the user wants a Dataflow pipeline to make use of Python code a template needs to be generated from the Python code
+(other languages also supported, namely Java). This can be done as follows:
+
+- This needs to be done on the GCP console (Linux-based terminal) and cannot be done locally:
+  - Open the cloud shell on GCP
+  - Click on **More**
+  - Select **Upload**
+  - Upload the files (e.g. Python code) as needed
+
+
+![GCP pipeline upload](img/gcp-pipeline-upload.png)
+
+- The files will now be uploaded to the console home directory;
+- Run the following command in the GCP console to create the pipeline template:
+
+ python3 -m MODULE \
+    --runner DataflowRunner \
+    --project PROJECT_ID \
+    --staging_location STAGING_LOC \
+    --temp_location TEMPORARY_LOC \
+    --template_location TEMPLATE_LOC \
+    --region REGION
+
+- **MODULE**: The Python file uploaded to the GCP console
+- **PROJECT_ID**: ID of the project (not the project name)
+- **STAGING_LOC**: The staging location for the pipeline (e.g. gs://pipeline_bucket/staging)
+- **TEMPORARY_LOC**: Temporary location for the pipeline (gs://pipeline_bucket/temp);
+- **TEMPLATE_LOC**: The location to which the JSON template will be saved (gs://pipeline_bucket/template);
+- **REGION**: Region (e.g. us-east1)
+
+If a template fails to generate, there is likely a problem in the code. The code needs to make use of Apache-beam, and minor issues will be a problem. For instance, code might work locally, but an issue might occur when running in the pipeline itself. For more information on Python template generation go to  https://cloud.google.com/dataflow/docs/quickstarts/create-pipeline-python.
+
+#### Compute Engine
+
+A **Dataflow** pipeline requires a virtual machine (VM). This can be set up using GCP **Compute engine**. Follow these instructions to set up a VM:
+
+- In the GCP navigation menu, select **Compute engine**
+- Click on **VM instances**
+- Click **Create instance**
+
+![GCP compute engine](img/gcp-compute-engine.png)
+
+- Provide the following parameters:
+  - **Name**;
+  - Choose a **Region** and **Zone**. Best will be to make use of the same region than what your other data in a bucket or BigQuery makes use of;
+  - Choose a **Series** and **Machine type**
+  - Other parameters can be left on default or changed as desired.
+
+![GCP virtual machine](img/gcp-virtual-machine.png)
+
+- Click **Create**
+
+> Be sure to choose the machine type as required. The costs will be higher to more processing power is used
+
+Here is an example using a *medium VM*:
+
+![GCP VM medium](img/gcp-vm-medium.png)
+
+Here is an example of a *high end VM*:
+
+![GCP VM high](img/gcp-vm-high-end.png)
+
+> Notice the cost difference! There are a large number of machine options, so be sure to choose as required.
+
+#### Deploy pipeline Python code
+
+Dataflow makes use of Apache Beam. This can be developed/deployed using the SSH console for a VM. Do this as follows:
+
+- Go to Compute engine in GCP;
+- Create a virtual machine (see Compute engine), or select an existing virtual machine;
+- Click on SSH. This will open the SSH console;
+- Install Python modules:
+  - pip install apitools
+  - pip install “apache_beam[gcp]” (this can run a very long time)
+  - pip install google
+  - pip install google-cloud-storage
+  - pip install google-cloud-bigquery
+  - pip install google-cloud
+  - Any other required Python modules (e.g. geopandas)
+
+> If git is not installed for the VM, follow the instructions here to install git: https://www.atlassian.com/git/tutorials/install-git.
+
+- Clone the repo from GitHub or other sources. This will download the repo into the compute engine root folder
+- Navigate in the console to the code which needs to be run
+- If providing parameters as as variable from the console:
+  - Set the bucket, if required, as follows:
+    - BUCKET="<your unique bucket name (Project ID)>"
+    - echo $BUCKET
+  - Set the project as follows:
+    - PROJECT="<your unique project name (Project ID)>"
+    - echo $PROJECT
+- Set up the environmental variables (see Environmental variables). This is required for authentication and local runs in the VM:
+  - The user will require the credentials json file for the service account (see Service account key).
+
+**Executing the pipeline**:
+
+- There are two options available. Local is faster, but cloud runs the pipeline on the cloud but is slower (the is shown In the GCP course). Here is how code can be run:
+  - **Execute pipeline locally**:
+    - python3 file.py --parameter $BUCKET --project $PROJECT –otherParameters $PARAMETER --DirectRunner
+  - **Execute in the cloud**:
+    - python3 file.py --bucket $BUCKET --project $PROJECT  –otherParameters $PARAMETER --DataFlowRunner
 
 ### BigQuery in Python
 
