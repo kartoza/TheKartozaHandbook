@@ -13,7 +13,7 @@ We aim to grow our staff complement on a sustainable basis till we reach around 
 
 We understand that every result is preceded by a 1-2-3-4 step process. It is within these processes that we spend our time, as we relentlessly "work" the systems of the business to perfection.
 
-Our guiding documents are this Strategic Objective, Our [Kartoza Operating Principles](./operating_procedures.md), and our collection of [Working Procedures]().
+Our guiding documents are this Strategic Objective, Our Kartoza Operating Principles, and our collection of Working Procedures.
 
 Kartoza's primary offerings are geospatial products and services using Free and Open Source Software. These facilitate spatial decision making and provide tools for economic empowerment.
 
@@ -42,7 +42,5 @@ Kartoza is globally active and locally relevant. Our primary vertical markets in
 * SDI support
 * Monitoring and observation
 * Biodiversity and conservation support
-
-(These are fleshed out in [[Kartoza-Portfolio-Offerings](./portfolio_offerings.md))
 
 Kartoza aims to model itself on the concept of a [B-Corporation](http://www.bcorporation.net/what-are-b-corps), in the sense that through the work we do and the people we employ, we aim to be socially and environmentally responsible.

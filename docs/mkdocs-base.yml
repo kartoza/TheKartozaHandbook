@@ -37,7 +37,7 @@ markdown_extensions:
 nav:
         - Home:
                   - Home: index.md
-                  - About Kartoza: about_kartoza.md
+                  - About Kartoza: company/kartoza/index.md
                   - Contributing: contributing.md
                   - Polyglot: polyglot.md
         - Company:
