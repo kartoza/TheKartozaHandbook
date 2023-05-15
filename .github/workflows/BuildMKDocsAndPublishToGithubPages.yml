@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
-        uses: BSFishy/pip-action@v3
+        uses: BSFishy/pip-action@v2
         with:
           packages: |
             mkdocs-material 
