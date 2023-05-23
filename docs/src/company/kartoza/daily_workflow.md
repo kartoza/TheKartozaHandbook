@@ -83,3 +83,52 @@ Now use the button (1) to pull data from erpnext then the button (2) to return t
 
 ![Register Complete](./img/timesheets-harvest.png)
 
+## Additional Guidelines
+
+Developing a project can be a lot of fun and enjoyable to work together to make
+something awesome, but we need to do it within the guide rails which we have
+laid down:
+
+1. Only work on the project you have allocated in your planning sheet. If you
+   need to work on something else, you need to communicate with your project manager and ask
+   her to change your planning allocation. Ideally ahead of time, not on the day
+   of working.
+2. You need to follow the scrum board - the ticket you have chosen in your
+   standup is not on the scrum board. That is a complete No-No.
+3. You need to work only on tickets you have been assigned - if someone asked
+   you to work on #46, you need to ask them to allocate yourself as the
+   developer.
+4. Before working on any ticket, it needs to be sized. You listed [5] as the
+   effort for your ticket in the standup, but your ticket lists [1] as its
+   size. If you disagree on the sizing you cannot start to work on the ticket
+   before reaching consensus with the technical lead.
+5. You need to work only on tickets that are in the 'this sprint' column - you
+   currently have only one ticket #57  which is eligible to be worked on. If
+   you feel another ticket needs to happen first (e.g. it is a logical dependency)
+   then again, you need to have a conversation with the technical lead and ask
+   them to update the board to accommodate your requested changes to the plan.
+6. When you write that you will work on a ticket of 8 points or less, it needs
+   to be done at the end of your workday with a neat  PR referencing the
+   ticket, providing testing (both backend and UI), providing a screen grab or
+   better, and animated GIF illustrating the work done, passing all coding
+   standard checks (pylint / black /pep8 etc.). If at the end of the day you have
+   not finished what you committed to then you have taken a wrong turn in your
+   workflow - you probably would have realised that you would not finish the task
+   at 50% in and you should have raised the issue with your team along with an
+   estimate of how much time extra will be needed to resolve. Then you stop
+   working on that ticket and work down the sprint board onto the next issue.
+7. Basically when you go over your estimate, you are spending either the
+   client's money or the Kartoza's profits for the job, neither of which should
+   be done without conscious agreement from your team mates.
+
+We really need you to step up and introduce this rigour into your work.  As you
+can see in the list above, in no case do we ask you to do anything unreasonable
+- we don't ask that you 'grind out' 18 hour days coding and going quietly
+insane with stress and pressure - we just want to see work delivered in a
+steady, orderly flow so we can predict timelines, make profit, please our
+clients and be awesome! So please keep it tight and communicate with your project
+manager and technical team lead using the framework above, let us see a PR at
+the end of the day (or more if your queue has multiple issues), and take on the
+tasks in a respectful, communicative, methodical and conscious manner.  We
+promise if you do that, your enjoyment of your work is going to sky rocket and
+your rapport and respect of your colleagues will too!
