@@ -27,7 +27,7 @@ jobs:
         # Uses orzih's mkdocs PDF builder
         # https://github.com/orzih/mkdocs-with-pdf
         env:
-          CONFIG_FILE: mkdocs.yml
+          CONFIG_FILE: docs/mkdocs.yml
           EXTRA_PACKAGES: build-base
           #REQUIREMENTS: folder/requirements.txt
       - name: Upload PDF Artifact ⚡
