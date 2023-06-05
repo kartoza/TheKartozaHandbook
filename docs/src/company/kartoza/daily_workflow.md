@@ -4,7 +4,7 @@
 
 The activities for your day are determined by:
 
-1. Which project you are working on, as listed in the company-wide project Gantt chart / sheet. Normally we try to have you work on a single project per day to reduce cognitive friction as you contextiswitch from one project to another.
+1. Which project you are working on, as listed in the company-wide project Gantt chart / sheet. Normally we try to have you work on a single project per day to reduce cognitive friction as you context switch from one project to another.
 2. The scrum board / project board for that day's project. The list of sized tickets should be implemented sequentially, from the top of the 'This sprint' (or Ready or 'To-do') column, down to the bottom.
 
 ## Story points
