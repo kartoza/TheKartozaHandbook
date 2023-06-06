@@ -8,7 +8,9 @@ let
         mkdocs-material
     ]);
 in pkgs.mkShell {
-  packages = [ pkgs.vim ];
+  packages = [ 
+    pkgs.vim 
+  ];
   buildInputs = [
     python-with-my-packages
   ];
