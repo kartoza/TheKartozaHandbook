@@ -6,10 +6,14 @@ let
     (p: with p; [ 
         mkdocs
         mkdocs-material
+        pygobject3
     ]);
 in pkgs.mkShell {
   packages = [ 
     pkgs.vim 
+    pkgs.gobject-introspection
+    pkgs.gtk3 
+    pkgs.mkdocs
   ];
   buildInputs = [
     python-with-my-packages
