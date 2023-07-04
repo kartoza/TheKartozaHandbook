@@ -1,0 +1,186 @@
+<mxfile host="Electron" modified="2023-07-04T13:45:47.259Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.0 Chrome/114.0.5735.106 Electron/25.1.1 Safari/537.36" etag="zR61l8caJCU7TR7M2FD9" version="21.5.0" type="device" pages="2">
+  <diagram id="YKtZFhzbhnAhP-7vTNSn" name="Standard Workflow">
+    <mxGraphModel dx="989" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-2" target="6rcEvyNJihN2H6-Kub0p-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-2" value="&lt;b&gt;Handbook&lt;/b&gt;&lt;br&gt;All of the standard processes for documenation described" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="110" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-4" target="6rcEvyNJihN2H6-Kub0p-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-4" value="&lt;b&gt;react base template&lt;br&gt;&lt;/b&gt;&lt;br&gt;Template doc tree for any new project. Cross reference to the hand book for instructions." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-5" value="project" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-6" value="procedures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-7" value="template" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="605" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-8" value="Jeremy" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="480" y="110" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-9" value="Jeremy" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="250" y="200" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-12" target="6rcEvyNJihN2H6-Kub0p-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-12" target="6rcEvyNJihN2H6-Kub0p-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-12" value="Jeremy" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="580" y="380" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.436;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-14" target="6rcEvyNJihN2H6-Kub0p-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-14" value="Developer" style="image;html=1;image=img/lib/clip_art/people/Farmer_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="220" y="377" width="40" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-15" value="PR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-16" value="Review Process" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-18" target="6rcEvyNJihN2H6-Kub0p-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="350" />
+              <mxPoint x="360" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-18" value="Feedback (language, style consistency etc.)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6rcEvyNJihN2H6-Kub0p-20" target="6rcEvyNJihN2H6-Kub0p-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-20" value="Approve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-21" value="Auto build into project docs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-22" value="👍️" style="text;whiteSpace=wrap;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="630" y="420" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6rcEvyNJihN2H6-Kub0p-23" value="👎️" style="text;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="640" y="310" width="50" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Structure" id="BANYnEr2Z3U_FcZWTCj4">
+    <mxGraphModel dx="989" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-7" target="tasEJSTGGEBl8Sxhe1zI-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-7" value="Docs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-8" value="User" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-9" value="Admin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-11" target="tasEJSTGGEBl8Sxhe1zI-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-11" value="Developer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-12" value="Devops" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-14" target="tasEJSTGGEBl8Sxhe1zI-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-14" value="About - make sure Kartoza logo etc there and IDS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-15" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="https://kartoza.github.io/TheKartozaHandbook/" link="https://kartoza.github.io/TheKartozaHandbook/" id="tasEJSTGGEBl8Sxhe1zI-16">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="520" y="240" width="280" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-17" value="Code Auto Docs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="https://github.com/mkdocstrings/mkdocstrings" link="https://github.com/mkdocstrings/mkdocstrings" id="tasEJSTGGEBl8Sxhe1zI-18">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="560" y="550" width="280" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-22" target="tasEJSTGGEBl8Sxhe1zI-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-22" target="tasEJSTGGEBl8Sxhe1zI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tasEJSTGGEBl8Sxhe1zI-22" target="tasEJSTGGEBl8Sxhe1zI-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-22" value="Narrative" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-23" value="Setting up a dev env" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-24" value="Architecture" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-25" value="Workflows e.g. testing, adding features, working with git etc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="https://github.com/kartoza/TheKartozaHandbook/tree/main/docs" link="https://github.com/kartoza/TheKartozaHandbook/tree/main/docs" id="tasEJSTGGEBl8Sxhe1zI-26">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="477" y="210" width="370" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="tasEJSTGGEBl8Sxhe1zI-27" value="License" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LWyjpgvrQPSxy3GdWSln-1" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
