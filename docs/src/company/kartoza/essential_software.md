@@ -106,6 +106,7 @@ asciinema-scenario | Edit playback speed etc, of asciinema vids |🎞️
 bat | Modern alternative to cat - list contents of a file |🔧 
 btop | Modern alternative to top - list the running processes on your system |🔧 
 byobu | Terminal multiplexer |🔧 
+comma # handy "nix-shell -p" shortcut - just do ", programmename" and it does rather "nix-shell -p programmename"
 cowsay | Useful tool to say stuff with the persona of a cow |🔧 
 exa |Modern alternative to ls - lists files |🔧 
 fd | Modern alternative to find - finds files |🔧 
@@ -124,4 +125,14 @@ nethogs | show which processes are consuming bandwidth on your machine |🔧
 nix-direnv | Automatically set up your dev env when you enter a directory. |🔧 
 pgcli | More modern postgres terminal client |🔧 
 wget | Fetch files from the internet in your console |🔧 
-
+dua | better du command |🔧
+exa | better ls command |🔧
+fish | fish shell like bash but with lots of goodies |🔧
+gping | a better ping implementation |🔧
+kitty | nicer terminal emulator with a lot of cool features |🔧
+lftp | for remote backups |🔧
+ranger | console file manager |📁
+powertop | swee what apps use the most power on your machine |🔧
+restic | for local backups |🔧
+unzip | unzip stuff |🔧
+usbutils | lsusb etc |🔧
