@@ -1,0 +1,32 @@
+@font-face {
+    src: url(../assets/AvenirLTStd-Book.otf);
+    font-family: avenir;
+}
+@page {
+    size: a4 portrait;
+    margin: 0mm;
+    padding: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: avenir;
+    font-size: 8pt;
+    white-space: normal;
+    color: grey;
+    @bottom-right {
+        content: 'Copyright © Kartoza';
+    	  margin-top: -25mm;
+    	  margin-right: 10mm;
+    }
+    @bottom-center{
+        content: 'Page ' counter(page);
+    	margin-top: -25mm;
+    }
+
+}
+
+body{
+  background-image: url('../img/kartozaBackgroundBorder.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: avenir;
+  height: 100vh;
+}
