@@ -45,9 +45,71 @@ URL: [www.postgresql.org](https://www.postgresql.org/)
 Purpose: Relational database management system with GIS support.
 Notes:
 
-### Console applications
+## Console applications
 
 These are applications used from the command line.
+
+### Asciinema 🎞️
+
+URL: [https://asciinema.org/](https://asciinema.org/)
+Purpose: Terminal session screen recorder
+Notes:
+
+Nixos packages:
+* asciinema
+* asciinema-agg
+* asciinema-scenario
+
+### bat 🔧 
+
+bat is a modern alternative to 'cat'. It lists the contents of a file on stdout.
+
+![bat screenshot](./img/bat.png)
+
+Nixos packages: bat
+
+### btop
+
+btop : A modern alternative to top - list the running processes on your system |🔧 
+
+![btop screenshot](./img/btop.png)
+
+Nixos packages: btop
+
+### byobu
+
+![byobu screenshot](./img/bat.png)
+byobu | Terminal multiplexer |🔧 
+comma # handy "nix-shell -p" shortcut - just do ", programmename" and it does rather "nix-shell -p programmename"
+cowsay | Useful tool to say stuff with the persona of a cow |🔧 
+exa |Modern alternative to ls - lists files |🔧 
+fd | Modern alternative to find - finds files |🔧 
+ffmpeg_5-full | Free MPEG encoder |🎞️
+figlet | Make ASCII text titles |🔧 
+git | Version control management tools |🔧 
+gotop | go based top - list the running processes on your system |🩺
+iftop | list the network traffic on a network interface|🩺
+imagemagickBig | command line based image manipulation  |✏️
+lazydocker | helpful docker command line docker ui |🔧 
+lazygit | helful git command line ui|🔧 
+mc | console based file manager |📁
+ncdu | disk usage reporting too | 🖴
+neofetch | show useful system info (I have it show whenever I open a terminal) |🔧 
+nethogs | show which processes are consuming bandwidth on your machine |🔧 
+nix-direnv | Automatically set up your dev env when you enter a directory. |🔧 
+pgcli | More modern postgres terminal client |🔧 
+wget | Fetch files from the internet in your console |🔧 
+dua | better du command |🔧
+exa | better ls command |🔧
+fish | fish shell like bash but with lots of goodies |🔧
+gping | a better ping implementation |🔧
+kitty | nicer terminal emulator with a lot of cool features |🔧
+lftp | for remote backups |🔧
+ranger | console file manager |📁
+powertop | swee what apps use the most power on your machine |🔧
+restic | for local backups |🔧
+unzip | unzip stuff |🔧
+usbutils | lsusb etc |🔧
 
 ### Git & GitHub Account
 
@@ -96,43 +158,3 @@ lorem | Lorem ipsum text generato - needs Gnome 44 |🗎
 solanum |  - needs Gnome 44|
 zap | Sound effects board  - needs Gnome 44|🎤
 
-### Console apps
-
-Name | Description | Type
------|-------------|-----
-asciinema | Terminal session screen recorder |🎞️
-asciinema-agg | Export GIFs from asciinema |🎞️
-asciinema-scenario | Edit playback speed etc, of asciinema vids |🎞️
-bat | Modern alternative to cat - list contents of a file |🔧 
-btop | Modern alternative to top - list the running processes on your system |🔧 
-byobu | Terminal multiplexer |🔧 
-comma # handy "nix-shell -p" shortcut - just do ", programmename" and it does rather "nix-shell -p programmename"
-cowsay | Useful tool to say stuff with the persona of a cow |🔧 
-exa |Modern alternative to ls - lists files |🔧 
-fd | Modern alternative to find - finds files |🔧 
-ffmpeg_5-full | Free MPEG encoder |🎞️
-figlet | Make ASCII text titles |🔧 
-git | Version control management tools |🔧 
-gotop | go based top - list the running processes on your system |🩺
-iftop | list the network traffic on a network interface|🩺
-imagemagickBig | command line based image manipulation  |✏️
-lazydocker | helpful docker command line docker ui |🔧 
-lazygit | helful git command line ui|🔧 
-mc | console based file manager |📁
-ncdu | disk usage reporting too | 🖴
-neofetch | show useful system info (I have it show whenever I open a terminal) |🔧 
-nethogs | show which processes are consuming bandwidth on your machine |🔧 
-nix-direnv | Automatically set up your dev env when you enter a directory. |🔧 
-pgcli | More modern postgres terminal client |🔧 
-wget | Fetch files from the internet in your console |🔧 
-dua | better du command |🔧
-exa | better ls command |🔧
-fish | fish shell like bash but with lots of goodies |🔧
-gping | a better ping implementation |🔧
-kitty | nicer terminal emulator with a lot of cool features |🔧
-lftp | for remote backups |🔧
-ranger | console file manager |📁
-powertop | swee what apps use the most power on your machine |🔧
-restic | for local backups |🔧
-unzip | unzip stuff |🔧
-usbutils | lsusb etc |🔧
