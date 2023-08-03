@@ -149,4 +149,119 @@ your rapport and respect of your colleagues will too!
 1. In the sprint planning meeting, based on discussion and sizes, move issues into the Ready column and assign them. 
 1. The Ready column must have only as many issues as the team can do in one sprint, no more!
 
+## The scrum board
 
+Our scrum boards are organised like this project below: 
+![image.png](./img/scrum.png)
+
+The columns of the scrum board have the following purposes:
+
+⛔️**No Status (aka Backlog):** There are all issues that have been raised by
+anyone. There is currently no plan to work on these, but they are topically
+connected to the project board.
+
+* 🕵️Who can place tickets in this column?:
+* 👨Any stakeholder!
+
+⏳️ **To be estimated:** Tickets that have to be estimated for an upcoming
+sprint. The size label has to be assigned based on the amount of hours it will
+take to complete the ticket.
+
+The following sizing scheme should be used:
+ - 1️⃣  It's quick I will have this done in 1 hour
+ - 2️⃣ Give me 2 hours and I will have it for you
+ - 3️⃣ It will take me between 2 hours to half a day
+ - 5️⃣ It will take between half a day and a full day
+ - 8️⃣ This is a full day job
+ - 1️⃣3️⃣ I'm going to need about a day and a half to do the job
+ - 2️⃣0️⃣ It will take at least two to three days
+ - 4️⃣0️⃣ This will take a full week
+
+For any ticket that has been assigned a value larger than 8, the ticket must
+be broken out into smaller issues so that the units of work are 1 day or
+less.
+
+- 🕵️Who can place tickets in this column?:
+- 🏉 Only the project planner ('scrum master') in collaboration with the client where appropriate.
+
+🛒**TODO:** These are sized tickets, that are ready to be worked on and go into
+the sprint for the week. The should be listed from top to bottom in priority
+order. During the sprint planning call, items for the upcoming sprint are
+identified from this column (see below).
+
+- 🕵️Who can place tickets in this column?:
+- 🏉 Only the project planner ('scrum master') in collaboration with the client where appropriate.
+
+🏃**Next Sprint:** These are tickets that will be worked on in the **next**
+sprint. They are placed here during the sprint planning call (which happens the
+week before a sprint starts) so that they do not cause confusion with the items
+in the current sprint plan. Only sized tickets should be in this column. The
+cumulative total of the sizes of issues in the next sprint column should be a
+little more than the number of hours that have been allocated to the team
+members. This is because sizing should be conservative and if the team finish
+their tasks more quickly than expected, they should have enough other tasks to
+keep busy.
+
+- 🕵️Who can place tickets in this column?:
+- 🏉 Only the project planner ('scrum master') in collaboration with the client where appropriate.
+
+🏃**This Sprint:** These are tickets that will be worked on in the **this**
+sprint. They are placed here at the start of the sprint in the order
+(vertically) in which they should be completed, highest priority at the top.
+Only sized tickets should be in this column. As per above, the cumulative total
+of the sizes of issues in the sprint column should be a little more than the
+number of hours that have been allocated to the team members.
+- 🕵️Who can place tickets in this column?:
+- 🏉 Only the project planner ('scrum master') in collaboration with the client where appropriate.
+
+👩**In Progress:** When the team members are ready for a new task, they move
+the task they will work on from the 'This Sprint' Column to the 'In Progress'
+column to indicate they are working on that issue. In most cases, there should
+only be one issue per team member in the 'In Progress' column at any time.
+
+- 🕵️Who can place tickets in this column?:
+- 👩Only the developer / team member working on the ticket.
+
+👨**Needs Review:** When a team member completes their work on an issue, they
+place it in the needs review column. At this point our testing team members
+will go and verify they feature works as expected.
+- Situations in which a ticket may fail review:
+- Functionality does not match requirements in ticket.
+- Changes result in a regression elsewhere.
+- Changes result in errors to be logged in javascript console.
+- Changes result in errors to be logged in sentry.
+- Changes result in errors to be logged in console.
+- If a ticket fails review, it should be moved back to the 'This Sprint' column.
+
+- 🕵️Who can place tickets in this column?:
+- 👩Only the developer / team member working on the ticket.
+
+🏋️**Client to Test:** Whenever a feature has been completed and tested
+internally, it should be signed off by the client. Placing the issue in this
+column indicates to the client that this item is ready for testing. In some
+cases, changes may not be client facing and the project planner may choose to
+skip this step.
+
+- Situations in which a ticket may fail review:
+- Functionality does not match requirements in ticket.
+- Customer raises an issue with the functionality not working as expected.
+- Customer encounters a bug or error using the new functionality.
+
+- 🕵️Who can place tickets in this column?:
+- 👩The developer / team member working on the ticket.
+- 👨The tester who just completed working on the ticket.
+- 🏉The project planner / scrum master
+
+✍️**Needs Docs:** Documentation should be a standard part of the sizing of
+tickets. This should include code documentation ('docstrings'), API docs, user
+manual entries etc. If, however, the ticket results in changes to workflows
+(e.g. screenshots need updating, workflows change)
+
+- 🕵️Who can place tickets in this column?:
+- 🏉The project planner / scrum master
+
+🌄 **Done:** Everyone is happy! Yay! The ticket can be marked as done.
+
+- 🕵️Who can place tickets in this column?:
+- 👩The customer.
+- 🏉The project planner / scrum master
