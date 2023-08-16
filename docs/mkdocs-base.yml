@@ -58,6 +58,48 @@ nav:
                   - Languages: development/technologies/index.md
                   - Environments: development/environments/index.md
                   - Resources: development/resources/index.md
+                  - "": development/developer_practices.md
+                  - "": development/conventions/coding_standards.md
+                  - "": development/conventions/dev_processes.md
+                  - "": development/conventions/git.md
+                  - "": development/conventions/ides.md
+                  - "": development/conventions/project_processes.md
+                  - "": development/documentation/index.md
+                  - development/environments/links.md
+                  - development/environments/mapstore/windows_machine_setup.md
+                  - development/environments/vscode/extension_install.md
+                  - development/environments/vscode/links.md
+                  - development/resources/gcp/index.md
+                  - development/technologies/frameworks.md
+                  - development/technologies/languages.md
+                  - devops/applications/standard-applications.md
+                  - devops/infrastructure/personal_infrastructure.md
+                  - devops/infrastructure/rancher-k3s-single-node.md
+                  - devops/security/links.md
+                  - gis/index.md
+                  - gis/cartography/index.md
+                  - gis/resources/ngi/index.md
+                  - gis/resources/postgres/index.md
+                  - gis/resources/postgres/issues/index.md
+                  - gis/resources/postgres/postgres_qgis/index.md
+                  - gis/resources/postgres/service_file/index.md
+                  - gis/resources/qgis/index.md
+                  - gis/resources/qgis/atlas/index.md
+                  - gis/resources/qgis/issues/index.md
+                  - library/cheatsheets/bash.md
+                  - library/cheatsheets/kubectl.md
+                  - library/cheatsheets/osgeo4w.md
+                  - library/cheatsheets/postgresql.md
+                  - library/media/newsletters.md
+                  - library/tutorials/general/index.md
+                  - library/tutorials/general/docker-ansible-deployments.md
+                  - library/tutorials/general/git-primer.md
+                  - library/tutorials/general/google-meet.md
+                  - library/tutorials/general/jitsi.md
+                  - library/tutorials/general/mkdocs-pdf.md
+                  - library/tutorials/general/zoom.md
+                  - library/tutorials/links/index.md                    
+
         - DevOps:
                   - DevOps: devops/index.md
                   - Security: devops/security/index.md
