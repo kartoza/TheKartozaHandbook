@@ -138,6 +138,7 @@ Composing and arranging all of the elements on the page involves just as much de
 18. Surpise and delight your user.
 19. There is no such thing as cheating, only finding creative solutions to your problems.
 20. Whenever possible, do things for the user.
+21. Do not ever underestimate your capabilities to overcome any problem; if there is a will, there surely is a way! (credit: Namrata Karki)
 
 ## Choosing a Coordinate Reference System for your map
 

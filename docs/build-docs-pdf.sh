@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # This is only intended for local
 # testing. See github workflows for 
@@ -8,3 +8,4 @@
 ./create-mkdocs-pdf-config.sh
 # and this will build the PDF document
 mkdocs build > /tmp/document.html
+ls -ls /tmp
