@@ -6,20 +6,20 @@ This section is a collection of rules and mantras used by Kartoza to make beauti
 
 ![Principles](img/cartography-principles.png)
 
-In the above image we can see a framework for you to use to develop your cartography skills. There are three principles you should understand in order to make great cartographic products. The principles are an adaptable construct designed to help you make maps which respect your user's intelligence and surprise, excite and delight them.
+In the above image we can see a framework for you to use to develop your cartography skills. There are three principles you should understand in order to make great cartographic products. The principles are an adaptable construct designed to help you make maps which respect your user's intelligence in order to surprise, excite and delight them.
 
-1. **Process:** This is definition of a standardised, rigorous set of steps that should be followed by for yourself and / or your co-workers to adhere to when developing your product. Process is the unexciting stuff that happens in the background. Your process should be defined as a nest list of statements. The best way to explain is by an example:
+1. **Process:** This is definition of a standardised, rigorous set of steps that you yourself should follow, along with your co-workers, and adhere to when developing your product. Process is the unexciting stuff that happens in the background. Your process should be defined as a nested list of statements. The best way to explain is by an example:
     1. All map fonts should be at least or larger than 6pt.
     2. All map symbols should be at least or larger than 3mm.
     3. All third party map symbols should be available and published under an open license.
     4. .... etc. ....
-The development of the process is to have the creation of your map repeatable from one end to another, and to be able to work collaboratively with colleages in a consistent way.
+The purpose of the development process is to have the creation of your map repeatable from one end to another, and to be able to work collaboratively with colleages and clients in a consistent way.
 2. **Technical Skill**: This is the process whereby you learn the capabilities of the software (e.g. QGIS) as thorough as possible in order to be able to articulate any idea you or others may have as a cartographic expression. Technical skill is a process of continual learning and acquiring it should commence with the development of a high level framework of the cartographic system and then progress with a deeper and deeper understanding of all of the constituent parts.
-3. **Creativity:** This is the hardest (and sometimes impossible) to imbue in a cartographer. When you lack personal creativity to come up with great map designs, you should (ethically) build on the work of others through emulation. By ethically we mean, crediting the inspiration of your designs to the correct person, asking permission when needed, and being sensitive to the livelihood and reputation for whoever you derive your work from. When you do have a creative side, you should be using it to inform the process and learning of technical skills so that you can articulate your vision in the cartography you produces.
+3. **Creativity:** This is the hardest (and sometimes impossible) principle to imbue in a cartographer. When you lack personal creativity to come up with great map designs, you should (ethically) build on the work of others through emulation. By ethically we mean, crediting the inspiration of your designs to the correct person, asking permission when needed, and being sensitive to the livelihood and reputation for whoever you derive your work from. When you do have a creative side, you should be using it to inform the process and learning of technical skills so that you can articulate your vision in the cartography you produce.
 
 We should stress that all rules you or others create can be broken if they are broken with intention. That is to say, if you decide a 3 point font symbol is critical for the artistic or technical vision, you should not be afraid to make such a decision. What we want to avoid is unintentional breaking of your own rules as it will lead to a less professional looking product.
 
-The relative size of your circles for process versus creative versus technical abilities will likely differ widelines. Your job is to strive in your personal journey as a cartographer to bring them into good proportion and to grow the areas which are under developed. There is a lot of theory out there on cartographic design, but I really recommend reading [this wikipedia page: https://en.wikipedia.org/wiki/Cartographic_design](https://en.wikipedia.org/wiki/Cartographic_design) and also reading the QGIS Map Design book by Anita Graser and Gretchen Peterson ([available at https://locatepress.com/book/qmd2](https://locatepress.com/book/qmd2)). ![MapDesignCover](img/qmd2_cover.png).
+The relative size of your circles for process versus creative versus technical abilities will likely differ widely. Your job is to strive in your personal journey as a cartographer to bring them into good proportion and to grow the areas which are under developed. There is a lot of theory out there on cartographic design, but I really recommend reading [this wikipedia page: https://en.wikipedia.org/wiki/Cartographic_design](https://en.wikipedia.org/wiki/Cartographic_design) and also reading the QGIS Map Design book by Anita Graser and Gretchen Peterson ([available at https://locatepress.com/book/qmd2](https://locatepress.com/book/qmd2)). ![MapDesignCover](img/qmd2_cover.png).
 
 ## Cartographic Map Design 
 
@@ -94,7 +94,7 @@ More recently, cartographers have recognised the central role of aesthetics in c
     4. URL
     5. Notes
 5. **Determine the purpose of your map.** Every map has a story to tell. Maybe you want to show a tourist around your city? Perhaps it is a narrative about crime or socio-economics. Try to create a short narrative like you were telling a friend about visiting the place in your map to create a sense of 'feel' about the place.
-6. **Plan your colour palette.** Overwhelming your reader with many, jarring colours won't help them to interpret your map well, not will it make for an aesthetically pleasing experience. If you are not good at working with colours, find a photo of a key feature of the area and lift colours out of the image until you have about 8 to 10 colours of different hues and intensities. Or check out one of the many online sites like [coolors.co](https://coolors.co/image-picker) ![coolors](img/coolers.png) ![palette](img/coolers-palette.png).
+6. **Plan your colour palette.** Overwhelming your reader with many, jarring colours won't help them to interpret your map well, nor will it make for an aesthetically pleasing experience. If you are not good at working with colours, find a photo of a key feature of the area and lift colours out of the image until you have about 8 to 10 colours of different hues and intensities. Or check out one of the many online sites like [coolors.co](https://coolors.co/image-picker) ![coolors](img/coolers.png) ![palette](img/coolers-palette.png).
 7. **Choose a style.** There are many amazing cartographic styles out there. Do you want something technical? Cartoony? Medieval looking? Find an example of a similar style to what you have in mind and look at what visual elements they use to cartography style. ![Mappa Mundi](img/mappa-mundi.png) - Medieval Mappa Mundi map from the 1300s ([source - Wikipedia](https://en.wikipedia.org/wiki/Mappa_mundi#/media/File:Hereford-Karte.jpg))
 8. **Plan your layout.** If you are making a print map, it can be useful to roughly plan where all the elements such as map, legend, photos or graphics e.t.c. will appear on your layout. That will influence some decisions in your cartography and will help you to organise your work plan.
 9. **Create a set of guidelines.** Create some rules for yourself to follow. Life gets a lot easier when you have a framework to construct your work on than when you are just 'winging it'.
@@ -106,7 +106,7 @@ A typical map, whether on paper or on a web page, consists of not only the map i
 
 > A **title** tells the reader what the map is about, including the purpose or theme, and perhaps the region covered.
 > A **legend** or **key** explains the meaning of the symbols on the map
-> A **neatline** may frames the entire map image, although many maps use negative space to set the map apart
+> A **neatline** may frame the entire map image, although many maps use negative space to set the map apart
 > A **compass rose** or **north arrow** provides orientation
 > **Inset maps** may serve several purposes, such as showing the context of the main map in a larger area, showing more detail for a subset of the main map, showing a separated but related area, or showing related themes for the same region.
 > A **bar scale** or other indication of scale translates between map measurements and real distances.
@@ -158,7 +158,7 @@ Name | Description
 -----|-------------
 [Oxford AI Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/) | Use for raster fill textures. License unknown.
 [QGIS Styles](https://plugins.qgis.org/styles/) | A collection of re-usable QGIS styles you can use to level up your cartography and learn how to produce interesting cartography.
-[QGIS Example Projects](https://plugins.qgis.org/geopackages/) | A collection of QGIS projects which provide reference examples of how different GIS workflows in QGIS.
+[QGIS Example Projects](https://plugins.qgis.org/geopackages/) | A collection of QGIS projects which provide reference examples of a number of different GIS workflows in QGIS.
 [QGIS Example Processing Models](https://plugins.qgis.org/models/)| A collection of processing models which solve different geospatial analysis problems.
 [QGIS Example 3D Models](https://plugins.qgis.org/wavefronts/) | A collection of 3d Objects you can use as point symbol markers for your 3D Scenes.
 [QGIS .lyr Files](https://plugins.qgis.org/layerdefinitions)| A collection of QGIS .lyr files with useful datasets that you can add to your QGIS projects.
