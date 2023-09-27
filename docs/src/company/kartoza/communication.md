@@ -88,3 +88,9 @@ When you are communicating with colleagues, especially if it is something urgent
 * Ask their line manager or a colleague to reach out to them
 
 Continue escalating the frequency and form of communication until you get a response.
+
+# Responding to Client Emails
+
+If a client or potential client writes to you, our expectation is that you should respond to them by next business day. If you reply, please CC in the original recipients  so they know the email has been dealt with. We ask you all to focus on your communication skills as it is a recurring issue that we have in the company and really creates a bad experience for our clients. 
+
+It is quite ok to give just a short reply giving a timeline of when a detailed reply will be forthcoming. If answering an email enquiry requires a substantial amount of time, you can also chat with the client (or ask your project or general manager to do so) and raise a quotation for the work involved in the client request.

@@ -1,3 +1,0 @@
-# QGIS Tutorials
-
-QGIS Tutorials

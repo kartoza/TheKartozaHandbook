@@ -8,7 +8,7 @@ plugins:
       # https://github.com/orzih/mkdocs-with-pdf
       # And don't get it confused with https://github.com/zhaoterryy/mkdocs-pdf-export-plugin
       # which is intended to export a single page at a time
-      output_path: ../pdfs/TheKartozaHandbook.pdf
+      output_path: /tmp/Documentation.pdf
       author: Kartoza Pty (Ltd.)
       # copyright will draw in page.bottom-right
       # do it manually in templates/styles.scss

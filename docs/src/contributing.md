@@ -10,13 +10,13 @@ Community contributions to this documentation site and associated resources are 
 
 The following conventions outline expectations for contributions to this documentation project:
 
-- Use grammar checking tools where available, such as grammarly or spell checking extensions for your IDE
+- Use grammar checking tools where available, such as Grammarly or spell checking extensions for your IDE
 - Request a review for internal changes before they are merged into the main repository
 - Default to British English spellings rather than American English
 - Do not commit sensitive information or links to non-public resources. This includes internal unlisted youtube channels, cloud storage repositories such as nextcloud, or personal details
 - Due to the nature of the contents in this repository, when making large edits that do not create new content, communicate with team members to prevent collisions
 - When producing assets such as images, ensure they are the minimum viable size and do not commit large resources to git
-- Assets and media elements such as images are best left out of the source control where possible. Use an external storage system (e.g. minio/ s3), or paste an image into an image to get a GitHub reference to the media item rather than committing to git. This includes screenshots etc. that are likely to change or be updated over time. Use the assets directory to store assets that are not likely to change such as logos
+- Assets and media elements such as images are best left out of the source control where possible. Use an external storage system (e.g. minio/ s3), or [paste an image into an image]??? to get a GitHub reference to the media item rather than committing to git. This includes screenshots etc. that are likely to change or be updated over time. Use the assets directory to store assets that are not likely to change such as logos
 - When using assets, upload them to a suitable file path according to their primary usage location, e.g. `assets/images/resources/cheatsheets/postgresql/joins.png`
 - Due to the depth and breadth of these resources, it is necessary to manually index new pages in various subcategories to ensure access and discoverability
 - It makes sense to use a consistent legend of emoji for tagging project and documentation items. Although it may have a steep initial learning curve or implementation strategy, using emoji and unicode symbols to tag elements is a fun and intuitive way to attach metadata to elements which makes visually scanning over documents and commit histories much more effective in multiple languages. Please see the [polyglot](polyglot.md) document for more information.
@@ -33,7 +33,7 @@ The following conventions outline expectations for contributions to this documen
 
 ## Translations
 
-Due to the scope and intension for frequent updates to this documentation, additional languages will not be supported at this time.
+Due to the scope and intention for frequent updates to this documentation, additional languages will not be supported at this time.
 
 Translations and i18n are handled by the documentation framework, as outlined in the [mkdocs](https://www.mkdocs.org/dev-guide/translations/) and [mkdocs-material](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/) documentation.
 
