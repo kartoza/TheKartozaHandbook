@@ -23,7 +23,7 @@ The relative size of your circles for process versus creative versus technical a
 
 ## Cartographic Map Design 
 
-### Reference : [Cartography n Map Design](https://en.wikipedia.org/wiki/Cartographic_design "Cartographic Map Design")
+### Reference : [Cartography in Map Design](https://en.wikipedia.org/wiki/Cartographic_design "Cartographic Map Design")
 
 **Definition.** Cartographic design or map design is the process of crafting the appearance of a map, applying the principles of design and knowledge of how maps are used to create a map that has both aesthetic appeal and practical function. It shares this dual goal with almost all forms of design; it also shares with other design, especially graphic design, the three skill sets of artistic talent, scientific reasoning, and technology. As a discipline, it integrates design, geography, and geographic information science.
 
@@ -167,6 +167,7 @@ Name | Description
 
 ## Common issues in cartography
 
+
 No. | Before | Description | After | 
 ----|-------|------------------------ |-------
 1 | ![Overlapping Labels](img/labels-overlap-features-before.png) | Don't let labels overlap features. | ![Overlapping Labels](img/labels-overlap-features-after.png)
@@ -201,6 +202,10 @@ No. | Before | Description | After |
 30 | ![icons](img/icon-before.png) | Make sure your symbols are consistent unless intentionally not consistent. Look at the size, colour and transparency of the symbols. | ![icons](img/icon-after.png)
 31 | ![colour](img/colour-before.png) | When choosing colours for your map, and even your layout, first consider what the purpose of your map is and who is going to be looking at it. Does your map need to cater for colour-blind viewers or viewers with other visual impairments? What data are you representing? Are there colours associated with the data? Does your client have a style guide representing the colours they use? Consider all of these factors when styling your data as well as when you design your map layout. | ![colour](img/colour-after.png)
 32 | ![stroke](img/stroke-size-before.png) | Be careful when adding defined outlines to your data while styling. Make sure the stroke width is not too thick or that the colour is not too pronounced. You can often get away with not having a defined stroke on your features, depending on the feature. | ![stroke](img/stroke-size-after.png)
+33 | ![Suitable CRS](img/CRS.PNG) | Always use CRS that is suitable for the study area. Avoid CRS that distorts your study area.
+34 | ![Callout crossing](img/label_crossing.PNG) | Avoid placing labels such that the callout crosses several other boundaries.
+35 | ![Repetition](img/repetive.png) | Avoid repetition and unnecessary elements such as adding the word 'Legend' to the legend in situations where it is obvious.
+36 | ![Sequential](img/sequential.PNG) | Avoid using a sequential color scheme when you have many categories since it makes it difficult to distinguish between categories, and use diverging, converging, or other schemes. For example, instead of light red to dark red, use red to blue.
 
 
 [//]: # (This is a comment it wont be rendered if you leave a blank line after)
