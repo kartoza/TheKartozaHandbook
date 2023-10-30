@@ -1,26 +1,33 @@
 # Intro
 
-- Evaluating quality, functioning and performance of software
-- Act of examining artifacts and behaviour of software under test by validation and verification.
-- It involves:
-    - analysing product requirements for completeness and correctness
-    - reviewing product architecture
-    - working on improving coding techniques with product developers
-    - examining program behaviour
-- The main goal is normally to detect software failures so that defects may be fixed.
-- It may entail :
-    - examining the code
-    - examining aspects of the code to ensure it does what it's supposed to do
-- Faults and failures in a software my not necessarily mean errors of bugs in the code. It may be a missing feature which is a requirement by the client.
-- For further reading: https://www.geeksforgeeks.org/software-testing-basics/
-    - Comparison between black box testing and White box testing:
-    - ![image.png](../assets/image_1694691053310_0.png)
+Evaluating quality, functioning and performance of software
+
+Act of examining artifacts and behaviour of software under test by validation and verification.
+
+It involves:
+- analysing product requirements for completeness and correctness
+- reviewing product architecture
+- working on improving coding techniques with product developers
+- examining program behaviour
+
+The main goal is normally to detect software failures so that defects may be fixed.
+
+It may entail :
+- examining the code
+- examining aspects of the code to ensure it does what it's supposed to do
+
+Faults and failures in a software my not necessarily mean errors of bugs in the code. It may be a missing feature which is a requirement by the client.
+
+For further reading: https://www.geeksforgeeks.org/software-testing-basics/
+- Comparison between black box testing and White box testing:
+- ![image.png](../assets/image_1694691053310_0.png)
 
 ## Testing approaches
 - There are three testing approaches:
     - 1️⃣ Static testing
     - 2️⃣ Dynamic testing
     - 3️⃣ Passive testing
+
 ### Static testing
 
 - It is mostly regarded as implicit, involves proofreading , checking syntax and data flows etc. (verification).
@@ -49,13 +56,13 @@ Frameworks and packages:
 - pyperformance
 
 Continuous delivery
-	- ![image.png](../assets/image_1694760382980_0.png)
+- ![image.png](../assets/image_1694760382980_0.png)
 
 Acceptance testing
-	- One can say it is the business -facing tests that drive development
-	- They test if the user requirements are met, so to show the developer when to end the development story.
-	- It is run when the system is in a production-like mode.
+- One can say it is the business -facing tests that drive development
+- They test if the user requirements are met, so to show the developer when to end the development story.
+- It is run when the system is in a production-like mode.
 
-- ## Gorilla testing
-	- Rather unconventional. https://www.educative.io/answers/what-is-gorilla-testing
-	- ![image.png](../assets/image_1694087153504_0.png)
+## Gorilla testing
+- Rather unconventional. https://www.educative.io/answers/what-is-gorilla-testing
+- ![image.png](../assets/image_1694087153504_0.png)
