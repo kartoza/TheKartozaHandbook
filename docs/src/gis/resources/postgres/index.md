@@ -6,6 +6,6 @@ PostGIS is a spatial database extender for PostgreSQL (https://postgis.net/).
 
 | Resource focus                                   |                                Description                                 |
 |--------------------------------------------------|:--------------------------------------------------------------------------:|
-| [Service file](./service_file)                   |   Connection parameters for a service name. Requirement for PostgreSQL.    |
-| [PostgreSQL, PostGIS, and QGIS](./postgres_qgis) | Guide which will be useful when working with PostgreSQL, PostGIS and QGIS. |
-| [Issues and workarounds](./issues)               |               Issues a user may encounter, and workarounds.                |
+| [Service file](./service_file/index.md)                   |   Connection parameters for a service name. Requirement for PostgreSQL.    |
+| [PostgreSQL, PostGIS, and QGIS](./postgres_qgis/index.md) | Guide which will be useful when working with PostgreSQL, PostGIS and QGIS. |
+| [Issues and workarounds](./issues(index.md)               |               Issues a user may encounter, and workarounds.                |
