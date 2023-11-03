@@ -51,6 +51,8 @@ These are applications used from the command line.
 
 ### Asciinema 🎞️
 
+![asciicast](img/asciinema-example.cast)
+
 URL: [https://asciinema.org/](https://asciinema.org/)
 Purpose: Terminal session screen recorder
 Notes:
