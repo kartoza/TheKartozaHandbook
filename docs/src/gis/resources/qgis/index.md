@@ -4,5 +4,5 @@ QGIS is a free, open-source software that allows users to create, edit,visualize
 
 | Resource focus                          |                                        Description                                         |
 |-----------------------------------------|:------------------------------------------------------------------------------------------:|
-| [Atlas](./atlas)                        | Atlas allows you to create multiple maps using records in a shapefile or spatial data set. |
-| [QGIS issues and workarounds](./issues) |       Sections on issues a user may encounter with QGIS, and workarounds for issues.       |
+| [Atlas](./atlas/index.md)                        | Atlas allows you to create multiple maps using records in a shapefile or spatial data set. |
+| [QGIS issues and workarounds](./issues/index.md) |       Sections on issues a user may encounter with QGIS, and workarounds for issues.       |

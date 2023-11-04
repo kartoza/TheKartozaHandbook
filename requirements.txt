@@ -3,3 +3,4 @@ mkdocs-with-pdf
 mkdocs-material
 mdx_gh_links
 mkdocs-pdf-export-plugin
+mkdocs-asciinema

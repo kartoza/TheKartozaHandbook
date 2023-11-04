@@ -15,4 +15,4 @@ General opinions can be handed off to [Environment Links](../environments/links.
 ### VSCode
 
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (recommended): Really great UX and insights into git
-- [GitMoji](https://marketplace.visualstudio.com/items?itemName=seatonjiang.gitmoji-vscode) (recommended): Don't forget to [use emoji in your commit messages](/polyglot.md)
+- [GitMoji](https://marketplace.visualstudio.com/items?itemName=seatonjiang.gitmoji-vscode) (recommended): Don't forget to [use emoji in your commit messages](../../polyglot.md)

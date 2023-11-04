@@ -544,9 +544,6 @@ underscore names. For this reason we adopt the following strategy:
   ``FooDialogBase``. By convention the concrete implementation is called the
   same sans the Base suffix e.g. ``FooDialog``.
 
-# Human Interface Guidelines
-
-Please see the dedicated page for [Human Interface Guidelines](human-interface-guidelines).
 
 # Code statistics
 
