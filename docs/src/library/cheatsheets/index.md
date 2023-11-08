@@ -4,7 +4,7 @@
 
 Cheatsheets and snippets for important and common operations.
 
-- [PostgreSQL](./postgresql)
-- [BASH](./bash)
-- [Kubectl](./kubectl)
-- [OSGeo4W](./osgeo4w)
+- [PostgreSQL](./postgresql.md)
+- [BASH](./bash.md)
+- [Kubectl](./kubectl.md)
+- [OSGeo4W](./osgeo4w.md)

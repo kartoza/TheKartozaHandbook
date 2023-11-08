@@ -26,11 +26,11 @@ The purpose and function of this collection of documents is to perform the follo
 
 Kartoza is a company that specializes in Open Source Geospatial solutions. As a result, topics covered by this documentation will be limited to categories relevant to the operations of Kartoza. These categories are outlined as follows:
 
-- [Company](/company): General practices and procedures for Kartoza staff
-- [GIS](/gis): Resources for Geographic Information Systems and data
-- [Development](/development): Software development processes, tools, and conventions
-- [DevOps](/devops): Developer operations and system administration
-- [Resources](/library): Cheatsheets, links, media, and other resources
+- [Company](company/kartoza/index.md): General practices and procedures for Kartoza staff
+- [GIS](gis/index.md): Resources for Geographic Information Systems and data
+- [Development](development/index.md): Software development processes, tools, and conventions
+- [DevOps](devops/index.md): Developer operations and system administration
+- [Resources](library/index.md): Cheatsheets, links, media, and other resources
 
 This repository is limited to these categories, with some slight overlap in domain verticals.
 

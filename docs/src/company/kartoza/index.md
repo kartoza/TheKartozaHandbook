@@ -10,7 +10,7 @@ Kartoza is a South Africa-based Free and Open Source GIS (FOSSGIS) service provi
 
 Kartoza was formed as a merger between Linfiniti and Afrispatial.
 
-![kartoza logo](./assets/logo.svg)
+![kartoza logo](./img/logo.svg)
 
 Learn more at our company website [https://kartoza.com](https://kartoza.com)
 
@@ -18,7 +18,7 @@ Learn more at our company website [https://kartoza.com](https://kartoza.com)
 
 Working at Kartoza:
 
-* [Your Kartoza Computer](./setting_up_your_computer/)
+* [Your Kartoza Computer](./setting_up_your_computer.md)
 * [Essential Software](./essential_software.md)
 * [Daily Workflow](./daily_workflow.md)
 * [Communication](./communication.md)
