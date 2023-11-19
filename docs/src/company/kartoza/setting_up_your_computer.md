@@ -102,4 +102,24 @@ You need to have online accounts with the following services:
 ![NextCloud 2FA](img/nextcloud-2fa.png)
 
 
-## Skills
+## Kartoza VPN
+
+We use wireguard to access our internal systems.
+
+- get the config QR code from Leon via screenshare
+- Use the Gnome QR Code app to scan it
+- Save the resulting file to e.g. kartoza-vpn.conf
+- Run this command:
+
+```
+nmcli connection import type wireguard file ~/.wireguard/kartoza-vpn.conf
+```
+- The new entry should be added to your network manager now:
+
+- ![image.png](img/vpn.png)
+
+
+## Kartoza Browser
+
+![](img/ssl-certificate.gif)
+![](img/certificate.png)

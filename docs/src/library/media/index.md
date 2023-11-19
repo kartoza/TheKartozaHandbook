@@ -8,4 +8,4 @@ Here you can find links to media releases, social media feeds, and notices from 
 - [GitHub](https://github.com/kartoza)
 - [Twitter](https://twitter.com/KartozaGeo)
 - [DockerHub](https://hub.docker.com/r/kartoza/)
-- [Newsletters](./newsletters)
+- [Newsletters](./newsletters.md)
