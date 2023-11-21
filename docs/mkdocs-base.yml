@@ -60,6 +60,7 @@ nav:
                   - Languages: development/technologies/index.md
                   - Environments: development/environments/index.md
                   - Resources: development/resources/index.md
+                  - Testing: development/testing/index.md
                   - "": development/developer_practices.md
                   - "": development/conventions/coding_standards.md
                   - "": development/conventions/dev_processes.md
