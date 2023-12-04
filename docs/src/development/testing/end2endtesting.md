@@ -57,6 +57,11 @@ To set up a new playwright project use:
 npm init playwright@latest
 ```
 
+To update an existing project use:
+```bash
+npm install -D @playwright/test@latest
+```
+
 To configure playwright step by step, you will have to:
 
 - To install all browsers and all its dependencies:
@@ -69,7 +74,9 @@ npx playwright install --with-deps
 npx playwright install chromium --with-deps
 ```
 
-### For Continuous Integration(`CI`):
+## Setting up playwright
+
+### For continuous integration(`CI`):
 
 Playwright does support Continuous Integration.
 For more information, visit the [playwright ci docs](https://playwright.dev/docs/ci-intro).
@@ -113,7 +120,9 @@ In setting up environment for staging tests, it uses the same approach as in set
 The only difference is that installing dependencies for CI won't be required.
 
 **NOTE:** Both `ci-tests` and `staging-tests` directory will have scripts to assist in setting up the environment easily.
+
 The scripts are:
+
 - `create-auth.sh`: Used to create a cookie file with the session state saved.
 - `record-test.sh`: Used to record new tests.
 - `run-tests.sh`: Used to run tests.
@@ -122,36 +131,48 @@ These scripts check if you have the required environment is set up, if it is not
 After setting up the environment, the script will proceed to run the next step.
 
 - Start off by creating the session state file.
-![10](./img/testing-e2e-playwright-10.png)
+![session state](./img/testing-e2e-playwright-10.png)
 
   1. Shows how to run the script in your terminal
   2. The script will prompt you if you want to save the `auth.json` file.
 
 - Proceed to log in.
-![16](./img/testing-e2e-playwright-16.png)
+![Log in](./img/testing-e2e-playwright-16.png)
 
 - The `auth.json` will be created. You can then proceed to record your tests.
-![11](./img/testing-e2e-playwright-11.png)
+![Auth file](./img/testing-e2e-playwright-11.png)
 
 - To record your tests, proceed to run the next script `record-test.sh`.
 The script takes a name argument for the file to be created `./record-test.sh demo`.
-![12](./img/testing-e2e-playwright-12.png)
+![Record script](./img/testing-e2e-playwright-12.png)
 
 - The script will open a browser and load the required page.
 It will use the session state that was previously created.
-![13](./img/testing-e2e-playwright-13.png)
-![16](./img/testing-e2e-playwright-17.png)
+![Test file](./img/testing-e2e-playwright-13.png)
+![Browser context](./img/testing-e2e-playwright-17.png)
 
 - Click on the page elements to record a test.
-![18](./img/testing-e2e-playwright-18.gif)
+![Click elements](./img/testing-e2e-playwright-18.gif)
+
+- **NOTE:** For playwright version 1.40 and above, you get a mini-toolbar that helps you in:
+
+  - Assert if an element is visible.
+  - Assert if an element contains a specific text
+  - Assert if an element has a certain value
+![Recording assertions](./img/testing-e2e-playwright-19.gif)
+
+- This is the generated script from the above action of recording tests.
+`expect` is used in assertions as seen below.
+![Generated script](./img/testing-e2e-playwright-20.png)
+
 
 - To run the tests, use `./run-tests.sh`. 
-![15](./img/testing-e2e-playwright-15.png)
+![run tests](./img/testing-e2e-playwright-15.png)
 
 - It will open a GUI playwright test runner with all tests. You can then proceed to run the tests.
-![14](./img/testing-e2e-playwright-14.png)
+![GUI test runner](./img/testing-e2e-playwright-14.png)
 
-### Alternative: playwright in visual studio code
+### For visual studio code
 
 Install extension `Playwright extention`
 
@@ -189,7 +210,7 @@ It will install and set up the project.
 
 ![Installation process](./img/testing-e2e-playwright-6.png)
 
-#### Running playwright tests in vscode
+### Running playwright tests in visual studio code
 
 To run tests in vscode, click on this testing icon.
 
