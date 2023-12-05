@@ -135,6 +135,58 @@ def test_mask_raster(raster_data, vector_path):
 
 `pytest-django` is a pytest plugin used to test django applications.
 
+### Installation
+
+To install `pytest-django`, open you terminal and activate your environment.
+Then type:
+```bash
+pip install pytest-django
+```
+
+### Setting up and configuration
+
+`pytest-django` is set up in the `django_project` directory.
+Navigate to the `django_project`, ensure there is a `pytest.ini` with the following configurations:
+```
+[pytest]
+env =
+    DJANGO_SETTINGS_MODULE=core.settings.test
+    AZURE_B2C_CLIENT_ID=
+```
+
+In the `django_project`, there are django apps each in a different directory.
+You need to create a `tests` folder in each directory and add an `__init.py__` file to make a package.
+
+In the `tests` directory, create tests based on [guidelines](./functionaltesting.md#creating-tests).
+An example of the directory structure:
+```bash
+$ project             # root directory
+    django_project    # django project
+      __init__.py
+      core
+  ->  <django_app_1>  # django application
+        __init__.py
+    ->  tests         # tests directory
+          __init__.py
+      ->  test_example.py   # test file <test_*.py>
+      frontend
+      manage.py
+      pytest.ini
+```
+
+### Running tests
+
+To run `pytest` in django, navigate to the `django_project` directory the run:
+```bash
+pytest
+```
+All the tests in each django application will be executed.
+
+To run a particular test use:
+```bash
+pytest <django_app>/tests/test_example.py
+```
+
 ## Pytest with BDD
 
 BDD library for pytest.
