@@ -18,7 +18,7 @@ TDD workflow:
 
 Navigate to the `django_project` directory.
 
-`pytest` is used to create this tests. It is quite similar to [Fucntional testing](functionaltesting.md#).
+`pytest` is used to create this tests. It is quite similar to [Functional testing](functionaltesting.md).
 `pytest` is installed while setting up the docker containers for the project.
 Ensure `pytest-django` is added to the settings.
 
@@ -32,14 +32,14 @@ env =
     DJANGO_SETTINGS_MODULE=core.settings.test
     AZURE_B2C_CLIENT_ID=
 ```
-In this cases, `pytest` uses the in-built django test cases(`core.settings.test`).
+In this case, `pytest` uses the in-built django test cases(`core.settings.test`).
 
 The convention for using pytest is the same:
 - Test files organisation: Having a `tests/` directory in each django application.
 - Naming convention for test files: `tests_<file_name>.py`
 - Naming convention for test functions: `test_<function_name>` 
 
-**Note:** Each django application in the django directory should have its own tests directory.
+**Note:** Each django application in the django directory should have its own `tests/` directory.
 
 ### Adding tests
 
@@ -79,7 +79,7 @@ class CheckEmailExistsViewTest(TestCase):
 
     # test function 
     # Note: naming convention
-    def test_email_exists(self)
+    def test_email_exists(self):
         url = reverse('check_email_exists')
         data = {
             'email': 'test@gmail.com',
