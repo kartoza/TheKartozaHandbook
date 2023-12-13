@@ -4,11 +4,15 @@ Regression testing is a type of testing after a code update to ensure that the c
 
 This means that a testing suite needs to exist prior to conducting regression tests.
 
+Regression testing logic:
+
+![regression testing logic](./img/drawio/regression-testing.drawio.png)
+
 Regression tests can be done in various approaches:
 
-- CI/CD
-- Writing tests
-- Recording tests
+- CI/CD tests
+- Functional and TDD tests
+- End-to-end tests
 
 ## Regression tests in CI/CD
 In CI/CD, regression tests can be set up in GitHub actions.
@@ -21,18 +25,18 @@ The approach:
 
 - Build the containers and set up the project
 - Test various aspects of the software
-- If all checks pass, the changes are open to merging
+- If all checks pass, the changes are open to being merged to the main branch.
 
-## Writing tests
+## Functional and TDD tests
 
 This is another way to conduct regression tests.
 This approach can be implemented using various software testing techniques.
 Examples are:
 
-- Unit testing
-- Functional testing
+- [Tet-Driven Development](./tdd.md)
+- [Functional testing](./functionaltesting.md)
 
-## Recording tests
+## End-to-end tests
 
 Recording tests can be done using [playwright](https://playwright.dev/).
 Playwright allows one to be able to record their workflow step by step then generates a script.
