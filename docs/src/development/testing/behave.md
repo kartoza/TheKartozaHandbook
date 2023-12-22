@@ -104,8 +104,8 @@ For a more comprehensive tutorial, kindly look at [behave tutorial](https://beha
 #### Setting up `behave_django`
 
 To install: `pip install behave_django`
-S
-Add `behave_django` as an installed application in `core.settings.dev` module.
+
+Add `behave_django` to `INSTALLED_APPS` in `core.settings.dev` module.
 
 Under `django_project` directory:
 
