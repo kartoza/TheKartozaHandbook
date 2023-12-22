@@ -74,7 +74,7 @@ Software testing touches on a few concepts:
   - [Test driven development](tdd.md)
   - [Behaviour driven development](bdd.md)
   - [Functional testing](functionaltesting.md)
-  - [Integrated testing](integratedtesting.md)
+  - [Integrated testing](integrationtesting.md)
   - [Regression testing](regression.md)
   - [System testing](systemtesting.md)
 
