@@ -97,15 +97,132 @@ For a more comprehensive tutorial, kindly look at [behave tutorial](https://beha
 
 - There are two projects that integrate django and behave:
 	- [django-behave](https://github.com/django-behave/django-behave/blob/master/README.md#how-to-use)
-    - [behave-django](https://behave-django.readthedocs.io/en/latest/installation.html)
+    - [behave_django](https://behave-django.readthedocs.io/en/latest/installation.html)
 
-### Behave-django
+### `behave_django`
 
-#### Setting up Behave-django
+#### Setting up `behave_django`
 
-For the tutorial clone:
+To install: `pip install behave_django`
+S
+Add `behave_django` as an installed application in `core.settings.dev` module.
+
+Under `django_project` directory:
+
+- Create `tests` directory and `behave.ini` file
 ```bash
+mkdir tests
 
+touch behave.ini
 ```
-#### Creating tests
+- In the `behave.ini` file, add the following:
+```ini
+[behave]
+paths = tests/acceptance
+junit_directory = tests/reports
+junit = yes
+```
+
+- Under `tests`,  create `acceptance` directory:
+```bash
+cd tests
+
+mkdir acceptance
+```
+
+- Under `acceptance` create two directories: `features` and `steps`
+```bash
+mkdir features steps
+```
+- In the `acceptance` directory create an `environment.py` file
+```python
+"""
+behave environment module
+"""
+# Customise according to project
+
+def before_feature(context, feature):
+    if feature.name == 'Fixture loading':
+        context.fixtures = ['behave-fixtures.json']
+
+    elif feature.name == 'Fixture loading with decorator':
+        # Including empty fixture to test that #92 is fixed
+        context.fixtures = ['empty-fixture.json']
+
+
+def before_scenario(context, scenario):
+    if scenario.name == 'Load fixtures for this scenario and feature':
+        context.fixtures.append('behave-second-fixture.json')
+
+    if scenario.name == 'Load fixtures then reset sequences':
+        context.fixtures.append('behave-second-fixture.json')
+        context.reset_sequences = True
+
+    if scenario.name == 'Load fixtures with databases option':
+        context.databases = '__all__'
+
+
+def django_ready(context):
+    context.django = True
+```
+
+#### Creating bdd tests
+
+Add `*.feature ` file in features directory.
+Feature files use the Gherkin syntax.
+
+```Gherkin
+Feature: auth
+
+    Scenario: Unauthenticated user can't access the page
+        Given I am not authenticated
+        When I access the page
+        Then Status code is 302
+
+
+    Scenario: Authenticated user can access the page
+        Given I am authenticated
+        When I access the page
+        Then Status code is 200
+```
+
+Add `*.py` file in steps directory.
+
+```python
+from behave import given, when, then, use_step_matcher
+from django.contrib.auth.models import User
+
+use_step_matcher("re")
+
+
+@given("I am not authenticated")
+def not_auth(context):
+    pass
+
+
+@when("I access the page")
+def access_page(context):
+    context.response = context.test.client.get("/map/")
+
+
+@then("Status code is (?P<status>\d+)")
+def status_code(context, status):
+    code = context.response.status_code
+    assert code == int(status), "{0} != {1}".format(code, status)
+
+
+@given("I am authenticated")
+def auth_success(context):
+    user = User.objects.create_superuser("admin", "admin@example.com", "admin")
+    context.test.client.force_login(user)
+```
+
 #### Running tests
+
+First collect static: `python manage.py collectstatic`
+
+To run: `python manage.py behave`
+
+Results:
+
+![bdd-results](./img/testing-bdd-behave-3.png)
