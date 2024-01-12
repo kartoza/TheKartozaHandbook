@@ -106,6 +106,15 @@ You need to have online accounts with the following services:
 
 We use wireguard to access our internal systems.
 
+On ubuntu you can install it like this:
+
+```
+sudo apt install wireguard
+```
+
+Also you can install the Gnome QR code app from here: https://apps.gnome.org/Decoder/
+
+
 - get the config QR code from Leon via screenshare
 - Use the Gnome QR Code app to scan it
 - Save the resulting file to e.g. kartoza-vpn.conf
