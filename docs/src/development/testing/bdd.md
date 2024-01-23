@@ -21,7 +21,201 @@ Gherkin communicates to the developer in a human-like language.
 [Behave](https://behave.readthedocs.io/en/latest/) is a tool implemented in python to make all this possible.
 
 
-## Installation
+## Playwright-BDD
+
+`playwright-bdd` is a nodejs package that allows you to work on behaviour-driven development.
+It runs the bdd tests using [playwright runner](https://playwright.dev/docs/intro).
+
+`playwright-bdd` combines the power of [CucumberJS](https://github.com/cucumber/cucumber-js) and [playwright](https://playwright.dev/docs/intro).
+
+### Installation
+
+Create a directory `playwright-bdd`.
+
+To install `playwright-bdd` using npm:
+
+```bash
+npm i -D playwright-bdd
+```
+This package uses `@playwright/test` and `@cucumber/cucumber` as a peer dependencies.
+For brand-new projects they will be installed automatically with playwright-bdd.
+
+For existing projects you may need to update them to the latest versions:
+
+```bash
+npm i -D @playwright/test @cucumber/cucumber
+```
+
+To install playwright browsers:
+
+```bash
+npx playwright install
+```
+
+### Setting up
+
+The examples are based off [sawps](https://github.com/kartoza/sawps) project.
+
+In the playwright directory, create two directories:
+
+- features: Contains `*.feature` files that use the Gherkin syntax
+- steps: Contains `*.spec.ts` files that contains the steps taken when testing the features.
+
+Copy the following documents:
+
+```Gherkin
+# map-filter.feature
+Feature: Map filter
+
+    Map filter
+    Scenario: Map filter
+        Given I am on the project landing page "http://localhost:61100/"
+        When I click on "Explore" button
+        Then I should be redirected to the "**/map" view
+        Then I should see the map canvas on the page
+        When I configure filters
+        Then I should see data on the map and legend should be visible
+```
+
+```TypeScript
+// map-filter.spec.ts
+
+import { expect } from '@playwright/test';
+import { createBdd } from 'playwright-bdd';
+
+const { Given, When, Then } = createBdd();
+
+/* Scenario: Check Explore page */
+
+Given('I am on the project landing page {string}', async ({ page }, url) => {
+  await page.goto(url);
+  await page.getByRole('link', { name: "LOGIN" }).click();
+  await page.getByPlaceholder('E-mail address').fill('admin@example.com');
+  await page.getByPlaceholder('Password').fill('admin');
+  await page.getByRole('button', { name: 'LOGIN' }).click();
+});
+
+When('I click on {string} button', async ({ page }, name) => {
+  await page.getByRole('link', { name }).first().click();
+});
+
+Then('I should be redirected to the {string} view', async ({ page }, url) => {
+  //await expect(page).toHaveTitle(new RegExp(keyword));
+  await page.waitForURL(url);
+});
+
+Then('I should see the map canvas on the page', async ({ page },) => {
+  await expect(page.getByRole('tab', { name: 'MAP' })).toBeVisible();
+  // Map canvas is visible
+  const map = 'canvas.maplibregl-canvas.mapboxgl-canvas';
+  await expect(page.locator(map)).toBeVisible();
+});
+
+When('I configure filters', async ({ page },) => {
+  await expect(page.getByRole('tab', { name: 'MAP' })).toBeVisible();
+  // Map canvas is visible
+  await page.locator('#combo-box-demo').click();
+
+  await page.getByRole('option', { name: 'Panthera leo' }).click();
+
+  await page.locator('nav').filter({ hasText: 'Organisation selected' }).getByLabel('Open').click();
+
+  await page.getByRole('button', { name: 'Close' }).click();
+
+});
+
+Then('I should see data on the map and legend should be visible', async ({ page },) => {
+
+  await expect(page.getByText('Panthera leo population (2024)')).toBeVisible();
+
+  // Map canvas is visible
+  const map = 'canvas.maplibregl-canvas.mapboxgl-canvas';
+
+  await expect(page.locator(map)).toBeVisible();
+});
+```
+
+Create a `playwright.config.ts` file.
+This file will contain the playwright configurations necessary for the project.
+
+Copy the following contents to the file:
+
+```TypeScript
+import { defineConfig, devices } from '@playwright/test';
+import { defineBddConfig } from 'playwright-bdd';
+
+/**
+ * Read environment variables from file.
+ * https://github.com/motdotla/dotenv
+ */
+// require('dotenv').config();
+
+/**
+ * See https://playwright.dev/docs/test-configuration.
+ */
+
+/* Test directory with features and steps */
+const testDir = defineBddConfig({
+  paths: ['features/*.feature'],
+  require: ['steps/*.ts'],
+  verbose: true,
+});
+
+export default defineConfig({
+  testDir,
+  /* timeout */
+  timeout: 30 * 1000,
+  /* Run tests in files in parallel */
+  fullyParallel: true,
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  forbidOnly: !!process.env.CI,
+  /* Retry on CI only */
+  retries: process.env.CI ? 2 : 0,
+  /* Opt out of parallel tests on CI. */
+  workers: process.env.CI ? 1 : undefined,
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  reporter: 'html',
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  use: {
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    baseURL: 'http://localhost:61100/',
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
+  },
+
+  /* Configure projects for major browsers */
+  projects: [
+    //{ name: 'setup', testMatch: /.*\.setup\.ts/ },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'],
+      // Use prepared auth state.
+     },
+    },
+});
+```
+
+Create a `.gitignore` file at the root directory of the playwright-bdd project.
+```gitignore
+**/.features-gen/**/*.spec.js
+```
+This will ignore the generated tests not to be committed by git.
+
+### Running tests
+
+To run tests on your terminal;
+```bash
+npx bddgen && npx playwright test
+```
+The first command `npx bddgen` generates the tests from the feature and step files.
+`npx playwright test` runs the test using the playwright runner.
+
+For more on playwright-bdd, review the docs [here](https://vitalets.github.io/playwright-bdd/#/getting-started).
+
+
+## behave
+### Installation
 
 Behave installation:
 
@@ -35,7 +229,7 @@ Behave installation:
   pip install behave
 ```
 
-## Gherkin Feature Testing language
+### Gherkin Feature Testing language
 
 Features are made up of scenarios:
 ```Gherkin
@@ -93,7 +287,7 @@ For a more comprehensive tutorial, kindly look at [behave tutorial](https://beha
 
 ![Testing layout](./img/testing-bdd-behave-2.png)
 
-## Django test integration
+### Django test integration
 
 - There are two projects that integrate django and behave:
 	- [django-behave](https://github.com/django-behave/django-behave/blob/master/README.md#how-to-use)
@@ -101,7 +295,7 @@ For a more comprehensive tutorial, kindly look at [behave tutorial](https://beha
 
 ### `behave_django`
 
-#### Setting up `behave_django`
+##### Setting up `behave_django`
 
 To install: `pip install behave_django`
 
@@ -166,7 +360,7 @@ def django_ready(context):
     context.django = True
 ```
 
-#### Creating bdd tests
+##### Creating bdd tests
 
 Add `*.feature ` file in features directory.
 Feature files use the Gherkin syntax.
@@ -217,7 +411,7 @@ def auth_success(context):
     context.test.client.force_login(user)
 ```
 
-#### Running tests
+##### Running tests
 
 First collect static: `python manage.py collectstatic`
 

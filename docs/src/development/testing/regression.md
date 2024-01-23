@@ -33,7 +33,7 @@ This is another way to conduct regression tests.
 This approach can be implemented using various software testing techniques.
 Examples are:
 
-- [Tet-Driven Development](./tdd.md)
+- [Test-Driven Development](./tdd.md)
 - [Functional testing](./functionaltesting.md)
 
 ## End-to-end tests

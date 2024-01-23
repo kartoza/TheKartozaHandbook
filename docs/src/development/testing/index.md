@@ -84,6 +84,7 @@ Frameworks and packages:
 
 - [behave](https://behave.readthedocs.io/en/latest/) 
 - [playwright](https://playwright.dev/)
+- [playwright-bdd](https://vitalets.github.io/playwright-bdd/#/)
 - [pytest](https://docs.pytest.org/en/latest/) 
 - [black](https://black.readthedocs.io/en/stable/)
 - [pyperformance](https://pyperformance.readthedocs.io/)
