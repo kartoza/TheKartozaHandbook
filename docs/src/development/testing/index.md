@@ -97,3 +97,7 @@ Start testing as early as possible in the development life cycle.
 Ensure that new changes do not negatively impact existing functionality(Automated).
 - `Test Data Management`:
 Use realistic and diverse test data to uncover potential issues.
+
+## QGIS-Django testing
+
+For [QGIS-Django testing](./qgis-e2e-testing.md).
