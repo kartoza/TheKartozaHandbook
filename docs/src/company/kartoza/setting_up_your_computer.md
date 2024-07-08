@@ -128,7 +128,79 @@ nmcli connection import type wireguard file ~/.wireguard/kartoza-vpn.conf
 - ![image.png](img/vpn.png)
 
 
-## Kartoza Browser
+## Installing and Importing the CA Certificate for Secure Access to Internal Company Websites
+
+---
+
+![](img/certificate.png)
+
+Installing the Kartoza CA (Certificate Authority) certificate and importing it into your browsers is necessary for secure access to certain internal company websites.
+
+### Why Install the CA Certificate?
+
+1. **Secure Communication**: CA certificates are used to establish secure connections (HTTPS) between your browser and web servers. This ensures that data transmitted between the client and server is encrypted and secure.
+  
+2. **Trust Verification**: When you access our website, your browser checks the website's SSL/TLS certificate to verify its authenticity. This SSL/TLS certificate is issued by a trusted CA. If the CA certificate is not recognized by your browser, it will display a warning, indicating that the connection may not be secure.
+  
+3. **Internal Websites**: Many companies use self-signed certificates or certificates issued by an internal CA for their internal websites. These internal CAs are not recognized by default by most browsers. Installing the internal CA certificate in your browser ensures that the browser trusts the certificates issued by the internal CA, allowing secure access to the internal websites without warnings.
+
+### Steps to Install a CA Certificate
 
 ![](img/ssl-certificate.gif)
-![](img/certificate.png)
+
+### 1. Obtain the CA Certificate
+
+For Developers, IT engineers and DevOps engineers, the Kartoza CA-certificate can be downloaded from the [devops](https://github.com/kartoza/kartoza-devops/tree/main/certificates) repository. One should have access to the Kartoza organization before trying to down load the certificate. The certificate will either a have a `.crt` or `.pem` extension.
+
+### 2. Install the CA Certificate on Your Machine
+
+#### For Windows:
+
+1. Double-click the CA certificate file.
+2. Click "Install Certificate".
+3. Choose "Local Machine" and click "Next".
+4. Select "Place all certificates in the following store".
+5. Click "Browse" and select "Trusted Root Certification Authorities".
+6. Click "Next" and then "Finish".
+
+#### For macOS:
+
+1. Double-click the CA certificate file.
+2. The Keychain Access application will open.
+3. Select "System" from the keychains list.
+4. Drag the certificate file into the Keychain Access window.
+5. Double-click the imported certificate.
+6. Expand the "Trust" section and select "Always Trust".
+
+#### For Linux:
+
+1. Copy the CA certificate file to the `/usr/local/share/ca-certificates` directory:
+
+   ```bash
+   sudo cp kartoza_ca_chain.crt /usr/local/share/ca-certificates/
+   ```
+
+2. Update the CA certificates:
+
+   ```bash
+   sudo update-ca-certificates
+   ```
+
+### 3. Import the CA Certificate into Your Browser
+
+#### For Google Chrome:
+
+1. Open Chrome and go to `Settings`.
+2. Search for "Certificates" and click on "Manage certificates".
+3. Go to the "Authorities" tab.
+4. Click "Import" and select the CA certificate file.
+5. Follow the prompts to complete the import.
+
+#### For Firefox:
+
+1. Open Firefox and go to `Preferences` or `Options`.
+2. Search for "Certificates" and click on "View Certificates".
+3. Go to the "Authorities" tab.
+4. Click "Import" and select the CA certificate file.
+5. Ensure the option to "Trust this CA to identify websites" is checked.
+6. Click "OK".
