@@ -144,7 +144,7 @@ Installing the Kartoza CA (Certificate Authority) certificate and importing it i
   
 3. **Internal Websites**: Many companies use self-signed certificates or certificates issued by an internal CA for their internal websites. These internal CAs are not recognized by default by most browsers. Installing the internal CA certificate in your browser ensures that the browser trusts the certificates issued by the internal CA, allowing secure access to the internal websites without warnings.
 
-### Steps to Install a CA Certificate
+### Steps to Install the CA Certificate
 
 ![](img/ssl-certificate.gif)
 
