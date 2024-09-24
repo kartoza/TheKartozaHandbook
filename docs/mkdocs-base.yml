@@ -13,7 +13,12 @@ markdown_extensions:
                   anchor_linenums: true
         - pymdownx.inlinehilite
         #- mdx_truly_sane_lists
-
+        - pymdownx.superfences:
+           # make exceptions to highlighting of code:
+           custom_fences:
+             - name: mermaid
+               class: mermaid
+               format: !!python/name:mermaid2.fence_mermaid_custom
         - markdown.extensions.toc:
            slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
            permalink: "\ue157"
@@ -49,6 +54,7 @@ nav:
                   - Staff Computers: company/kartoza/setting_up_your_computer.md
                   - Essential Software: company/kartoza/essential_software.md
                   - Daily Workflow: company/kartoza/daily_workflow.md
+                  - Working in Sprints: company/kartoza/working_in_sprints.md
                   - Communication: company/kartoza/communication.md
         - GIS:
                   - Cartography Guidelines: gis/cartography/cartography-guidelines.md
@@ -61,6 +67,13 @@ nav:
                   - Environments: development/environments/index.md
                   - Resources: development/resources/index.md
                   - Testing: development/testing/index.md
+                  - "": development/testing/bdd.md
+                  - "": development/testing/end2endtesting.md
+                  - "": development/testing/functionaltesting.md
+                  - "": development/testing/integrationtesting.md
+                  - "": development/testing/regression.md
+                  - "": development/testing/systemtesting.md
+                  - "": development/testing/tdd.md
                   - "": development/developer_practices.md
                   - "": development/conventions/coding_standards.md
                   - "": development/conventions/dev_processes.md

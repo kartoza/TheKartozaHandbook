@@ -4,3 +4,4 @@ mdx_gh_links
 mkdocs-with-pdf
 mkdocs-pdf-export-plugin
 mkdocs-asciinema
+mkdocs-mermaid2-plugin

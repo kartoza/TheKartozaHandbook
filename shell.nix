@@ -20,6 +20,14 @@ in pkgs.mkShell rec {
     pythonPackages.requests
     pythonPackages.pygobject3
 
+    # For PDF production  in mkdocs
+    pythonPackages.venvShellHook
+    python311Packages.weasyprint
+    cairo
+    pango
+    gdk-pixbuf
+    glib
+    gtk2
     # In this particular example, in order to compile any binary extensions they may
     # require, the Python modules listed in the hypothetical requirements.txt need
     # the following packages to be installed locally:
@@ -34,6 +42,7 @@ in pkgs.mkShell rec {
     zlib
     gnused
     httplz # for serving up the static site while testing
+    vscode
   ];
 
   # Run this command, only after creating the virtual environment

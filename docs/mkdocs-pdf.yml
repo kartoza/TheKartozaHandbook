@@ -2,6 +2,7 @@
 # scripts for how this is used
 
 plugins:
+  - mermaid2
   - with-pdf:
       # Generate the whole site as a single PDF
       # Full details on this plugin here:

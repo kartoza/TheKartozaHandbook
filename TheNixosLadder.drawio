@@ -1,0 +1,174 @@
+<mxfile host="Electron" modified="2024-07-08T12:47:25.739Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/122.0.6261.156 Electron/29.4.2 Safari/537.36" etag="UAb-pVyO8-TgfnDoFMQF" version="24.3.1" type="device">
+  <diagram name="Page-1" id="kjjziN4DRTwDH12FPqou">
+    <mxGraphModel dx="2876" dy="2353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="600" as="sourcePoint" />
+            <mxPoint x="940" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-3" value="NixOS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="550" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-4" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-5" value="OS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-6" value="Package Manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-7" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-8" value="Ubuntu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-9" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-10" value="RH" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-11" value="MacOS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-12" value="Windows / WSL2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="667" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-13" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-14" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="667" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-15" value="Nix" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-16" value="Nix Install A Single Package for your profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="160" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="nix-env -iA&amp;nbsp;&lt;div&gt;nixpkgs.hello&lt;/div&gt;" link="nix-env -iA nixpkgs.hello" id="8bRmlou1UEH4qa6OKYU_-17">
+          <mxCell style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+            <mxGeometry x="145" y="300" width="150" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-18" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="170" y="230" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-20" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-21" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="245" y="200" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-23" value="🟢" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="200" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-24" value="Nix Install A Single Package for this session" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="10" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="nix-shell -p hello" link="nix-env -iA nixpkgs.hello" id="8bRmlou1UEH4qa6OKYU_-25">
+          <mxCell style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+            <mxGeometry x="-5" y="400" width="150" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-26" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="20" y="330" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-27" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="80" y="330" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-29" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-30" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="95" y="300" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-31" value="Nix Install a package declaratively for a user" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="335" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-33" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="345" y="120" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-34" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="405" y="120" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-37" value="🟢" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="355" y="80" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-39" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-40" value="Persistent" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#7FBA42;" vertex="1" parent="1">
+          <mxGeometry x="376" width="38" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-41" value="Not Persistent" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#DA4026;" vertex="1" parent="1">
+          <mxGeometry x="201" y="130" width="38" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-42" value="Not Persistent" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#DA4026;" vertex="1" parent="1">
+          <mxGeometry x="51" y="218" width="38" height="52" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: &#39;Droid Sans Mono&#39;, &#39;monospace&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;users&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;users&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.timlinux&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;packages&lt;/span&gt; &lt;span style=&quot;color: rgb(212, 212, 212);&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: rgb(86, 156, 214);&quot;&gt;with&lt;/span&gt; &lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;pkgs&lt;/span&gt;; [&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;asciiquarium&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    ];&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;  };&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" link="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: &#39;Droid Sans Mono&#39;, &#39;monospace&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;users&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;users&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #569cd6;font-style: italic;&quot;&gt;${&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;font-style: italic;&quot;&gt;username&lt;/span&gt;&lt;span style=&quot;color: #569cd6;font-style: italic;&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;isNormalUser&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;initialPassword&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;font-style: italic;&quot;&gt;${&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;font-style: italic;&quot;&gt;username&lt;/span&gt;&lt;span style=&quot;color: #569cd6;font-style: italic;&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;description&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;Tim Sutton&quot;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;extraGroups&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;wheel&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;disk&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;libvirtd&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;dialout&quot;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# needed for arduino&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;docker&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;audio&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;video&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;input&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;systemd-journal&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;networkmanager&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;network&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;davfs2&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;adbusers&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;scanner&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;lp&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;lpadmin&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;i2c&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    ];&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;openssh&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;authorizedKeys&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;keys&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      (&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;builtins&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;readFile&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;./public-keys/id_ed25519_tim.pub&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    ];&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;packages&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;with&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;pkgs&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;; [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;popcorntime&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;freetube&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    ];&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;  };&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" id="8bRmlou1UEH4qa6OKYU_-43">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="280" y="-130" width="240" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-44" value="Nix Install a package set declaratively for all users for a single host" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-45" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="552.5" y="-30" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-46" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="612.5" y="-30" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-49" value="Persistent" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#7FBA42;" vertex="1" parent="1">
+          <mxGeometry x="583.5" y="-150" width="38" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-50" value="🟢" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="621.5" y="-70" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-51" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="562.5" y="-70" width="50" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: &#39;Droid Sans Mono&#39;, &#39;monospace&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;imports&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    (&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;modulesPath&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;/installer/scan/not-detected.nix&quot;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../configuration/desktop-gnome-x11.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../configuration/desktop-apps.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;../users/tim.nix&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;  ];&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" link="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: &#39;Droid Sans Mono&#39;, &#39;monospace&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;imports&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; [&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    (&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;modulesPath&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;/installer/scan/not-detected.nix&quot;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../configuration/desktop-gnome-x11.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../configuration/desktop-apps.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/locale-pt-en.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/biometrics.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/zfs-encryption.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;#../modules/unstable-apps.nix # qgis, keepasxc, vscode, uxplay&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# I do it this way so that we use hand compiled QGIS with&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# all the extra goodies I want like pyqtgraph&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# rasterio, debug libs etc. available to the build of QGIS&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Note that it is mutually exclusive (for now) to the upstream&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# QGIS binaries and also the build may take quite a while on&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# your pc.   If you prefer to use the upstream built binary,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# you can comment out these next 4 lines and uncomment the&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# unstable-apps entry above.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/desktop-apps-unstable/keepassxc-unstable.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/desktop-apps-unstable/vscode-unstable.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/desktop-apps-unstable/uxplay-unstable.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/gis/qgis-sourcebuild.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;#../software/system/sound-noise-suppression-unstable.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;#../software/gis/tilemaker-sourcebuild.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/gis/whitebox-tools.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/gis/saga.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# R&amp;amp;D Package for Wolfgang&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/gis/gverify-sourcebuild.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/podman.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/distrobox.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;#../software/system/tty-font.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/tailscale.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/virt.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/printing.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../software/system/sanoid.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;#../software/system/lima.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;../users/tim.nix&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;  ];&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" id="8bRmlou1UEH4qa6OKYU_-52">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="230" y="-325" width="460" height="130" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-53" value="Nix Install a package set declaratively for all users for a multiple host" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="751" y="-130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-54" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="761" y="-240" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-55" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="821" y="-240" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-56" value="Persistent" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#7FBA42;" vertex="1" parent="1">
+          <mxGeometry x="792" y="-360" width="38" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-57" value="🟢" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="830" y="-280" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-58" value="🔴" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="771" y="-280" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-59" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="880" y="-240" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-60" value="System" style="image;html=1;image=img/lib/clip_art/computers/Secure_System_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="880" y="-320" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bRmlou1UEH4qa6OKYU_-61" value="Personal" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Black_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="710" y="-240" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

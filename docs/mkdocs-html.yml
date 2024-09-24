@@ -67,3 +67,4 @@ extra_javascript:
 plugins:
   - search
   - mkdocs-asciinema
+  - mermaid2

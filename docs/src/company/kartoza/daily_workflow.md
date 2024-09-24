@@ -192,6 +192,7 @@ sprint. The size label has to be assigned based on the amount of hours it will
 take to complete the ticket.
 
 The following sizing scheme should be used:
+
  - 1️⃣  It's quick I will have this done in 1 hour
  - 2️⃣ Give me 2 hours and I will have it for you
  - 3️⃣ It will take me between 2 hours to half a day
@@ -249,6 +250,7 @@ only be one issue per team member in the 'In Progress' column at any time.
 👨**Needs Review:** When a team member completes their work on an issue, they
 place it in the needs review column. At this point our testing team members
 will go and verify they feature works as expected.
+
 - Situations in which a ticket may fail review:
 - Functionality does not match requirements in ticket.
 - Changes result in a regression elsewhere.
