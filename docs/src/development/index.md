@@ -47,21 +47,21 @@ graph TD
 8. **Code Formatting and Standards**  
    Follow PEP 8 (or other specified code style guidelines) to ensure code quality and readability. Use a linter or code formatter to assist with this step.
 
-9. **Create a New Branch for Your Changes**  
+9. **Create a New Branch for Your Changes**
+   For Git conventions: [Git](./conventions/git.md)
    Use Git to create a new branch specific to the feature or bug fix:
    ```bash
    git checkout -b <branch-name>
    ```
 
-   [Git](./conventions/git.md)
 
-10. **Push Changes to the Remote Repository**  
+11. **Push Changes to the Remote Repository**  
     Push your branch to the remote repository on GitHub:
     ```bash
     git push origin <branch-name>
     ```
 
-11. **Open a Pull Request (PR)**  
+12. **Open a Pull Request (PR)**  
     Open a pull request for your branch, describing the changes made. This PR will be reviewed by other team members to ensure code quality and alignment with project requirements. Attach screenshots to the pull request if applicable to show proof of work.
 
 ### Important Notes
