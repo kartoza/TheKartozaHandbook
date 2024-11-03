@@ -1,16 +1,75 @@
-# Development
 
-> Note that all users, regardless of role, should understand and review the [security](../devops/security/index.md) section.
 
-Kartoza is a consulting and development firm. In many instances, projects require developers to leverage existing tools and codebases, and to work with other organisations in a way that is consistent in their own conventions.
+## Development Lifecycle Overview
 
-This documentation seeks to outline processes and practices so that internal project development and practices within the team remain consistent. Where it is noted that beneficial conventions listed here are not implemented in client projects, recommendations may be made that clients adopt such standards.
+The following steps outline the general development workflow when contributing to a Kartoza project. These practices ensure code consistency, maintainability, and alignment with project conventions and standards.
 
-For the most part, however, it is less a concern of how a particular outcome is achieved, but rather that the result is consistent with the appropriate conventions.
 
-- [Documentation](./documentation/index.md)
-- [Conventions](./conventions/index.md)
-- [Technologies](./technologies/index.md)
-- [Environments](./environments/index.md)
-- [Resources](./resources/index.md)
-- [Testing](./testing/index.md)
+```mermaid
+graph TD
+    A[Receive Repository Link] --> B[Clone Project Locally]
+    B --> C[Set Up Project]
+    C --> D[Configure Environment]
+    D --> E[Run Project Locally]
+    E --> F[Develop Features or Fix Bugs]
+    F --> G[Write/Update Tests]
+    G --> H[Apply Code Standards]
+    H --> I[Create New Branch]
+    I --> J[Push to Remote Repository]
+    J --> K[Open Pull Request]
+```
+
+
+1. **Receive Project Repository Link**  
+   Developers are provided with a GitHub repository link for the project they will be working on.
+
+2. **Clone the Project Locally**  
+   Use Git to clone the project repository to your local machine:
+   ```bash
+   git clone <repository-link>
+   ```
+
+3. **Set Up the Project**  
+   After cloning, follow the installation instructions available in the README file to set up dependencies, tools, and the environment.
+
+4. **Configure Environment Variables**  
+   Adjust the environment variables in `.env` or as instructed in the documentation to ensure proper configuration for local development.
+
+5. **Run the Project Locally**  
+   Start the project to confirm that it runs as expected in your local environment.
+
+6. **Develop New Features or Fix Bugs**  
+   Identify the feature or bug you will be working on and make the necessary code changes. Ensure these changes align with project goals and specifications. You might also want to refer to [Coding Standards](./conventions/coding_standards.md) during the development process.
+
+7. **Write and Update Tests (If Applicable)**  
+   If tests are available, add or update tests to verify that your changes are working as expected. This helps maintain stability and reliability.
+
+8. **Code Formatting and Standards**  
+   Follow PEP 8 (or other specified code style guidelines) to ensure code quality and readability. Use a linter or code formatter to assist with this step.
+
+9. **Create a New Branch for Your Changes**
+
+    
+   For Git conventions: [Git](./conventions/git.md)
+   
+   Use Git to create a new branch specific to the feature or bug fix:
+   ```bash
+   git checkout -b <branch-name>
+   ```
+
+
+11. **Push Changes to the Remote Repository**  
+    Push your branch to the remote repository on GitHub:
+    ```bash
+    git push origin <branch-name>
+    ```
+
+12. **Open a Pull Request (PR)**  
+    Open a pull request for your branch, describing the changes made. This PR will be reviewed by other team members to ensure code quality and alignment with project requirements. Attach screenshots to the pull request if applicable to show proof of work.
+
+### Important Notes
+- **Security**: All users, regardless of role, should understand and review the [Security](../devops/security/index.md) section.
+- **Consistency with Client Conventions**: Kartoza projects may involve existing tools, codebases, or conventions from other organizations. Follow these practices for consistency with team standards and client expectations.
+
+Kartoza is a consulting and development firm that values consistent, maintainable practices across projects. This documentation outlines the processes to maintain uniformity within the team. Where beneficial conventions are not in place within a client’s project, we may suggest adopting these standards for overall project quality.
+
