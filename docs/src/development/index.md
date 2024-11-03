@@ -49,6 +49,7 @@ graph TD
 
 9. **Create a New Branch for Your Changes**
    For Git conventions: [Git](./conventions/git.md)
+   
    Use Git to create a new branch specific to the feature or bug fix:
    ```bash
    git checkout -b <branch-name>
