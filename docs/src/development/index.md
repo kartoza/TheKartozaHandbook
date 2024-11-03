@@ -7,16 +7,16 @@ The following steps outline the general development workflow when contributing t
 
 ```mermaid
 graph TD
-    A[Receive Project Repository Link] --> B[Clone the Project Locally]
-    B --> C[Set Up the Project]
-    C --> D[Configure Environment Variables]
-    D --> E[Run the Project Locally]
-    E --> F[Develop New Features or Fix Bugs]
-    F --> G[Write and Update Tests (If Applicable)]
-    G --> H[Code Formatting and Standards]
-    H --> I[Create a New Branch for Your Changes]
-    I --> J[Push Changes to the Remote Repository]
-    J --> K[Open a Pull Request (PR)]
+    A[Receive Repository Link] --> B[Clone Project Locally]
+    B --> C[Set Up Project]
+    C --> D[Configure Environment]
+    D --> E[Run Project Locally]
+    E --> F[Develop Features or Fix Bugs]
+    F --> G[Write/Update Tests]
+    G --> H[Apply Code Standards]
+    H --> I[Create New Branch]
+    I --> J[Push to Remote Repository]
+    J --> K[Open Pull Request]
 ```
 
 
