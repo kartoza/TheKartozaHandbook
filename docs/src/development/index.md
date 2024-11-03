@@ -48,6 +48,8 @@ graph TD
    Follow PEP 8 (or other specified code style guidelines) to ensure code quality and readability. Use a linter or code formatter to assist with this step.
 
 9. **Create a New Branch for Your Changes**
+
+    
    For Git conventions: [Git](./conventions/git.md)
    
    Use Git to create a new branch specific to the feature or bug fix:
