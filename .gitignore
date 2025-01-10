@@ -145,3 +145,4 @@ docs/src/img/.$ProjectPlanning.drawio.bkp
 *.swp
 *.bkp
 *.dtmp
+.vscode-extensions
