@@ -3,11 +3,11 @@
 ## General Approach
 
 * Use github for revision control, issue tracking and management and use the recommended workflow below whenever possible:
- * Create new Ticket on https://github.com/<org>/<repo>/issues/new
+  * Create new Ticket on [https://github.com/](https://github.com/)<org>/<repo>/issues/new
   * Fill in the needed information and description
   * Assign yourself
   * Note ticket number
- * Fork InaSAFE (if not already done)
+  * Fork InaSAFE (if needed)
   * Create new branch called fix-yourticketnumber in your fork
   * Implement feature
   * Pull request your branch into InaSAFE Develop
@@ -61,19 +61,16 @@ or:
      # pylint: enable=unused-imports
 ```
 
-**Note:** The use of messages codes (e.g. ``disable=W1234``) should be considered deprecated.
-Any new exceptions should be added using the keyword format (e.g. ``disable=unused-exceptions``).
+> Note: The use of messages codes (e.g. `disable=W1234`) should be considered deprecated.
+Any new exceptions should be added using the keyword format (e.g. `disable=unused-exceptions`).
 
-
-  .. note:: You can globally ignore messages by adding them to :file:`pylintrc`
-     in the :samp:`[MESSAGES CONTROL]` section.
+> Note: You can globally ignore messages by adding them to :file:`pylintrc` in the :samp:`[MESSAGES CONTROL]` section.
 
 The following pylint messages have been thus globally excluded from the
 check. For a discussion of these see also github issue
 [#245](https://github.com/AIFDR/inasafe/issues/245).
 
-  * All type R: Refactor suggestions such as limiting the number of local
-                variables. We may bring some back later.
+  * All type R: Refactor suggestions such as limiting the number of local variables. We may bring some back later.
   * All type I: Information only
   * W0142: Allow the Python feature F(\*args, \*\*kwargs)
   * W0201: Allow definition of class attributes outside the constructor.
@@ -119,7 +116,7 @@ avoided. Here is an example of what we mean by this:
     page_content = 'foo'
 ```
 
-Avoid 'yoda speak' in variable names. 
+Avoid `yoda speak` in variable names. 
 
 **Bad**:
 
@@ -221,9 +218,9 @@ Doc strings and comments
 All code should be self documenting. Please take special note and follow
 these PEP guidelines and sphinx documents:
 
-* http://www.python.org/dev/peps/pep-0287/
-* http://sphinx-doc.org/markup/desc.html#info-field-lists
-* http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+* [http://www.python.org/dev/peps/pep-0287/](http://www.python.org/dev/peps/pep-0287/)
+* [https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html](https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html)
+* [http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html](http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html)
 
 We follow these specific guidelines for our code:
 
@@ -260,7 +257,7 @@ class MyObject(object):
 
 Another example:
 
-```
+```python
 class MyObject(object):
 
    """My new class."""
@@ -305,7 +302,7 @@ Note the following in the above examples:
 * If a function or method is extremely obvious there is no need to have
   anything more than a single line docstring.
 * If a function or method returns a tuple it should be be documented as
-  ``:rtype: (<type>, <type>, ..)`` e.g. ``:rtype: (int, int)``.
+  `:rtype: (<type>, <type>, ..)` e.g. `:rtype: (int, int)`.
 
 Please also see the **api documentation how-to** section for more
 information on how to document your code properly.
@@ -314,7 +311,7 @@ information on how to document your code properly.
 
 Whenever you add or change a module, class, function or method, you should
 annotate it accordingly. The method for doing this is described on the
-`Sphinx paragraph markup page <http://sphinx-doc.org/markup/para.html>`_. Here
+[Sphinx paragraph markup page](http://sphinx-doc.org/markup/para.html)_. Here
 are a couple of examples:
 
 Adding a new module:
@@ -337,7 +334,7 @@ Adding a new method to a class:
 
 Changing an existing method API:
 
-```
+```python
     def show_static_message(self, message, foo):
     """Send a static message to the message viewer.
 
@@ -360,11 +357,12 @@ Changing an existing method API:
         message=message)
 ```
 
-
 # Strings and internationalisation
 
 * Simple strings in source code should be quoted with `'`
-* Favour interpolation over concatenation. For example this is **bad**:
+* Favour interpolation over concatenation.
+
+For example this is **bad**:
 
 ```python
     world = 'World'
@@ -378,7 +376,17 @@ And this is **good**:
     food = 'Hello %s' % world
 ```
 
-* Use parenthesis for long strings. For example this is **bad**:
+Or even **better**:
+
+```
+    world = 'World'
+    foo = f'Hello {world}'
+
+```
+
+* Use parenthesis for long strings.
+
+For example this is **bad**:
 
 ```python
     foo = 'The quick brown fox jumps over the lazy dog. ' +
@@ -431,15 +439,11 @@ __revision__ = '$Format:%H$'
 
 ```
 
-**Note**:: Please see [faq_developer] for details on how the revision tag
-is replaced with the SHA1 for the file when the release packages are made.
-
+> Note: Please see [faq_developer] for details on how the revision tag is replaced with the SHA1 for the file when the release packages are made.
 
 # Qt Guidelines
 
-Compile UI files at run time. There is no need to precompile UI files using
-pyuic4. Rather you can dynamically compile them using this technique (see
-[technical docs here](http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#the-uic-module):
+Compile UI files at run time. There is no need to precompile UI files using pyuic4. Rather you can dynamically compile them using this technique (see [technical docs here](http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#the-uic-module)):
 
 ```python
     import os
@@ -509,7 +513,7 @@ fact that it uses the naming convention ``on_<object>_clicked``.
 Note that in some cases you need to explicitly specify which signature is being
 listened for by using the pyqtSignature decorator:
 
-```
+```python
     @pyqtSignature('int')
     def on_polygon_layers_combo_currentIndexChanged(self, theIndex=None):
         """Automatic slot executed when the layer is changed to update fields.
@@ -547,16 +551,15 @@ underscore names. For this reason we adopt the following strategy:
 
 # Code statistics
 
-* https://www.ohloh.net/p/inasafe/analyses/latest
-* https://github.com/AIFDR/inasafe/network
-* https://github.com/AIFDR/inasafe/graphs
-
+* [https://www.ohloh.net/p/inasafe/analyses/latest](https://www.ohloh.net/p/inasafe/analyses/latest)
+* [https://github.com/AIFDR/inasafe/network](https://github.com/AIFDR/inasafe/network)
+* [https://github.com/AIFDR/inasafe/graphs](https://github.com/AIFDR/inasafe/graphs)
 
 # Working with GIT
 
-* Additions to the develop branch should be made via the GitHub **pull request** mechanism
-* Pull requests should preferably be **squashed** into a single commit before applying (see http://eli.thegreenplace.net/2014/02/19/squashing-github-pull-requests-into-a-single-commit)
-* Commits and pull requests should reference the issue number they close or contribute to
+* Additions to the develop branch should be made via the GitHub **pull request** mechanism.
+* Pull requests should preferably be **squashed** into a single commit before applying (click [here](http://eli.thegreenplace.net/2014/02/19/squashing-github-pull-requests-into-a-single-commit) to see).
+* Commits and pull requests should reference the issue number they close or contribute to.
 
 # Landscape
 ```python
