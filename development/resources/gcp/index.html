@@ -1,0 +1,3703 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Kartoza staff handbook and technical documentation.">
+      
+      
+        <meta name="author" content="Kartoza">
+      
+      
+      
+        <link rel="prev" href="../../environments/vscode/links/">
+      
+      
+        <link rel="next" href="../../technologies/frameworks/">
+      
+      
+      <link rel="icon" href="../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Kartoza Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/print.css">
+    
+      <link rel="stylesheet" href="../../../css/asciinema-player.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="grey">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#google-cloud-platform-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Kartoza Handbook" class="md-header__button md-logo" aria-label="Kartoza Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kartoza Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kartoza/TheKartozaHandbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Kartoza Handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../company/kartoza/" class="md-tabs__link">
+          
+  
+    
+  
+  Company
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../gis/cartography/cartography-guidelines/" class="md-tabs__link">
+          
+  
+    
+  
+  GIS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../library/tutorials/general/" class="md-tabs__link">
+          
+  
+    
+  
+  Tutorials & Cheatsheets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../devops/" class="md-tabs__link">
+          
+  
+    
+  
+  DevOps
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../library/" class="md-tabs__link">
+          
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Kartoza Handbook" class="md-nav__button md-logo" aria-label="Kartoza Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12Z"/></svg>
+
+    </a>
+    Kartoza Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kartoza/TheKartozaHandbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Kartoza Handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Kartoza
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../polyglot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polyglot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../company/kartoza/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Company
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Company
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/strategic_objective/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategic Objective
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/operating_principles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operating Principles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/setting_up_your_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staff Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/essential_software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essential Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/scrum_at_kartoza/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scrum at Kartoza
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/daily_workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daily Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/working_in_sprints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working in Sprints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../company/kartoza/communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../gis/technologies/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GIS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            GIS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/cartography/cartography-guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cartography Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conventions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/bdd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/end2endtesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/functionaltesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/integrationtesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/systemtesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/tdd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/coding_standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/dev_processes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/ides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conventions/project_processes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environments/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environments/mapstore/windows_machine_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environments/vscode/extension_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environments/vscode/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apis-and-services" class="md-nav__link">
+    APIs and services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-storage" class="md-nav__link">
+    Cloud storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-bucket" class="md-nav__link">
+    Create a new bucket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-data-into-a-bucket" class="md-nav__link">
+    Load data into a bucket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    Dataflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    BigQuery
+  </a>
+  
+    <nav class="md-nav" aria-label="BigQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-table" class="md-nav__link">
+    Create a new table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-schema" class="md-nav__link">
+    Table schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locally-run-python-code" class="md-nav__link">
+    Locally run python code
+  </a>
+  
+    <nav class="md-nav" aria-label="Locally run python code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-account-key" class="md-nav__link">
+    Service account key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmental-variables" class="md-nav__link">
+    Environmental variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-modules-and-libraries-to-install" class="md-nav__link">
+    Python modules and libraries to install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-code-locally" class="md-nav__link">
+    Running the code locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucket-trigger-events" class="md-nav__link">
+    Bucket trigger events
+  </a>
+  
+    <nav class="md-nav" aria-label="Bucket trigger events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trigger-event-for-python" class="md-nav__link">
+    Trigger event for Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pubsub-trigger-events" class="md-nav__link">
+    Pub/Sub trigger events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow-pipeline-using-python" class="md-nav__link">
+    Dataflow pipeline using Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataflow pipeline using Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute-engine" class="md-nav__link">
+    Compute Engine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-pipeline-python-code" class="md-nav__link">
+    Deploy pipeline Python code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery-in-python" class="md-nav__link">
+    BigQuery in Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technologies/frameworks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technologies/languages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/applications/standard-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/infrastructure/personal_infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/infrastructure/rancher-k3s-single-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/security/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/cartography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/ngi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/postgres/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/postgres/issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/postgres/postgres_qgis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/postgres/service_file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/qgis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/qgis/atlas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gis/resources/qgis/issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/media/newsletters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/docker-ansible-deployments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../library/tutorials/general/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorials & Cheatsheets
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials & Cheatsheets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/git-primer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/google-meet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/jitsi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/mkdocs-pdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/general/zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/cheatsheets/bash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/cheatsheets/kubectl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/cheatsheets/osgeo4w/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/cheatsheets/postgresql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../devops/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DevOps
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/procedures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procedures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devops/infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../library/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/cheatsheets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cheatsheets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/tutorials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../library/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apis-and-services" class="md-nav__link">
+    APIs and services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-storage" class="md-nav__link">
+    Cloud storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-bucket" class="md-nav__link">
+    Create a new bucket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-data-into-a-bucket" class="md-nav__link">
+    Load data into a bucket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    Dataflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    BigQuery
+  </a>
+  
+    <nav class="md-nav" aria-label="BigQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-table" class="md-nav__link">
+    Create a new table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-schema" class="md-nav__link">
+    Table schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locally-run-python-code" class="md-nav__link">
+    Locally run python code
+  </a>
+  
+    <nav class="md-nav" aria-label="Locally run python code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-account-key" class="md-nav__link">
+    Service account key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmental-variables" class="md-nav__link">
+    Environmental variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-modules-and-libraries-to-install" class="md-nav__link">
+    Python modules and libraries to install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-code-locally" class="md-nav__link">
+    Running the code locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucket-trigger-events" class="md-nav__link">
+    Bucket trigger events
+  </a>
+  
+    <nav class="md-nav" aria-label="Bucket trigger events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trigger-event-for-python" class="md-nav__link">
+    Trigger event for Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pubsub-trigger-events" class="md-nav__link">
+    Pub/Sub trigger events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow-pipeline-using-python" class="md-nav__link">
+    Dataflow pipeline using Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataflow pipeline using Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute-engine" class="md-nav__link">
+    Compute Engine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-pipeline-python-code" class="md-nav__link">
+    Deploy pipeline Python code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery-in-python" class="md-nav__link">
+    BigQuery in Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="google-cloud-platform-guide">Google cloud platform guide<a class="headerlink" href="#google-cloud-platform-guide" title="Permanent link"></a></h1>
+<p>A guide for Google cloud platform (GCP).</p>
+<h2 id="apis-and-services">APIs and services<a class="headerlink" href="#apis-and-services" title="Permanent link"></a></h2>
+<p>When using working with GCP, the user will need to enable the APIs required for the features they will be using.
+Here is a list of APIs the user will need to activate for storage, workflows, dataflows, and triggers.</p>
+<ul>
+<li>Cloud:</li>
+<li>Cloud Pub/Sub API</li>
+<li>Cloud storage</li>
+<li>Cloud logging API</li>
+<li>Cloud storage JSON API</li>
+<li>BigQuery API</li>
+<li>Cloud datastore API</li>
+<li>Compute Engine API</li>
+<li>Workflow:</li>
+<li>Workflow API</li>
+<li>Workflow executions API</li>
+<li>Eventarc API</li>
+<li>Cloud scheduler API</li>
+<li>Dataflow:</li>
+<li>Dataflow API</li>
+</ul>
+<blockquote>
+<p>This does not mean the user needs to make use of all these APIs, it only points out important cases</p>
+</blockquote>
+<p>To activate any of the above, do the following:
+- On the dashboard, click on <strong>APIs and services</strong></p>
+<p><img alt="GCP API services" src="img/gcp-api-services.png" /></p>
+<ul>
+<li>Select <strong>Library</strong>. This will take the user to a library which contains the available APIs</li>
+<li>The simplest method, if the API name is known, is to search for the API in the search bar</li>
+<li>For this guide, type “Cloud pub/sub api” in the search bar and press <strong>Enter</strong></li>
+</ul>
+<p><img alt="GCP API search" src="img/gcp-api-search.png" /></p>
+<ul>
+<li>Select the <em>Cloud Pub/Sub API</em> result</li>
+<li>Click <strong>Enable</strong></li>
+<li>Do this for all required APIs and services</li>
+</ul>
+<p>If an API is required for a function by GCP which has not been activated, the user will be prompted to enable it.</p>
+<h2 id="cloud-storage">Cloud storage<a class="headerlink" href="#cloud-storage" title="Permanent link"></a></h2>
+<h3 id="create-a-new-bucket">Create a new bucket<a class="headerlink" href="#create-a-new-bucket" title="Permanent link"></a></h3>
+<p>How to create a Storage bucket:
+- Go to <strong>Cloud Storage</strong> and click on <strong>Browser</strong></p>
+<p><img alt="GCP cloud starage" src="img/gcp-cloud-storage.png" /></p>
+<ul>
+<li>Click <strong>Create bucket</strong></li>
+</ul>
+<p><img alt="GCP cloud starage" src="img/gcp-create-bucket.png" /></p>
+<ul>
+<li>Provide a unique name for the bucket and click <strong>Continue</strong></li>
+<li>Choose a region of your choice and click Continue</li>
+</ul>
+<blockquote>
+<p>Using a single <strong>Region</strong> type will be the most cost-effective option.
+Only use <strong>Multi-region</strong> when required.</p>
+</blockquote>
+<ul>
+<li>The user can decide on the storage type, storage class, access control and data protection which will suffice for their requirements</li>
+</ul>
+<blockquote>
+<p>Default parameters/options should be sufficient for most cases.
+It is also important to consider the different storage classes, as this can affect the cost.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Storage class</th>
+<th style="text-align: center;">Minimum storage duration (days)</th>
+<th>Retrieval fees (per GB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard storage</td>
+<td style="text-align: center;">None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Nearline storage</td>
+<td style="text-align: center;">30</td>
+<td>$0.01</td>
+</tr>
+<tr>
+<td>Coldline storage</td>
+<td style="text-align: center;">90</td>
+<td>$0.02</td>
+</tr>
+<tr>
+<td>Archive storage</td>
+<td style="text-align: center;">365</td>
+<td>$0.05</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Click <strong>Create</strong></li>
+</ul>
+<p>For more information on Cloud Storage and buckets, see https://cloud.google.com/storage/docs/json_api/v1/buckets.</p>
+<h3 id="load-data-into-a-bucket">Load data into a bucket<a class="headerlink" href="#load-data-into-a-bucket" title="Permanent link"></a></h3>
+<ul>
+<li>Select the bucket to which data will be added</li>
+<li>Click on <strong>Create folder</strong></li>
+<li>Open the newly created folder</li>
+<li>Click <strong>Upload files</strong></li>
+<li>Select the file which needs to be stored in the bucket, and click <strong>Open</strong>. The file will be uploaded to the bucket</li>
+</ul>
+<p><img alt="GCP file uploading" src="img/gcp-upload-file.png" /></p>
+<ul>
+<li>The file can be renamed as follows:</li>
+<li>To the right, open the <strong>object overflow menu</strong> (button with three dots)</li>
+<li>Select <strong>Rename</strong></li>
+<li>Rename the file as desired</li>
+<li>A file can be deleted from the bucket by selecting it (tick next to the file) and clicking on <strong>Delete</strong></li>
+</ul>
+<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link"></a></h2>
+<p>This sections deals with creating a workflow in GCP.</p>
+<ul>
+<li>In the GCP menu, click on <strong>Workflows</strong></li>
+</ul>
+<p><img alt="GCP workflow" src="img/gcp-workflow.png" /></p>
+<ul>
+<li>Click <strong>Create</strong> to start setting up a workflow</li>
+</ul>
+<p><img alt="GCP workflow create" src="img/gcp-workflow-create.png" /></p>
+<ul>
+<li>Provide a workflow name, description (optional) and region</li>
+</ul>
+<blockquote>
+<p>Using a single region option is a more cost-effective approach.
+Only use multi-regional if required.</p>
+</blockquote>
+<ul>
+<li>Select a service account. Do the following if you want to create a new service account:</li>
+<li>Click on <strong>Create a new service account</strong></li>
+<li>Provide an account name, ID and description (optional). The user can also generate a random ID.</li>
+<li>Click on <strong>Create and Continue</strong></li>
+<li>Now select the newly created service account</li>
+</ul>
+<p><img alt="GCP workflow parameters" src="img/gcp-workflow-parameters.png" /></p>
+<blockquote>
+<p>Description parameters are optional, but it is highly recommended to provide a good, but short description.
+This helps a lot if multiple users will be working on the GCP project.</p>
+</blockquote>
+<ul>
+<li>The user can also provide a label to link this workflow to a group. This is optional.</li>
+<li>Click on <strong>Add label</strong></li>
+<li>Provide a <strong>Key</strong> and <strong>Value</strong></li>
+<li>GCP provides two trigger types:</li>
+</ul>
+<p><img alt="GCP workflow triggers" src="img/gcp-workflow-triggers.png" /></p>
+<ul>
+<li>Choose either type:</li>
+<li><em>Cloud scheduler</em>: This is a recurring schedule option<ul>
+<li>Click on <strong>Add new trigger</strong> and select <strong>Cloud scheduler</strong></li>
+<li>Provide the following:</li>
+<li>A <strong>name</strong>, <strong>region</strong>, and <strong>time zone</strong></li>
+<li>The <strong>frequency</strong> needs to be set as explained here: https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules#defining_the_job_schedule</li>
+<li>Click <strong>Continue</strong></li>
+<li>Set the <strong>workflow argument</strong>, <strong>log level</strong> and the <strong>service account</strong> as desired</li>
+<li>Click <strong>Create</strong></li>
+</ul>
+</li>
+<li><em>Eventarc</em>: This is an event driven option (e.g. file uploaded to a bucket)<ul>
+<li>Click on <strong>Add new trigger</strong> and select <strong>Eventarc</strong></li>
+<li>Set the <strong>Trigger name</strong> as desired</li>
+<li>Choose an <strong>Event provider</strong>. Depending on the chosen provider, the parameters which follows may differ. For this example/guide Cloud Storage will be used</li>
+<li>Under <strong>Event</strong>, the user will note that there are numerous options, but for now we will use google.cloud.storage.object.v1.finalized – This event occurs when a new object has been created in a bucket</li>
+<li>To select the bucket which should be monitored, click on <strong>Browse</strong>. Then select the desired bucket, or create a new bucket. Click <strong>Select</strong></li>
+<li>Choose the Service account</li>
+<li>Grant permission as required for the chosen <strong>Region</strong> and <strong>Service account</strong>. If permissions are already set up, this option will not show to the user</li>
+<li>Click <strong>Save trigger</strong></li>
+</ul>
+</li>
+<li>Set up the workflow which needs to be performed. See the following for more information on this: https://cloud.google.com/workflows/docs/reference/syntax</li>
+<li>Click <strong>Deploy</strong></li>
+<li>If the workflow has been successfully deployed, the user can perform the workflow. Click on <strong>Execute</strong> to go to the execute workflow section</li>
+</ul>
+<p><img alt="GCP workflow execute" src="img/gcp-workflow-exe.png" /></p>
+<ul>
+<li>Click <strong>Execute</strong></li>
+<li>Here is an example of an output from a Workflow</li>
+</ul>
+<p><img alt="GCP workflow started" src="img/gcp-workflow-output.png" /></p>
+<h2 id="dataflow">Dataflow<a class="headerlink" href="#dataflow" title="Permanent link"></a></h2>
+<p>The GCP dataflow can be split into three main categories, namely Java, Python and notebooks.
+Essentially the outcome and aim of each category will be the same.
+For this guide focus will be on Python.</p>
+<blockquote>
+<p>To enable dataflow developing for an account, add the Dataflow developer role to the service account.</p>
+</blockquote>
+<p>Here is a short tutorial on creating a <strong>Dataflow</strong>:</p>
+<ul>
+<li>Let's first create a text file which will contain some words for our example:</li>
+<li>Create a new text file at a desired directory on your computer. The text file name can be anything (e.g. “just_some_text.txt”);</li>
+<li>Add some words to the text file. Which words you add does not matter, but here is an example:</li>
+</ul>
+<p><img alt="GCP dataflow text file" src="img/gcp-dataflow-text-file.png" /></p>
+<ul>
+<li>Upload the new file:</li>
+<li>Open Cloud storage</li>
+<li>Open an existing bucket, or <strong>create a new bucket</strong></li>
+<li>Click <strong>Upload files</strong></li>
+<li>Select the newly created text file and click <strong>OK</strong></li>
+<li>Create a tempory storage folder for <strong>Dataflow</strong>:</li>
+<li>Click on <strong>Create folder</strong> and name it "temp"</li>
+<li>On the dashboard, click on <strong>Dataflow</strong></li>
+</ul>
+<p><img alt="GCP dataflow dashboard" src="img/gcp-dataflow-dashboard.png" /></p>
+<ul>
+<li>Click on Create job from template</li>
+</ul>
+<blockquote>
+<p>A user can also create their own template, but for this example we will not be doing that.</p>
+</blockquote>
+<p><img alt="GCP dataflow dashboard" src="img/gcp-dataflow-template.png" /></p>
+<ul>
+<li>Provide a <strong>Job name</strong></li>
+<li>Choose a <strong>Regional endpoint</strong></li>
+</ul>
+<blockquote>
+<p>The region will be best to be the same as your cloud storage. This will minimize costs.</p>
+</blockquote>
+<ul>
+<li>Set the <strong>Dataflow template</strong> to Word count. The Word count dataflow will execute code on a provided text file and return the number of cases the file contains each word</li>
+<li>To set directories the syntax will be “gs://{bucket}/{folder}/{filename}”. For example, “gs://newb2/just_some_text.txt” will refer to the text file named ‘just_some_text.txt’ in the bucket named ‘newb2’. These directories can also refer to folders in a bucket. Set the directories as follows:</li>
+<li><strong>Input file(s) in Cloud storage</strong>: The text file which contains the words (e.g. “gs://newb2/just_some_text.txt”). This will be the input for the dataflow</li>
+<li><strong>Output Cloud Storage file prefix</strong>: This is the prefix which will be used for the output file (“gs://newb2/just_some_text_result.txt”). The counts for each word will be stored in this file</li>
+<li><strong>Temporary location</strong>: Provide the temporary folder we created here (“gs://newb2/temp”). The dataflow will use this folder to store any temporary data used for processing</li>
+<li>Here is an example of the parameters:</li>
+</ul>
+<p><img alt="GCP dataflow parameters" src="img/gcp-dataflow-parameters.png" /></p>
+<ul>
+<li>Click <strong>Run job</strong></li>
+<li>The job will run for a few minutes. The output should be similar to the following:</li>
+</ul>
+<p><img alt="GCP dataflow job run" src="img/gcp-dataflow-job-run.png" /></p>
+<ul>
+<li>Once the dataflow finished running, go back to your bucket. There should be a new file, based on the name you have provided, in your bucket. In this example, the file is named “just_some_text_result.txt-00000-000001”</li>
+</ul>
+<p><img alt="GCP dataflow output files" src="img/gcp-dataflow-output-files.png" /></p>
+<ul>
+<li>Download the file</li>
+<li>The user should see something similar to the following:</li>
+</ul>
+<p><img alt="GCP dataflow output example" src="img/gcp-dataflow-output-example.png" /></p>
+<p>This concludes the basic example for <strong>Dataflows</strong>.</p>
+<h2 id="bigquery">BigQuery<a class="headerlink" href="#bigquery" title="Permanent link"></a></h2>
+<h3 id="create-a-new-table">Create a new table<a class="headerlink" href="#create-a-new-table" title="Permanent link"></a></h3>
+<ul>
+<li>Click the <strong>View actions</strong> button for the project</li>
+<li>Click <strong>Create data set</strong></li>
+</ul>
+<p><img alt="GCP bigquery create table" src="img/gcp-bigquery-create-table.png" /></p>
+<ul>
+<li>Select the <strong>Project ID</strong></li>
+<li>Provide a <strong>Data set ID</strong></li>
+<li>Select a <strong>Data location</strong> (region)</li>
+</ul>
+<blockquote>
+<p>For cost-effectiveness, make use a single zone region. Multi-region is more costly.</p>
+</blockquote>
+<ul>
+<li>Click <strong>Create data set</strong></li>
+</ul>
+<p><img alt="GCP bigquery create dataset" src="img/gcp-bigquery-create-dataset.png" /></p>
+<ul>
+<li>Click <strong>View actions</strong> for the newly created data set;</li>
+<li>Click <strong>Create table</strong>;</li>
+</ul>
+<p><img alt="GCP bigquery create table2" src="img/gcp-bigquery-create-table2.png" /></p>
+<ul>
+<li>Provide the required parameters and click on <strong>Create table</strong></li>
+</ul>
+<p><img alt="GCP bigquery parameters" src="img/gcp-table-parameters.png" /></p>
+<blockquote>
+<p>A dataset can contain multiple tables.</p>
+</blockquote>
+<h3 id="table-schema">Table schema<a class="headerlink" href="#table-schema" title="Permanent link"></a></h3>
+<p>The schema for a table contains all of the fields, field types, size, description, and other parameters based on the field type.
+To add or edit a Schema to the table, do the following:</p>
+<ul>
+<li>Click on the table so that it opens in a new tab in GCP</li>
+<li>Click <strong>Edit schema</strong></li>
+</ul>
+<p><img alt="GCP bigquery schema" src="img/gcp-bigquery-schema.png" /></p>
+<ul>
+<li>Click the <strong>Add field</strong> button</li>
+<li>Provide a <strong>Field name</strong>, <strong>Type</strong>, <strong>Mode</strong> and <strong>Description</strong>. Some schema options might be optional (e.g. <strong>Description</strong>). The parameters will also differ depending on the Type;</li>
+<li>The user can add several fields;</li>
+</ul>
+<p><img alt="GCP bigquery schema fields" src="img/gcp-bigquery-schema-fields.png" /></p>
+<ul>
+<li>Click <strong>Save</strong> to update the Schema</li>
+</ul>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link"></a></h3>
+<p>Some issues the user should avoid or may encounter:</p>
+<ul>
+<li>BigQuery will not allow loading of a table with the incorrect number of columns:</li>
+<li>Deleting unwanted fields will solve this problem</li>
+<li>Always base the schema on the table being loaded, but this can introduce other issues</li>
+<li>The names of each field needs to be the same. So the user needs to check the data prior to uploading it. This will also make it easier to automatically delete unwanted fields</li>
+<li>The data type needs to be the same for all features/rows of the table. A string cannot be imported into a float fields type</li>
+<li>Found an issue where the number of columns changes from a certain row (e.g. row 81), therefore the data cannot be loaded. These were resolved by ‘just deleting’ a bunch of columns at the end of the file. Could not find any data in those columns, so not exactly sure what caused to problem (maybe spaces or tabs in the table elements)</li>
+<li>Most of these issues can be solved prior to uploading data, or in the Python code itself when a trigger event occurs</li>
+<li>Issues when importing a date column. BigQuery needs the data to be perfect for improting.</li>
+</ul>
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link"></a></h2>
+<p>Python can be used for trigger events for <strong>Storage bucket</strong> or <strong>Dataflow</strong> pipelines. Other languages, namely Java, are also supported.</p>
+<h3 id="locally-run-python-code">Locally run python code<a class="headerlink" href="#locally-run-python-code" title="Permanent link"></a></h3>
+<p>Python code can be run locally before running it on the GCP. Makes it easier to test code before uploading it.
+Firstly the user needs to create a service account JSON file, followed by setting up environmental variables in their OS and installing a few libraries/modules.</p>
+<h4 id="service-account-key">Service account key<a class="headerlink" href="#service-account-key" title="Permanent link"></a></h4>
+<p>The service account key will be used by the user’s OS to access the GCP account. The JSON key can be created as follows:</p>
+<ul>
+<li>Go to <strong>IAM and admin</strong></li>
+<li>Select <strong>Service account</strong></li>
+<li>Select the service account for which you want to create the JSON key</li>
+<li>Click on the <strong>Keys</strong> tab</li>
+<li>Click Add key and then <strong>Create new key</strong></li>
+<li>Select JSON and click <strong>Create</strong></li>
+<li>The new key will be created and the browser will download the JSON file</li>
+</ul>
+<blockquote>
+<p>If the download fails, try using a different browser as some browsers causes issues.</p>
+</blockquote>
+<h4 id="environmental-variables">Environmental variables<a class="headerlink" href="#environmental-variables" title="Permanent link"></a></h4>
+<p>Windows environmental variables needs to be set up as follows:
+- Type ‘environmental variables’ in the Windows start menu
+- Select <strong>Edit the system environmental variables</strong>
+- Under <em>System variables</em>, click <strong>New</strong></p>
+<p><img alt="GCP python environmental variables" src="img/gcp-win-environmental-var.png" /></p>
+<ul>
+<li>Set the variables as follows:</li>
+<li>Service account JSON key:<ul>
+<li><strong>Variable name</strong>: GOOGLE_APPLICATION_CREDENTIALS; and</li>
+<li><strong>Variable value</strong>: Directory with filename to the JSON key file.</li>
+</ul>
+</li>
+<li>GCP project:<ul>
+<li><strong>Variable name</strong>: GOOGLE_CLOUD_PROJECT; and</li>
+<li><strong>Variable value</strong>: Project ID.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="GCP python environmental example" src="img/gcp-win-environmental-example.png" /></p>
+<ul>
+<li>Click <strong>OK</strong></li>
+<li>The new environmenal variables will now be added</li>
+</ul>
+<p>On Linux the user can do the following to set up the environmental variables:
+- Open the terminal
+- Service account JSON key:
+  - Run the following: export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH", where KEY_PATH is the directory to the JSON key file
+- GCP project:
+  - Run the following: export GOOGLE_CLOUD_PROJECT="PROJECT", where PROJECT is the ID of the project.</p>
+<p>Accessing the GCP using Python code should now work.</p>
+<h4 id="python-modules-and-libraries-to-install">Python modules and libraries to install<a class="headerlink" href="#python-modules-and-libraries-to-install" title="Permanent link"></a></h4>
+<p>Required roles:
+- Dataflow admin;
+- Dataflow developer;
+- Dataflow worker; and
+- Service account user.</p>
+<p>Install pip, if not installed:
+- sudo apt update
+- sudo apt install python3-pip</p>
+<p>The following Python modules will be required:
+- pip install google-cloud-storage;
+- pip install google-cloud-bigquery; and
+- pip install google-cloud.</p>
+<p>These modules should be installed locally if the user wants to perform Python runs locally, but also on the GCP terminal when code should be run on the platform as well. To check the list of installed Python modules, use ‘pip list’.</p>
+<p>The following libraries should be installed for local Python runs:
+- gcloud command:
+  - sudo snap install google-cloud-cli; and
+  - sudo snap install google-cloud-sdk.</p>
+<p>If the user will be making use of Apache-beam (Data flow pipeline), do the following to be able to run code locally:
+- Open the console
+- pip install wheel
+- Installing Apache-beam differs for Windows and Linux:
+  - Windows: pip install “apache-beam[gcp]”
+  - Linux: pip install ‘apache-beam[gcp]’</p>
+<blockquote>
+<p>Take note that Windows uses a souble-quote, Linux uses a single-quote.</p>
+</blockquote>
+<h4 id="running-the-code-locally">Running the code locally<a class="headerlink" href="#running-the-code-locally" title="Permanent link"></a></h4>
+<p>Before adding code to GCP (e.g. for a trigger), it will be best to test the code locally as it can be slow to upload or deploy the code. Simply run the Python code using the normal console command:
+- python3 python_file.py</p>
+<h3 id="bucket-trigger-events">Bucket trigger events<a class="headerlink" href="#bucket-trigger-events" title="Permanent link"></a></h3>
+<p>A trigger event can be set up for a Storage bucket. Depending on the event (e.g. object.finalize will occur when a new file finished uploading to the bucket), code can be triggered. This guide will only explain how to do this for Python, but it can also be set up for other languages (e.g. Java).
+Add required roles:
+- cloudfunctions.functions.get
+- cloudfunctions.functions.create
+- cloudfunctions.functions.delete
+- cloudfunctions.functions.call
+- Any other required roles</p>
+<h4 id="trigger-event-for-python">Trigger event for Python<a class="headerlink" href="#trigger-event-for-python" title="Permanent link"></a></h4>
+<p>A trigger event for Python can be set up as follows:
+- <em>main.py</em>: This Python file will contain the functions which will be triggered when an event occurs. The file has to be named main.py.
+- <em>requirements.txt</em>: This file will consist of any modules which will be imported and used by the code. Here is two examples of requirements added to the text file:
+  - google.cloud.storage
+  - google.cloud.bigquery</p>
+<p><img alt="GCP python requirements file" src="img/gcp-requirements-file.png" /></p>
+<ul>
+<li>The code can be deployed by going to Cloud functions in GCP;</li>
+<li>
+<p>The code can also be deployed on the GCP to the bucket using the following command:
+gcloud functions deploy FUNCTION_NAME \
+--runtime python39 \
+--trigger-resource BUCKET_NAME \
+--trigger-event TRIGGER_EVENT \
+--project PROJECT_ID</p>
+</li>
+<li>
+<p>The user can manually upload the data to the bucket or use the following command:
+gsutil cp FILE_NAME BUCKET_DIR</p>
+</li>
+<li>To check the logs of the trigger, do the following command:
+gcloud functions logs read --limit 50 --project PROJECT_ID</li>
+<li>Variable descriptions:</li>
+<li><strong>FUNCTION_NAME</strong>: The name of the method/function in the main.py file;</li>
+<li><strong>BUCKET_NAME</strong>: The name of the bucket which will trigger the event. This should only be the bucket name (e.g. example_bucket);</li>
+<li><strong>TRIGGER_EVENT</strong>: The event which will trigger the code (e.g. google.storage.object.finalize will trigger when a file finished uploading);</li>
+<li><strong>PROJECT_ID</strong>: The ID of the project (not the name of the project)</li>
+<li><strong>FILE_NAME</strong>: The local file the user wants to upload; and</li>
+<li><strong>BUCKET_DIR</strong>: The bucket directory on GCP. This will consist of ‘gs://’ and the BUCKET_NAME (e.g. gs://example_bucket)</li>
+</ul>
+<h3 id="pubsub-trigger-events">Pub/Sub trigger events<a class="headerlink" href="#pubsub-trigger-events" title="Permanent link"></a></h3>
+<p>This section focuses on setting up a scheduled trigger event using Pub/Sub, Cloud function and Cloud scheduler, but other approaches are available.</p>
+<ul>
+<li>In GCP, open <strong>Pub/Sub</strong> in the menu</li>
+<li>Click <strong>Create topic</strong></li>
+<li>Provide a <strong>Topic ID</strong></li>
+<li>The other parameter can be left as is. Click <strong>Create topic</strong></li>
+</ul>
+<p><img alt="GCP create topic" src="img/gcp-create-topic.png" /></p>
+<ul>
+<li>Open your newly created topic</li>
+<li>Click on <strong>Trigger Cloud function</strong> at the top of the page. This will allow you to add function which will be triggered if the <strong>Pub/Sub</strong> is called</li>
+<li>Provide the required parameters for the <strong>Create function</strong> step:</li>
+<li><strong>Environment</strong> can be left as 1st gen, but 2nd can also be used</li>
+<li>Provide a name in the <strong>Function name</strong> field</li>
+<li>Choose a <strong>Region</strong> which will be the same as the data/buckets/BigQuery which will be accessed</li>
+<li>Set the <strong>Timeout</strong> to 540 seconds (9 minutes)</li>
+<li>Set other settings as desired</li>
+</ul>
+<p><img alt="GCP create function" src="img/gcp-create-function.png" /></p>
+<ul>
+<li>Under <strong>Source code</strong> select the programming language for <strong>Runtime</strong> (e.g. Python)</li>
+<li>Paste your code in the <em>MAIN.PY</em> tab</li>
+<li>Entry point should consist of the name of the function which will be called in the code segment pasted in <em>MAIN.PY</em></li>
+</ul>
+<p><img alt="GCP source code" src="img/gcp-source-code.png" /></p>
+<blockquote>
+<p>The Entry point function needs to have two parameters, namely ‘event’ and ‘context’. These parameters are included when the trigger event happens.</p>
+</blockquote>
+<ul>
+<li>Click <strong>Deploy function</strong></li>
+<li>Now that the Pub/Sub topic and trigger function has been set up, we can set the schedule for when this should occur</li>
+<li>Go to Cloud Scheduler in the GCP menu</li>
+<li>Click <strong>Create job</strong></li>
+<li>Set the parameters as follows:</li>
+<li><strong>Name</strong>: As desired</li>
+<li><strong>Region</strong>: Select the region which is used by your Sub/Pub topic</li>
+<li><strong>Description</strong>: As desired</li>
+<li><strong>Frequency</strong>: This consist of 5 values using this structure * * * * *, which is minute, hour, day of the month, month, and day of the week. * refers to all cases for that parameter. See https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules for more information on how to set frequencies</li>
+<li><strong>Time zone</strong>: Set as desired. South Africa Standard Time (SAST) is available as an option</li>
+</ul>
+<p><img alt="GCP cron job" src="img/gcp-cron-job.png" /></p>
+<ul>
+<li>Click <strong>Continue</strong> to go to the <strong>Configure the execution</strong> section</li>
+<li>Select Pub/Sub as the <strong>Target type</strong></li>
+<li>Select the <strong>Topic</strong> which contains the trigger function</li>
+<li>Add a message as desired</li>
+<li>Set other options as desired</li>
+<li>Click <strong>Create</strong></li>
+</ul>
+<p>The job will be executed based on the frequency set by the user. It will call the Pub/Sub topic, which in turn will trigger the Cloud function. To have a look at the function and execution, do the following:
+- Go to Cloud function in the GCP menu
+- Open the function. The user should see the metric</p>
+<p><img alt="GCP function metric" src="img/gcp-function-metric.png" /></p>
+<ul>
+<li>This section shows all information related to the function, such is when it was called, if it failed, completed, or is currently running</li>
+<li>Go to LOGS to see the terminal responses and print from the active function</li>
+</ul>
+<p><img alt="GCP function console" src="img/gcp-function-console.png" /></p>
+<h3 id="dataflow-pipeline-using-python">Dataflow pipeline using Python<a class="headerlink" href="#dataflow-pipeline-using-python" title="Permanent link"></a></h3>
+<p>When the user wants a Dataflow pipeline to make use of Python code a template needs to be generated from the Python code
+(other languages also supported, namely Java). This can be done as follows:</p>
+<ul>
+<li>This needs to be done on the GCP console (Linux-based terminal) and cannot be done locally:</li>
+<li>Open the cloud shell on GCP</li>
+<li>Click on <strong>More</strong></li>
+<li>Select <strong>Upload</strong></li>
+<li>Upload the files (e.g. Python code) as needed</li>
+</ul>
+<p><img alt="GCP pipeline upload" src="img/gcp-pipeline-upload.png" /></p>
+<ul>
+<li>The files will now be uploaded to the console home directory;</li>
+<li>Run the following command in the GCP console to create the pipeline template:</li>
+</ul>
+<p>python3 -m MODULE \
+    --runner DataflowRunner \
+    --project PROJECT_ID \
+    --staging_location STAGING_LOC \
+    --temp_location TEMPORARY_LOC \
+    --template_location TEMPLATE_LOC \
+    --region REGION</p>
+<ul>
+<li><strong>MODULE</strong>: The Python file uploaded to the GCP console</li>
+<li><strong>PROJECT_ID</strong>: ID of the project (not the project name)</li>
+<li><strong>STAGING_LOC</strong>: The staging location for the pipeline (e.g. gs://pipeline_bucket/staging)</li>
+<li><strong>TEMPORARY_LOC</strong>: Temporary location for the pipeline (gs://pipeline_bucket/temp);</li>
+<li><strong>TEMPLATE_LOC</strong>: The location to which the JSON template will be saved (gs://pipeline_bucket/template);</li>
+<li><strong>REGION</strong>: Region (e.g. us-east1)</li>
+</ul>
+<p>If a template fails to generate, there is likely a problem in the code. The code needs to make use of Apache-beam, and minor issues will be a problem. For instance, code might work locally, but an issue might occur when running in the pipeline itself. For more information on Python template generation go to  https://cloud.google.com/dataflow/docs/quickstarts/create-pipeline-python.</p>
+<h4 id="compute-engine">Compute Engine<a class="headerlink" href="#compute-engine" title="Permanent link"></a></h4>
+<p>A <strong>Dataflow</strong> pipeline requires a virtual machine (VM). This can be set up using GCP <strong>Compute engine</strong>. Follow these instructions to set up a VM:</p>
+<ul>
+<li>In the GCP navigation menu, select <strong>Compute engine</strong></li>
+<li>Click on <strong>VM instances</strong></li>
+<li>Click <strong>Create instance</strong></li>
+</ul>
+<p><img alt="GCP compute engine" src="img/gcp-compute-engine.png" /></p>
+<ul>
+<li>Provide the following parameters:</li>
+<li><strong>Name</strong>;</li>
+<li>Choose a <strong>Region</strong> and <strong>Zone</strong>. Best will be to make use of the same region than what your other data in a bucket or BigQuery makes use of;</li>
+<li>Choose a <strong>Series</strong> and <strong>Machine type</strong></li>
+<li>Other parameters can be left on default or changed as desired.</li>
+</ul>
+<p><img alt="GCP virtual machine" src="img/gcp-virtual-machine.png" /></p>
+<ul>
+<li>Click <strong>Create</strong></li>
+</ul>
+<blockquote>
+<p>Be sure to choose the machine type as required. The costs will be higher to more processing power is used</p>
+</blockquote>
+<p>Here is an example using a <em>medium VM</em>:</p>
+<p><img alt="GCP VM medium" src="img/gcp-vm-medium.png" /></p>
+<p>Here is an example of a <em>high end VM</em>:</p>
+<p><img alt="GCP VM high" src="img/gcp-vm-high-end.png" /></p>
+<blockquote>
+<p>Notice the cost difference! There are a large number of machine options, so be sure to choose as required.</p>
+</blockquote>
+<h4 id="deploy-pipeline-python-code">Deploy pipeline Python code<a class="headerlink" href="#deploy-pipeline-python-code" title="Permanent link"></a></h4>
+<p>Dataflow makes use of Apache Beam. This can be developed/deployed using the SSH console for a VM. Do this as follows:</p>
+<ul>
+<li>Go to Compute engine in GCP;</li>
+<li>Create a virtual machine (see Compute engine), or select an existing virtual machine;</li>
+<li>Click on SSH. This will open the SSH console;</li>
+<li>Install Python modules:</li>
+<li>pip install apitools</li>
+<li>pip install “apache_beam[gcp]” (this can run a very long time)</li>
+<li>pip install google</li>
+<li>pip install google-cloud-storage</li>
+<li>pip install google-cloud-bigquery</li>
+<li>pip install google-cloud</li>
+<li>Any other required Python modules (e.g. geopandas)</li>
+</ul>
+<blockquote>
+<p>If git is not installed for the VM, follow the instructions here to install git: https://www.atlassian.com/git/tutorials/install-git.</p>
+</blockquote>
+<ul>
+<li>Clone the repo from GitHub or other sources. This will download the repo into the compute engine root folder</li>
+<li>Navigate in the console to the code which needs to be run</li>
+<li>If providing parameters as as variable from the console:</li>
+<li>Set the bucket, if required, as follows:<ul>
+<li>BUCKET="<your unique bucket name (Project ID)>"</li>
+<li>echo $BUCKET</li>
+</ul>
+</li>
+<li>Set the project as follows:<ul>
+<li>PROJECT="<your unique project name (Project ID)>"</li>
+<li>echo $PROJECT</li>
+</ul>
+</li>
+<li>Set up the environmental variables (see Environmental variables). This is required for authentication and local runs in the VM:</li>
+<li>The user will require the credentials json file for the service account (see Service account key).</li>
+</ul>
+<p><strong>Executing the pipeline</strong>:</p>
+<ul>
+<li>There are two options available. Local is faster, but cloud runs the pipeline on the cloud but is slower (the is shown In the GCP course). Here is how code can be run:</li>
+<li><strong>Execute pipeline locally</strong>:<ul>
+<li>python3 file.py --parameter $BUCKET --project $PROJECT –otherParameters $PARAMETER --DirectRunner</li>
+</ul>
+</li>
+<li><strong>Execute in the cloud</strong>:<ul>
+<li>python3 file.py --bucket $BUCKET --project $PROJECT  –otherParameters $PARAMETER --DataFlowRunner</li>
+</ul>
+</li>
+</ul>
+<h3 id="bigquery-in-python">BigQuery in Python<a class="headerlink" href="#bigquery-in-python" title="Permanent link"></a></h3>
+<p>This section will deal with BigQuery in Python code.</p>
+<p>The table schema, basically the attributes structure, is important to set up correctly in BigQuery and will cause issues if the user attempts to load a table into BigQuery using the incorrect structure for the table being loaded. A table schema makes use of JSON, and is easy to set up. Here is a code example:</p>
+<p>SCHEMA = [
+        bigquery.SchemaField('Date', 'Date', mode='NULLABLE'),
+        bigquery.SchemaField('Max_Temperature', 'FLOAT', mode='NULLABLE'),
+        bigquery.SchemaField('Min_Temperature', 'FLOAT', mode='NULLABLE'),
+        bigquery.SchemaField('Precipitation', 'FLOAT', mode='NULLABLE'),
+        bigquery.SchemaField('Relative_Humidity', 'FLOAT', mode='NULLABLE'),
+        bigquery.SchemaField('Solar', 'FLOAT', mode='NULLABLE'),
+        bigquery.SchemaField('Streamflow', 'FLOAT', mode='NULLABLE'),
+]</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Kartoza and Contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/kartoza" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/r/kartoza/" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/KartozaGeo" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://kartoza.com" target="_blank" rel="noopener" title="kartoza.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://kartoza.com" target="_blank" rel="noopener" title="kartoza.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m177.8 63.2 10 17.4c2.8 4.8 4.2 10.3 4.2 15.9v41.4c0 3.9 1.6 7.7 4.3 10.4 6.2 6.2 16.5 5.7 22-1.2l13.6-17c4.7-5.9 12.9-7.7 19.6-4.3l15.2 7.6c3.4 1.7 7.2 2.6 11 2.6 6.5 0 12.8-2.6 17.4-7.2l3.9-3.9c2.9-2.9 7.3-3.6 11-1.8l29.2 14.6c7.8 3.9 12.6 11.8 12.6 20.5 0 10.5-7.1 19.6-17.3 22.2l-35.4 8.8c-7.4 1.8-15.1 1.5-22.4-.9l-32-10.7c-3.3-1.1-6.7-1.7-10.2-1.7-7 0-13.8 2.3-19.4 6.5L176 212c-10.1 7.6-16 19.4-16 32v28c0 26.5 21.5 48 48 48h32c8.8 0 16 7.2 16 16v48c0 17.7 14.3 32 32 32 10.1 0 19.6-4.7 25.6-12.8l25.6-34.1c8.3-11.1 12.8-24.6 12.8-38.4v-12.1c0-3.9 2.6-7.3 6.4-8.2l5.3-1.3c11.9-3 20.3-13.7 20.3-26 0-7.1-2.8-13.9-7.8-18.9l-33.5-33.5c-3.7-3.7-3.7-9.7 0-13.4 5.7-5.7 14.1-7.7 21.8-5.1l14.1 4.7c12.3 4.1 25.7-1.5 31.5-13 3.5-7 11.2-10.8 18.9-9.2l27.4 5.5C432 112.4 351.5 48 256 48c-27.7 0-54 5.4-78.2 15.2zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../../../js/tablesort.js"></script>
+      
+        <script src="../../../js/asciinema-player.min.js"></script>
+      
+    
+  </body>
+</html>
